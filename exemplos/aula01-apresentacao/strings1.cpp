@@ -7,5 +7,9 @@ int main() {
   std::cout << hello;
   std::cout << std::endl;
   std::cout << pds2;
+
+  std::string maisuma = "Mais uma!";
+  std::cout << maisuma.size();
+  std::cout << std::endl;
   return 0;
 }
