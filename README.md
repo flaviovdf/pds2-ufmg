@@ -86,4 +86,4 @@ visto em aula. Abaixo segue alguns possíveis temas.
 [TPs]: #tps
 [Bibliografia]: #bibliografia
 [Listas]: 404
-[Exemplos]: 404
+[Exemplos]: ./exemplos
