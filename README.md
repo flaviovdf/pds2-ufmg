@@ -60,6 +60,10 @@ Sala Prática: -
 
   1. Batalha RPG
   1. Jogo de Magic
+  1. Jogo de Cartas
+     a. UNO
+     b. Poker
+     c. Truco
 
 [Slides]: 404
 [Calendário]: #calendário
