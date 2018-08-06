@@ -21,7 +21,7 @@ Sala Prática: -
 | Aula | Data  | **Assunto**                           | Informações  |
 |------|----|------------------------------------------|--------------|
 | **Agosto**                                                          |
-| 1    | 09 | Apresentação do curso                    |              |
+| 1    | 09 | Apresentação do curso/Básico de C++      |              |
 | 2    | 14 | Armazenamento de dados em memória        |              |
 | 3    | 16 | Tipos Abstratos de Dados em C++          |              |
 | 4    | 21 | Tipos Abstratos de Dados em C++          |              |
