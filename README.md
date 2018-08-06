@@ -36,10 +36,10 @@ Sala Prática: -
 | 12   | 18 | Herança e Polimorfismo                   |              |
 | 13   | 20 | Composição                               |              |
 | 14   | 25 | Entrega Lab 03 - Dúvidas no Lab          |              |
-| 15   | 27 | Especificação e Modelagem                |              |
+| 15   | 27 | **Prova Teórica**                        |              |
 | **Outubro**                                                         |
 | 16   | 02 | Especificação e Modelagem                |              |
-| 17   | 04 | **Prova Teórica**                        |              |
+| 17   | 04 | Especificação e Modelagem                |              |
 | 18   | 09 | **Entrevistas Projeto**                  |              |
 | 19   | 11 | **Entrevistas Projeto**                  |              |
 | 20   | 16 | Revisão de Código e Depuração            |              |
