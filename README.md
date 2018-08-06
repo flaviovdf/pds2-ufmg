@@ -2,7 +2,7 @@
 |----------|------------|--------------|------------|-------|----------|
 - - -
 
-# DCCXXX:P rogramação e Desenvolvimento de Software 2
+# DCCXXX: Programação e Desenvolvimento de Software 2
 
 Professor: Flavio Figueiredo
 
@@ -18,31 +18,34 @@ Sala Prática: -
 
 ## Calendário
 
-| Aula | Data  | **Assunto**                              | Informações  |
-|------|-------|------------------------------------------|--------------|
-| 1    | 09/08 | Apresentação do curso                    |              |
-| 2    | 14/08 | Armazenamento de dados em memória        |              |
-| 3    | 13/03 | Tipos Abstratos de Dados em C++          |              |
-| 4    |       | Tipos Abstratos de Dados em C++          |              |
-| 5    |       | Uso de TADs da Biblioteca Padrão         |              |
-| 6    |       | Entrega Lab 01 - Dúvidas no Lab          |              |
-| 7    |       | Programação Orientada a Objetos          |              |
-| 8    |       | Classes e Interfaces                     |              |
-| 9    |       | Boas Práticas de POO                     |              |
-| 10   |       | Entrega Lab 02 - Dúvidas no Lab          |              |
-| 11   |       | Encapsulamento                           |              |
-| 12   |       | Herança e Polimorfismo                   |              |
-| 13   |       | Composição                               |              |
-| 14   |       | Entrega Lab 03 - Dúvidas no Lab          |              |
-| 15   |       | Especificação e Modelagem                |              |
-| 16   |       | Especificação e Modelagem                |              |
-| 17   |       | Prova Teórica                            |              |
-| 18   |       | Entrevistas Projeto                      |              |
-| 19   |       | Entrevistas Projeto                      |              |
-| 20   |       | Revisão de Código e Depuração            |              |
-| 21   |       | Refatoração                              |              |
-| 22   |       | Entrega Lab 04 - Dúvidas no Lab          |              |
-| 23   |       | Testes de Unidade                        |              |
+| Aula | Data  | **Assunto**                           | Informações  |
+|------|----|------------------------------------------|--------------|
+| **Agosto**                                                          |
+| 1    | 09 | Apresentação do curso                    |              |
+| 2    | 14 | Armazenamento de dados em memória        |              |
+| 3    | 16 | Tipos Abstratos de Dados em C++          |              |
+| 4    | 21 | Tipos Abstratos de Dados em C++          |              |
+| 5    | 23 | Uso de TADs da Biblioteca Padrão         |              |
+| 6    | 28 | Entrega Lab 01 - Dúvidas no Lab          |              |
+| 7    | 30 | Programação Orientada a Objetos          |              |
+| **Setembro**                                                        |
+| 8    | 04 | Classes e Interfaces                     |              |
+| 9    | 06 | Boas Práticas de POO                     |              |
+| 10   | 11 | Entrega Lab 02 - Dúvidas no Lab          |              |
+| 11   | 13 | Encapsulamento                           |              |
+| 12   | 18 | Herança e Polimorfismo                   |              |
+| 13   | 20 | Composição                               |              |
+| 14   | 25 | Entrega Lab 03 - Dúvidas no Lab          |              |
+| 15   | 27 | Especificação e Modelagem                |              |
+| **Outubro**                                                         |
+| 16   | 02 | Especificação e Modelagem                |              |
+| 17   | 04 | Prova Teórica                            |              |
+| 18   | 09 | Entrevistas Projeto                      |              |
+| 19   | 11 | Entrevistas Projeto                      |              |
+| 20   | 16 | Revisão de Código e Depuração            |              |
+| 21   | 18 | Refatoração                              |              |
+| 22   | 23 | Entrega Lab 04 - Dúvidas no Lab          |              |
+| 23   | 25 | Testes de Unidade                        |              |
 | 24   |       | Exceções                                 |              |
 | 25   |       | Programação Defensiva                    |              |
 | 26   |       | Entrega Lab 04 - Dúvidas no Lab          |              |
