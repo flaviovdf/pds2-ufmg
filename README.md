@@ -53,7 +53,7 @@ Sala Prática:
 | 23   | 25 | Testes de Unidade                        |              |
 | 24   | 30 | Exceções                                 |              |
 | 25   | Nov. 01 | Programação Defensiva               |              |
-| 26   | 06 | Entrega Lab 04 - Dúvidas no Lab          |              |
+| 26   | 06 | Entrega Lab 05 - Dúvidas no Lab          |              |
 | 27   | 08 | **Prova Teórica**                        |              |
 | 27   | 13 | **Reposição**                            |              |
 | 28   | 20 | **Entrevistas Projeto**                  |              |
