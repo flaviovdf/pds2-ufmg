@@ -46,12 +46,13 @@ Sala Prática: -
 | 21   | 18 | Refatoração                              |              |
 | 22   | 23 | Entrega Lab 04 - Dúvidas no Lab          |              |
 | 23   | 25 | Testes de Unidade                        |              |
-| 24   |       | Exceções                                 |              |
-| 25   |       | Programação Defensiva                    |              |
-| 26   |       | Entrega Lab 04 - Dúvidas no Lab          |              |
-| 27   |       | Prova Teórica                            |              |
-| 28   |       | Entrevistas Projeto                      |              |
-| 29   |       | Entrevistas Projeto                      |              |
+| 24   | 30 | Exceções                                 |              |
+| **Novembro**                                                        |
+| 25   | 01 | Programação Defensiva                    |              |
+| 26   | 06 | Entrega Lab 04 - Dúvidas no Lab          |              |
+| 27   | 08 | Prova Teórica                            |              |
+| 28   | 20 | Entrevistas Projeto                      |              |
+| 29   | 22 | Entrevistas Projeto                      |              |
 
 ## Trabalho Prático (Temas)
 
