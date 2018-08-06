@@ -64,6 +64,12 @@ Sala Prática: -
      1. UNO
      1. Poker
      1. Truco
+  1. Sistema de Gerência
+     1. e-commerce
+     1. biblioteca
+  1. Biblioteca de grafos
+  1. Indexador de Arquivos
+  1. Seu Tema!
 
 [Slides]: 404
 [Calendário]: #calendário
