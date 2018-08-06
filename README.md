@@ -67,7 +67,7 @@ Sala Prática: -
   1. Sistema de Gerência
      1. e-commerce
      1. biblioteca
-  1. Biblioteca de grafos
+  1. Biblioteca de Grafos
   1. Indexador de Arquivos
   1. Seu Tema!
 
