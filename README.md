@@ -56,7 +56,12 @@ Sala Prática: -
 | 29   | 22 | **Entrevistas Projeto**                  |              |
 | 30   | 27 | **Entrevistas Projeto**                  |              |
 
-## Trabalho Prático (Temas)
+## TPs
+
+Além dos laboratórios, a disciplina deve contar com um TP. Para fazer o
+mesmo, montem grupos de 4 pessoas. Tal TP será um projeto de software
+de pequeno/médio porte. O importante é que o mesmo aplique os conceitos
+visto em aula. Abaixo segue alguns possíveis temas.
 
   1. Batalha RPG
   1. Jogo de Magic
@@ -71,7 +76,7 @@ Sala Prática: -
   1. Indexador de Arquivos
   1. Seu Tema!
 
-[Slides]: 404
+[Slides]: https://drive.google.com/drive/folders/1GfrhnrBqer6sOlONrjuyHM1VJTV1P9Hr?usp=sharing
 [Calendário]: #calendário
 [Informes]: #informes
 [TPs]: #tps
