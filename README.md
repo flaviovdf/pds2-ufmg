@@ -6,11 +6,17 @@
 
 Professor: Flavio Figueiredo
 
-Aulas: Terças e Quintas 07:00 - 09:10 (Computação); 13:00 - 14:40 (Controle e Automação)
+Aulas:
+  1. **Ciência da Computação:** Terças e Quintas 07:00 - 09:10;
+  1. **Controle e Automação:**  Terças e Quintas 13:00 - 14:40.
 
-Sala Teórica: -
-
-Sala Prática: -
+Sala Teórica:
+  1. **Ciência da Computação:**
+  1. **Controle e Automação:**
+  
+Sala Prática:
+  1. **Ciência da Computação:**
+  1. **Controle e Automação:**
 
 ## Informes
 
