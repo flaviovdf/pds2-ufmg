@@ -54,6 +54,7 @@ Sala Prática: -
 | 27   | 13 | **Reposição**                            |              |
 | 28   | 20 | **Entrevistas Projeto**                  |              |
 | 29   | 22 | **Entrevistas Projeto**                  |              |
+| 30   | 27 | **Entrevistas Projeto**                  |              |
 
 ## Trabalho Prático (Temas)
 
