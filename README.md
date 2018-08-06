@@ -39,9 +39,9 @@ Sala Prática: -
 | 15   | 27 | Especificação e Modelagem                |              |
 | **Outubro**                                                         |
 | 16   | 02 | Especificação e Modelagem                |              |
-| 17   | 04 | Prova Teórica                            |              |
-| 18   | 09 | Entrevistas Projeto                      |              |
-| 19   | 11 | Entrevistas Projeto                      |              |
+| 17   | 04 | **Prova Teórica**                        |              |
+| 18   | 09 | **Entrevistas Projeto**                  |              |
+| 19   | 11 | **Entrevistas Projeto**                  |              |
 | 20   | 16 | Revisão de Código e Depuração            |              |
 | 21   | 18 | Refatoração                              |              |
 | 22   | 23 | Entrega Lab 04 - Dúvidas no Lab          |              |
@@ -50,9 +50,10 @@ Sala Prática: -
 | **Novembro**                                                        |
 | 25   | 01 | Programação Defensiva                    |              |
 | 26   | 06 | Entrega Lab 04 - Dúvidas no Lab          |              |
-| 27   | 08 | Prova Teórica                            |              |
-| 28   | 20 | Entrevistas Projeto                      |              |
-| 29   | 22 | Entrevistas Projeto                      |              |
+| 27   | 08 | **Prova Teórica**                        |              |
+| 27   | 13 | **Reposição**                            |              |
+| 28   | 20 | **Entrevistas Projeto**                  |              |
+| 29   | 22 | **Entrevistas Projeto**                  |              |
 
 ## Trabalho Prático (Temas)
 
