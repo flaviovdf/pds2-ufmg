@@ -1,5 +1,5 @@
-| [Slides] | [Informes] | [Calendário] | [Exemplos] | [TPs] | [Listas] |
-|----------|------------|--------------|------------|-------|----------|
+| [Slides] | [Informes] | [Calendário] | [Exemplos] | [TPs] | [Livros] | [Listas] |
+|----------|------------|--------------|------------|-------|----------|----------|
 - - -
 
 # DCCXXX: Programação e Desenvolvimento de Software 2
@@ -11,8 +11,8 @@ Aulas:
   1. **Controle e Automação:**  Terças e Quintas 13:00 - 14:40.
 
 Sala Teórica:
-  1. **Ciência da Computação:**
-  1. **Controle e Automação:**
+  1. **Ciência da Computação:** CAD 1 - 312
+  1. **Controle e Automação:** CAD 3 - 309
   
 Sala Prática:
   1. **Ciência da Computação:**
@@ -21,6 +21,7 @@ Sala Prática:
 ## Informes
 
 * **INF01**: Aulas iniciam no dia 09/08.
+* **INF02**: Sala da turma da computação: CAD 3 - 309
 
 ## Calendário
 
@@ -80,10 +81,30 @@ visto em aula. Abaixo segue alguns possíveis temas.
   1. Indexador de Arquivos
   1. Seu Tema!
 
+## Livros
+
+1. Clean Code: A Handbook of Agile Software Craftsmanship.
+   Robert C. Martin.
+   Prentice Hall, 2008. 
+
+1. Code Complete: A Practical Handbook of Software Construction.
+   Steve McConnell.
+   Microsoft Press, 2004. 2nd Edition.
+
+1. Effective C++: 55 Specific Ways to Improve Your Programs and Designs.
+   Scott Meyers.
+   Addison-Wesley Professional, 2005. 3nd Edition.
+
+1. A Tour of C++.
+   Bjarne Stroustrup.
+   Addison-Wesley Professional, 2013. 1st Edition.
+
+
 [Slides]: https://drive.google.com/drive/folders/12AeGYRaQ0__plj503WBZSlYxJSNeIhcs?usp=sharing
 [Calendário]: #calendário
 [Informes]: #informes
 [TPs]: #tps
 [Bibliografia]: #bibliografia
 [Listas]: 404
+[Livros]: #livros
 [Exemplos]: ./exemplos
