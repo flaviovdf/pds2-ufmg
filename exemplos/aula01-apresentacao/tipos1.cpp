@@ -13,6 +13,7 @@ int main() {
   cout << "E se eu quiser uma precisão menor? ";
   cout << setprecision(1) << pi;
   cout << endl;
-  cout << "Pi ao quadrado com 7 precisao: " << setprecision(7) << pow(pi, 2);
+  cout << "Pi ao quadrado com 7 precisao: " \
+    << setprecision(7) << pow(pi, 2);
   return 0;
 }
