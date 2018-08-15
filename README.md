@@ -21,7 +21,7 @@ Sala Prática:
 ## Informes
 
 * **INF01**: Aulas iniciam no dia 09/08.
-* **INF02**: Sala da turma da computação: CAD 3 - 309
+* **INF02**: Sala da turma da computação: CAD 1 - 312
 
 ## Calendário
 
