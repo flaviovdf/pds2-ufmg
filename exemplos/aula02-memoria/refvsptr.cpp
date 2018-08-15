@@ -1,9 +1,11 @@
 #include <iostream>
 
-int f(int &v) {
-
+void f(int &v) {
+  v = 1;
 }
 
 int main() {
-    int *v = new int;
+  int *v = new int;
+  f(v);
+  delete v;
 }
