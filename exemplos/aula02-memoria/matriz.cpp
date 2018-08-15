@@ -7,5 +7,6 @@ int main() {
     mat[1][0] = 9;
     mat[1][1] = 8;
 
+    // Errado!
     delete mat;
 }
