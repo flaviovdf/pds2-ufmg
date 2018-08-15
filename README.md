@@ -30,23 +30,23 @@ Sala Prática:
 |      |         | **POO e Memória em C++**            |              | 
 | 1    | Ago. 09 | Apresentação do curso/Básico de C++ |              |
 | 2    | 14 | Armazenamento de dados em memória        |              |
-| 3    | 16 | Tipos Abstratos de Dados em C++          |              |
-| 4    | 21 | Tipos Abstratos de Dados em C++          |              |
-| 5    | 23 | Uso de TADs da Biblioteca Padrão         |              |
-| 6    | 28 | *Entrega Lab 01 - Dúvidas no Lab*        |              |
-| 7    | 30 | Programação Orientada a Objetos          |              |
-| 8    | Set. 04 | Classes e Interfaces                |              |
-| 9    | 06 | Boas Práticas de POO                     |              |
-| 10   | 11 | *Entrega Lab 02 - Dúvidas no Lab*        |              |
-| 11   | 13 | Encapsulamento                           |              |
-| 12   | 18 | Herança e Polimorfismo                   |              |
-| 13   | 20 | Composição                               |              |
-| 14   | 25 | *Entrega Lab 03 - Dúvidas no Lab*        |              |
-| 15   | 27 | *Prova Teórica*                          |              |
+| 3    | 16 | Programação Orientada a Objetos          |              |
+| 4    | 21 | Encapsulamento                           |              |
+| 5    | 23 | Classes vs Interfaces                    |              |
+| 6    | 28 | Boas Práticas de POO                     |              |
+| 7    | 30 | *Entrega Lab 01 - Dúvidas no Lab*        |              |
+| 8    | Set. 04 | Tipos Abstratos de Dados em C++     |              |
+| 9    | 06 | Tipos Abstratos de Dados em C++          |              |
+| 10   | 11 | Uso de TADs da Biblioteca Padrão         |              |
+| 11   | 13 | *Entrega Lab 02 - Dúvidas no Lab*        |              |
+| 12   | 18 | Herança                                  |              |
+| 13   | 20 | Polimorfismo                             |              |
+| 14   | 25 | Composição                               |              |
+| 15   | 27 | *Entrega Lab 03 - Dúvidas no Lab*        |              |
+| 16   | Out. 02 | *Prova Teórica*                     |              |
 |      |         | **Boas Práticas, Modelagem**        |              | 
-| 16   | Out. 02 | Especificação e Modelagem           |              |
 | 17   | 04 | Especificação e Modelagem                |              |
-| 18   | 09 | *Entrevistas Projeto*                    |              |
+| 18   | 09 | Especificação e Modelagem                |              |
 | 19   | 11 | *Entrevistas Projeto*                    |              |
 | 20   | 16 | Revisão de Código e Depuração            |              |
 | 21   | 18 | Refatoração                              |              |
