@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+
 //C
 int *cria_um_vetor_zerado_c(int n) {
     int *rv = (int *) malloc(n * sizeof(int));
