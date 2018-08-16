@@ -31,7 +31,7 @@ Sala Prática:
 | 1    | Ago. 09 | Apresentação do curso/Básico de C++ |              |
 | 2    | 14 | Armazenamento de dados em memória        |              |
 | 3    | 16 | Programação Orientada a Objetos          |              |
-| 4    | 21 | Encapsulamento                           |              |
+| 4    | 21 | Encapsulamento e Modularização           |              |
 | 5    | 23 | Classes vs Interfaces                    |              |
 | 6    | 28 | Boas Práticas de POO                     |              |
 | 7    | 30 | *Entrega Lab 01 - Dúvidas no Lab*        |              |
