@@ -10,9 +10,11 @@ private:
   std::string _nome;
   double _resistencia;
   bool _infectado;
+  Virus *_virus;
 public:
   Paciente(std::string nome, double resistencia);
   bool esta_infectado();
+  Virus *get_virus();
   std::string get_nome();
   void contato(Paciente &contato);
   void curar();
