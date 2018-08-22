@@ -15,8 +15,8 @@ Sala Teórica:
   1. **Controle e Automação:** CAD 3 - 309
   
 Sala Prática:
-  1. **Ciência da Computação:**
-  1. **Controle e Automação:**
+  1. **Ciência da Computação:** 2011 e 2012 (ICEX)
+  1. **Controle e Automação:** 2011 e 2012 (ICEX)
 
 ## Informes
 
@@ -32,9 +32,10 @@ Sala Prática:
 | 2    | 14 | Armazenamento de dados em memória        |              |
 | 3    | 16 | Programação Orientada a Objetos          |              |
 | 4    | 21 | Encapsulamento e Modularização           |              |
-| 5    | 23 | Classes vs Interfaces                    |              |
-| 6    | 28 | Boas Práticas de POO                     |              |
-| 7    | 30 | *Entrega Lab 01 - Dúvidas no Lab*        |              |
+| 7    | 23 | *Aula Lab 01 - Dúvidas no Lab*           |              |
+| 5    | 28 | Classes vs Interfaces                    |              |
+| 6    | 30 | Boas Práticas de POO                     |              |
+| 7    | 30 | *Entrega Lab 01 - Dúvidas no Lab*        |*Entrega Lab 01 - Dúvidas no Lab*              |
 | 8    | Set. 04 | Tipos Abstratos de Dados em C++     |              |
 | 9    | 06 | Tipos Abstratos de Dados em C++          |              |
 | 10   | 11 | Uso de TADs da Biblioteca Padrão         |              |
