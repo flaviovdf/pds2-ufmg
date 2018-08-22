@@ -32,14 +32,13 @@ Sala Prática:
 | 2    | 14 | Armazenamento de dados em memória        |              |
 | 3    | 16 | Programação Orientada a Objetos          |              |
 | 4    | 21 | Encapsulamento e Modularização           |              |
-| 7    | 23 | *Aula Lab 01 - Dúvidas no Lab*           |              |
-| 5    | 28 | Classes vs Interfaces                    |              |
-| 6    | 30 | Boas Práticas de POO                     |              |
-| 7    | 30 | *Entrega Lab 01 - Dúvidas no Lab*        |*Entrega Lab 01 - Dúvidas no Lab*              |
+| 5    | 23 | *Aula Lab 01 - Dúvidas no Lab*           |              |
+| 6    | 28 | Classes vs Interfaces                    |              |
+| 7    | 30 | Boas Práticas de POO                     |*Entrega Lab 01 - Dúvidas no Lab*              |
 | 8    | Set. 04 | Tipos Abstratos de Dados em C++     |              |
 | 9    | 06 | Tipos Abstratos de Dados em C++          |              |
 | 10   | 11 | Uso de TADs da Biblioteca Padrão         |              |
-| 11   | 13 | *Entrega Lab 02 - Dúvidas no Lab*        |              |
+| 11   | 13 | *Aula Lab 02 - Dúvidas no Lab*           |              |
 | 12   | 18 | Herança                                  |              |
 | 13   | 20 | Polimorfismo                             |              |
 | 14   | 25 | Composição                               |              |
