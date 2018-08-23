@@ -41,11 +41,26 @@ function executar() {
   return $mainexit
 }
 
-# 1. Testa compilacao de cada arquivo. Ajuda alunos a ver erros.
-for f in *.cpp ; do
-  if [ "$f" != "testador.cpp" ] ; then
-    if [ "$f" != "main.cpp" ] ; then
-      compilar -c $f
+# Testa compilacao de cada arquivo. Ajuda alunos a ver erros.
+function compila_tudo_menos_testes() {
+  for f in *.cpp ; do
+    if [ "$f" != "testador.cpp" ] ; then
+      if [ "$f" != *"testcase"* ] ; then
+        compilar -c $f
+      fi
     fi
-  fi
-done
+  done
+}
+
+
+function header() {
+  echo "<|--"
+  echo
+}
+
+
+function footer() {
+  echo
+  echo "--|>"
+  echo
+}

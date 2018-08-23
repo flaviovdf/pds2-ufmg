@@ -6,7 +6,10 @@ check_program g++
 get_source_files cpp
 . common_compile.sh
 
-# 2. Rodar um main, caso exista.
+# 1a. Ajuda os alunos vendo se tudo está ok
+compila_tudo_menos_testes
+
+# 2. Rodar os testes de unidade
 files=`find . -name '*.cpp' | grep -v main.cpp | paste -s`
 compilar $files -o main
 chmod +x main
@@ -21,7 +24,7 @@ if [ "$exitstatus" -ne 0 ]; then
   echo "doctest saida de erros: "
   echo
   cat err | remove_cores
-  echo 'echo -n "Grade :==> 0"' > vpl_execution
+  echo 'echo "Grade :=>> 0"' > vpl_execution
 else
   echo "All tests passed!"
   echo
@@ -33,6 +36,8 @@ else
   echo "doctest saida de erros: "
   echo
   cat err | remove_cores
-  echo 'echo -n "Grade :==> 100"' > vpl_execution
+  echo 'echo "Grade :=>> 100"' > vpl_execution
 fi
+
+footer
 chmod +x vpl_execution
