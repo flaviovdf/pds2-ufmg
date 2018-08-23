@@ -5,11 +5,9 @@
 check_program g++
 get_source_files cpp
 
-. common_compile.sh
-
 # 2. Rodar um main, caso exista.
 files=`find . -name '*.cpp' | grep -v testador | grep -v testcase | paste -s`
-compilar $files -o main
+g++ -std=c++11 -Wall $files -o main
 chmod +x main
 ./main
 exit $?
