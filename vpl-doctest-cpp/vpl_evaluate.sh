@@ -2,6 +2,8 @@
 
 # 1. Compilação comum
 . common_script.sh
+check_program g++
+get_source_files cpp
 . common_compile.sh
 
 # 2. Rodar um main, caso exista.
@@ -11,18 +13,26 @@ chmod +x main
 ./main -nc -s > out 2> err
 exitstatus=$?
 if [ "$exitstatus" -ne 0 ]; then
-  echo "./main saida padrao: "
+  echo "doctest saida padrao: "
+  echo
   cat out | remove_cores
   echo
   echo
-  echo "./main saida de erros: "
+  echo "doctest saida de erros: "
+  echo
   cat err | remove_cores
-  echo "Grade :==> 0"
+  echo 'echo -n "Grade :==> 0"' > vpl_execution
 else
   echo "All tests passed!"
-  echo "Grade :==> 100"
+  echo
+  echo "doctest saida padrao: "
+  echo
+  cat out | remove_cores
+  echo
+  echo
+  echo "doctest saida de erros: "
+  echo
+  cat err | remove_cores
+  echo 'echo -n "Grade :==> 100"' > vpl_execution
 fi
-rm err 2> /dev/null
-rm out 2> /dev/null
-rm main 2> /dev/null
-exit $exitstatus
+chmod +x vpl_execution
