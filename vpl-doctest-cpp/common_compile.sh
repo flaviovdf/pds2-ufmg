@@ -9,37 +9,13 @@ function remove_cores() {
 
 # Roda GCC, remove cores da saída.
 function compilar() {
-  g++ -std=c++11 -Wall $* > gccout 2> gccerr
+  g++ -std=c++11 -Wall -fdiagnostics-color=never $*
   gppexit=$?
   if [ "$gppexit" -ne "0" ] ; then
-    echo "!! Nao compilou !!"
-    echo "$GPP saida padrao: "
-    cat gccout | remove_cores
-    echo
-    echo
-    echo "$GPP saida de erros: "
-    cat gccerr | remove_cores
     exit $gppexit
   fi
-  rm gccout 2> /dev/null
-  rm gccerr 2> /dev/null
-  rm *.o 2> /dev/null
 }
 
-
-function executar() {
-  ./main $* > out 2> err
-  mainexit=$?
-  echo "./main saida padrao: "
-  cat out | remove_cores
-  echo
-  echo
-  echo "./main saida de erros: "
-  cat err | remove_cores
-  rm out
-  rm err
-  return $mainexit
-}
 
 # Testa compilacao de cada arquivo. Ajuda alunos a ver erros.
 function compila_tudo_menos_testes() {
