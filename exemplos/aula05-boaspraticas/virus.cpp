@@ -28,8 +28,9 @@ Virus *Virus::reproduzir() {
   }
   // Aloca uma um novo filho.
   Virus novo_virus = Virus(_nome, _forca, _capacidade_reproducao);
-  _filhos[_numero_filhos - 1] = novo_virus; // Guarda copia em um vetor
-  this->_infeccoes_totais++;                // Aumenta o número de infeccoes
+  _filhos[_numero_filhos] = novo_virus;     // Guarda copia em um vetor
+  _infeccoes_totais++;                      // Aumenta o número de infeccoes
+  _numero_filhos += 1;                      // Aumenta o número de filhos
   return &_filhos[_numero_filhos - 1];      // Retorna ponteiro para copia
 }
 
