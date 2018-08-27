@@ -6,10 +6,7 @@
 class Virus {
 private:
   // Conta quantas infeccções todos os virus já causaram.
-  static int _global_infeccoes;
-
-  // Conta quantas infecções este virus causou
-  int _local_infeccoes;
+  static int _infeccoes_totais;
 
   // Guarda os filhos alocados
   Virus *_filhos;
@@ -42,10 +39,7 @@ public:
   Virus *reproduzir();
 
   // Retorna quantas infeccções todos os virus já causaram.
-  static int get_global_infeccoes();
-
-  // Retorna quantas infeccções este virus já causou
-  int get_local_infeccoes();
+  static int get_infeccoes_totais();
 };
 
 

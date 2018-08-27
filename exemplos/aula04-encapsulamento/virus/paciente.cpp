@@ -1,5 +1,13 @@
 #include "paciente.h"
 
+Paciente::Paciente(std::string nome, double resistencia,
+                   Virus *virus) {
+  _nome = nome;
+  _resistencia = resistencia;
+  _infectado = true;
+  _virus = virus;
+}
+
 Paciente::Paciente(std::string nome, double resistencia) {
   _nome = nome;
   _resistencia = resistencia;
@@ -20,7 +28,8 @@ Virus *Paciente::get_virus() {
 }
 
 void Paciente::contato(Paciente &contato) {
-  if (contato.esta_infectado() && !this->esta_infectado()) {
+  if (contato.esta_infectado() && \
+      !this->esta_infectado()) {
     if (contato.get_virus()->get_forca() > _resistencia) {
       _infectado = true;
       _virus = contato.get_virus();

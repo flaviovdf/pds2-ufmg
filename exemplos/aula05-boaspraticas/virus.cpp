@@ -1,12 +1,11 @@
 #include "virus.h"
 
-int Virus::_global_infeccoes = 0;
+int Virus::_infeccoes_totais = 0;
 
 Virus::Virus(std::string nome, double forca, int capacidade_reproducao) {
   _nome = nome;
   _forca = forca;
   _capacidade_reproducao = capacidade_reproducao;
-  _local_infeccoes = 0;
   _numero_filhos = 0;
 }
 
@@ -19,17 +18,16 @@ double Virus::get_forca() {
 }
 
 Virus *Virus::reproduzir() {
-  Virus *novo_virus = new Virus(_nome, _forca, _capacidade_reproducao);
-  novo_virus->_local_infeccoes = 1;
-  _filhos[_numero_filhos - 1] = novo_virus;
-  
-  return novo_virus;
+  if (this->_numero_filhos == this->_capacidade_reproducao) {
+    return nullptr;
+  }
+  // Aloca uma um novo filho.
+  Virus novo_virus = Virus(_nome, _forca, _capacidade_reproducao);
+  _filhos[_numero_filhos - 1] = novo_virus; // Guarda copia em um vetor
+  this->_infeccoes_totais++;                // Aumenta o número de infeccoes
+  return &_filhos[_numero_filhos - 1];      // Retorna ponteiro para copia
 }
 
-int Virus::get_local_infeccoes() {
-  return Virus::_global_infeccoes;
-}
-
-int Virus::get_global_infeccoes() {
-  return Virus::_global_infeccoes;
+int Virus::get_infeccoes_totais() {
+  return Virus::_infeccoes_totais;
 }

@@ -7,23 +7,22 @@
 #include "conta.h"
 
 int main(void) {
+  // Ou, eu posso fazer também
+  // Banco banco = Banco(1, "Banco do Brasil");
+  Banco banco(1, "Banco do Brasil");
+  Agencia &agencia = banco.cria_agencia("Av Antonio Carlos, 6627",
+                                       "Pampulha", "Belo Horizonte",
+                                        3217901);
+  agencia.adiciona_cliente(111, "Flavio F.");
+  Conta &conta = agencia.cria_conta(111);
+  std::cout << "Saldo em conta " << conta.get_saldo() << std::endl;
 
-  // Mesma coisa de Banco banco(1, "Banco do Brasil")
-  Banco banco = Banco(1, "Banco do Brasil");
-  Agencia &agencia = banco.cria_agencia("Antonio Carlos, 6667", "Pampulha",
-                                        "Belo Horizonte", 3217901);
-
-  // Adicionando um novo cliente
-  agencia.adiciona_cliente(1, "Flavio Figueiredo");
-
-  // Criando uma conta (no momento, 1 conta por cliente)
-  Conta &conta = agencia.cria_conta(1);
-
-  std::cout << "Saldo de Flavio " << conta.get_saldo() << std::endl;
   conta.depositar(200);
-  std::cout << "Saldo de Flavio " << conta.get_saldo() << std::endl;
+  std::cout << "Saldo em conta " << conta.get_saldo() << std::endl;
 
-  conta.sacar(2000);
+  agencia.adiciona_cliente(222, "Joao P.");
+  Conta &conta_joao = agencia.cria_conta(222);
 
-  return 0;
+  std::cout << "Saldo em conta Flavio " << conta.get_saldo() << std::endl;
+  std::cout << "Saldo em conta Joao " << conta_joao.get_saldo() << std::endl;
 }
