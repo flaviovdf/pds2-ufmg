@@ -41,12 +41,12 @@ Sala Prática:
 | 11   | 13 | *Aula Lab 02 - Dúvidas no Lab*           |              |
 | 12   | 18 | Herança                                  |              |
 | 13   | 20 | Polimorfismo                             |              |
-| 14   | 25 | Composição                               |              |
-| 15   | 27 | *Entrega Lab 03 - Dúvidas no Lab*        |              |
+| 14   | 25 | Composição                               |*Entrega Lab 02*|
+| 15   | 27 | *Aula Lab 03*                            |              |
 | 16   | Out. 02 | *Prova Teórica*                     |              |
 |      |         | **Boas Práticas, Modelagem**        |              | 
 | 17   | 04 | Especificação e Modelagem                |              |
-| 18   | 09 | Especificação e Modelagem                |              |
+| 18   | 09 | Especificação e Modelagem                |*Entrega Lab 03*|
 | 19   | 11 | *Entrevistas Projeto*                    |              |
 | 20   | 16 | Revisão de Código e Depuração            |              |
 | 21   | 18 | Refatoração                              |              |
