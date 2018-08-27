@@ -1,6 +1,16 @@
+#include <iostream>
 #include "virus.h"
 
 int Virus::_infeccoes_totais = 0;
+
+// Construtor privador por causa do array
+Virus::Virus() {
+  _nome = "";
+  _forca = 0;
+  _capacidade_reproducao = 0;
+  _numero_filhos = 0;
+  _filhos = nullptr;
+}
 
 Virus::Virus(std::string nome, double forca, int capacidade_reproducao) {
   _nome = nome;
@@ -11,6 +21,8 @@ Virus::Virus(std::string nome, double forca, int capacidade_reproducao) {
 }
 
 Virus::~Virus() {
+  std::cout << this->_nome << std::endl;
+  std::cout << this->_numero_filhos << std::endl;
   delete[] _filhos;
 }
 

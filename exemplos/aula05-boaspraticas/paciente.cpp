@@ -25,8 +25,8 @@ std::string Paciente::get_nome() {
 
 void Paciente::contato(Paciente &contato) {
   if (contato.esta_infectado() && this->esta_infectado()) {
-    if (contato.get_virus()->get_forca() > _resistencia) {
-      Virus *virus = contato.get_virus()->reproduzir();
+    if (contato._virus->get_forca() > _resistencia) {
+      Virus *virus = contato._virus->reproduzir();
       if (virus != nullptr) {
         _infectado = true;
         _virus = virus;
