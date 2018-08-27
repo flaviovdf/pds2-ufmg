@@ -33,20 +33,20 @@ Sala Prática:
 | 3    | 16 | Programação Orientada a Objetos          |              |
 | 4    | 21 | Encapsulamento e Modularização           |              |
 | 5    | 23 | *Aula Lab 01 - Dúvidas no Lab*           |              |
-| 6    | 28 | Classes vs Interfaces                    |              |
-| 7    | 30 | Boas Práticas de POO                     |*Entrega Lab 01 - Dúvidas no Lab*              |
+| 6    | 28 | Práticas POO (Destrutor, Static, Copias) |              |
+| 7    | 30 | Interfaces                               |*Entrega Lab 01*|
 | 8    | Set. 04 | Tipos Abstratos de Dados em C++     |              |
 | 9    | 06 | Tipos Abstratos de Dados em C++          |              |
 | 10   | 11 | Uso de TADs da Biblioteca Padrão         |              |
 | 11   | 13 | *Aula Lab 02 - Dúvidas no Lab*           |              |
 | 12   | 18 | Herança                                  |              |
 | 13   | 20 | Polimorfismo                             |              |
-| 14   | 25 | Composição                               |              |
-| 15   | 27 | *Entrega Lab 03 - Dúvidas no Lab*        |              |
+| 14   | 25 | Composição                               |*Entrega Lab 02*|
+| 15   | 27 | *Aula Lab 03*                            |              |
 | 16   | Out. 02 | *Prova Teórica*                     |              |
 |      |         | **Boas Práticas, Modelagem**        |              | 
 | 17   | 04 | Especificação e Modelagem                |              |
-| 18   | 09 | Especificação e Modelagem                |              |
+| 18   | 09 | Especificação e Modelagem                |*Entrega Lab 03*|
 | 19   | 11 | *Entrevistas Projeto*                    |              |
 | 20   | 16 | Revisão de Código e Depuração            |              |
 | 21   | 18 | Refatoração                              |              |
