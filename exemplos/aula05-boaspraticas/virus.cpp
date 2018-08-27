@@ -7,6 +7,11 @@ Virus::Virus(std::string nome, double forca, int capacidade_reproducao) {
   _forca = forca;
   _capacidade_reproducao = capacidade_reproducao;
   _numero_filhos = 0;
+  _filhos = new Virus[capacidade_reproducao];
+}
+
+Virus::~Virus() {
+  delete[] _filhos;
 }
 
 std::string Virus::get_nome() {

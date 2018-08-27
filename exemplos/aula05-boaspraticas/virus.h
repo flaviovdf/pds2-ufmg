@@ -22,6 +22,9 @@ private:
 
   // Capacidade de reproducao limita o numero de _numero_filhos
   int _capacidade_reproducao;
+
+  // Construtor privador apenas para criar o array.
+  Virus();
 public:
   // Construtor para ser utilizado fora da classe
   Virus(std::string nome, double forca, int capacidade_reproducao);
