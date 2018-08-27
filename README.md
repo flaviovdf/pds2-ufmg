@@ -33,8 +33,8 @@ Sala Prática:
 | 3    | 16 | Programação Orientada a Objetos          |              |
 | 4    | 21 | Encapsulamento e Modularização           |              |
 | 5    | 23 | *Aula Lab 01 - Dúvidas no Lab*           |              |
-| 6    | 28 | Classes vs Interfaces                    |              |
-| 7    | 30 | Boas Práticas de POO                     |*Entrega Lab 01 - Dúvidas no Lab*              |
+| 6    | 28 | Práticas POO (Destrutor, Static, Copias) |              |
+| 7    | 30 | Interfaces                               |*Entrega Lab 01*|
 | 8    | Set. 04 | Tipos Abstratos de Dados em C++     |              |
 | 9    | 06 | Tipos Abstratos de Dados em C++          |              |
 | 10   | 11 | Uso de TADs da Biblioteca Padrão         |              |
