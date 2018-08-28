@@ -16,8 +16,11 @@ Matriz::Matriz(int n_linhas, int n_colunas) {
 
 Matriz::~Matriz() {
   std::cout << "Destruindo uma matriz" << std::endl;
+  if (this->_dados == nullptr)
+    return;
   for (int i = 0; i < this->_n_linhas; i++) {
-    delete[] this->_dados[i];
+    if (this->_dados[i] != nullptr)
+      delete[] this->_dados[i];
   }
   delete[] this->_dados;
 }
