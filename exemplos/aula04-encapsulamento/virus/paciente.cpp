@@ -28,8 +28,7 @@ Virus *Paciente::get_virus() {
 }
 
 void Paciente::contato(Paciente &contato) {
-  if (contato.esta_infectado() && \
-      !this->esta_infectado()) {
+  if (contato.esta_infectado() && !this->esta_infectado()) {
     if (contato.get_virus()->get_forca() > _resistencia) {
       _infectado = true;
       _virus = contato.get_virus();
