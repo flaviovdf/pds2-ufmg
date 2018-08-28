@@ -2,6 +2,7 @@
 
 
 void f(int &i) {
+  // testando refs
   std::cout << i << std::endl;
   i++;
 }
