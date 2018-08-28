@@ -18,7 +18,7 @@ Virus::Virus(std::string nome, double forca, int capacidade_reproducao) {
   _capacidade_reproducao = capacidade_reproducao;
   _numero_filhos = 0;
   _filhos = new Virus[capacidade_reproducao];
-  _infeccoes_totais++;                      // Aumenta o número de infeccoes
+  Virus::_infeccoes_totais++;
 }
 
 Virus::~Virus() {
