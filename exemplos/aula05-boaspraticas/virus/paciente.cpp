@@ -1,3 +1,4 @@
+#include <iostream>
 #include "paciente.h"
 
 Paciente::Paciente(std::string nome, double resistencia,
@@ -27,6 +28,7 @@ void Paciente::contato(Paciente &contato) {
   if (contato.esta_infectado() && !this->esta_infectado()) {
     if (contato._virus->get_forca() > _resistencia) {
       Virus *virus = contato._virus->reproduzir();
+  std::cout << 4 << std::endl;
       if (virus != nullptr) {
         _infectado = true;
         _virus = virus;

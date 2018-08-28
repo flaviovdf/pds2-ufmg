@@ -12,7 +12,7 @@ private:
   double _resistencia;
   bool _infectado;
   Virus *_virus;
-  Virus *get_virus();
+  Virus &get_virus();
 public:
   Paciente(std::string nome, double resistencia);
   Paciente(std::string nome, double resistencia, Virus *virus);

@@ -10,7 +10,7 @@ private:
   static int _infeccoes_totais;
 
   // Guarda os filhos alocados
-  Virus *_filhos;
+  Virus **_filhos;
 
   // Número de filhos
   int _numero_filhos;
@@ -23,9 +23,6 @@ private:
 
   // Capacidade de reproducao limita o numero de _numero_filhos
   int _capacidade_reproducao;
-
-  // Construtor privador apenas para criar o array.
-  Virus();
 public:
   // Construtor para ser utilizado fora da classe
   Virus(std::string nome, double forca, int capacidade_reproducao);
@@ -41,6 +38,9 @@ public:
 
   // Reproduz o virus
   Virus *reproduzir();
+
+  // Retorna uma string representando o virus
+  std::string to_string();
 
   // Retorna quantas infeccções todos os virus já causaram.
   static int get_infeccoes_totais();

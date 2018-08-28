@@ -3,28 +3,24 @@
 
 int Virus::_infeccoes_totais = 0;
 
-// Construtor privador por causa do array
-Virus::Virus() {
-  _nome = "";
-  _forca = 0;
-  _capacidade_reproducao = 0;
-  _numero_filhos = 0;
-  _filhos = nullptr;
-}
-
 Virus::Virus(std::string nome, double forca, int capacidade_reproducao) {
   _nome = nome;
   _forca = forca;
   _capacidade_reproducao = capacidade_reproducao;
   _numero_filhos = 0;
-  _filhos = new Virus[capacidade_reproducao];
+  _filhos = new Virus*[capacidade_reproducao]();
+  for (int i = 0; i < _numero_filhos; i++)
+    _filhos[i] = nullptr;
   Virus::_infeccoes_totais++;
 }
 
 Virus::~Virus() {
-  std::cout << this->_nome << std::endl;
-  std::cout << this->_numero_filhos << std::endl;
-  delete[] _filhos;
+  if (_filhos != nullptr) {
+    for (int i = 0; i < _numero_filhos; i++)
+      if (_filhos[i] != nullptr)
+        delete _filhos[i];
+    delete[] _filhos;
+  }
 }
 
 std::string Virus::get_nome() {
@@ -36,16 +32,20 @@ double Virus::get_forca() {
 }
 
 Virus *Virus::reproduzir() {
-  if (this->_numero_filhos == this->_capacidade_reproducao) {
+  if (_numero_filhos == _capacidade_reproducao) {
     return nullptr;
   }
-  // Aloca uma um novo filho.
-  Virus novo_virus = Virus(_nome, _forca, _capacidade_reproducao);
+  // Aloca uma cópia
+  Virus *novo_virus = new Virus(_nome, _forca, _capacidade_reproducao);
   _filhos[_numero_filhos] = novo_virus;     // Guarda copia em um vetor
-  _numero_filhos += 1;                      // Aumenta o número de filhos
-  return &_filhos[_numero_filhos - 1];      // Retorna ponteiro para copia
+  _numero_filhos++;                         // Aumenta o número de filhos
+  return _filhos[_numero_filhos - 1];      // Retorna ponteiro para copia
 }
 
 int Virus::get_infeccoes_totais() {
   return Virus::_infeccoes_totais;
+}
+
+std::string Virus::to_string() {
+  return "Nome " + _nome + "::Filhos " + std::to_string(_numero_filhos) + "\n";
 }
