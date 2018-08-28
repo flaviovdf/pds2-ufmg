@@ -6,6 +6,9 @@ Matriz::Matriz(int n_linhas, int n_colunas) {
   this->_dados = new int*[n_linhas];
   for (int i = 0; i < n_linhas; i++) {
     this->_dados[i] = new int[n_colunas];
+    for (int j = 0; j < n_colunas; j++) {
+      this->_dados[i][j] = 0;
+    }
   }
 }
 
