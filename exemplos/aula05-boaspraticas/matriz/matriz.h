@@ -4,7 +4,7 @@
 
 class Matriz {
 private:
-  int **_dados;
+  int **_dados = nullptr;
   int _n_linhas;
   int _n_colunas;
 public:
