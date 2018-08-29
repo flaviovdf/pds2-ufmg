@@ -25,41 +25,41 @@ Sala Prática:
 
 ## Calendário
 
-| Aula | Data  | **Assunto**                           | Informações  |
-|------|----|------------------------------------------|--------------|
-|      |         | **POO e Memória em C++**            |              | 
-| 1    | Ago. 09 | Apresentação do curso/Básico de C++ |              |
-| 2    | 14 | Armazenamento de dados em memória        |              |
-| 3    | 16 | Programação Orientada a Objetos          |              |
-| 4    | 21 | Encapsulamento e Modularização           |              |
-| 5    | 23 | *Aula Lab 01 - Dúvidas no Lab*           |              |
-| 6    | 28 | Práticas POO (Destrutor, Static, Copias) |              |
-| 7    | 30 | Interfaces                               |*Entrega Lab 01*|
-| 8    | Set. 04 | Tipos Abstratos de Dados em C++     |              |
-| 9    | 06 | Tipos Abstratos de Dados em C++          |              |
-| 10   | 11 | Uso de TADs da Biblioteca Padrão         |              |
-| 11   | 13 | *Aula Lab 02 - Dúvidas no Lab*           |              |
-| 12   | 18 | Herança                                  |              |
-| 13   | 20 | Polimorfismo                             |              |
-| 14   | 25 | Composição                               |*Entrega Lab 02*|
-| 15   | 27 | *Aula Lab 03*                            |              |
-| 16   | Out. 02 | *Prova Teórica*                     |              |
-|      |         | **Boas Práticas, Modelagem**        |              | 
-| 17   | 04 | Especificação e Modelagem                |              |
-| 18   | 09 | Especificação e Modelagem                |*Entrega Lab 03*|
-| 19   | 11 | *Entrevistas Projeto*                    |              |
-| 20   | 16 | Revisão de Código e Depuração            |              |
-| 21   | 18 | Refatoração                              |              |
-| 22   | 23 | *Entrega Lab 04 - Dúvidas no Lab*        |              |
-| 23   | 25 | Testes de Unidade                        |              |
-| 24   | 30 | Exceções                                 |              |
-| 25   | Nov. 01 | Programação Defensiva               |              |
-| 26   | 06 | *Entrega Lab 05 - Dúvidas no Lab*        |              |
-| 27   | 08 | *Prova Teórica*                          |              |
-| 27   | 13 | *Reposição*                              |              |
-| 28   | 20 | *Entrevistas Projeto*                    |              |
-| 29   | 22 | *Entrevistas Projeto*                    |              |
-| 30   | 27 | *Entrevistas Projeto*                    |              |
+| Aula | Data  | **Assunto**                           | Informações      |
+|------|----|------------------------------------------|------------------|
+|      |         | **POO e Memória em C++**            |                  | 
+| 1    | Ago. 09 | Apresentação do curso/Básico de C++ |                  |
+| 2    | 14 | Armazenamento de dados em memória        |                  |
+| 3    | 16 | Programação Orientada a Objetos          |                  |
+| 4    | 21 | Encapsulamento e Modularização           |                  |
+| 5    | 23 | *Aula Lab 01 - Dúvidas no Lab*           |                  |
+| 6    | 28 | Práticas POO (Destrutor, Static, Copias) |                  |
+| 7    | 30 | Tipos Abstratos de Dados em C++          |                  |
+| 8    | Set. 04 | Tipos Abstratos de Dados em C++     | *Entrega Lab 01* |
+| 9    | 06 | Uso de TADs da Biblioteca Padrão         |                  |
+| 10   | 11 | Interfaces                               |                  |
+| 11   | 13 | *Aula Lab 02 - Dúvidas no Lab*           |                  |
+| 12   | 18 | Herança                                  |                  |
+| 13   | 20 | Polimorfismo                             |                  |
+| 14   | 25 | Composição                               | *Entrega Lab 02* |
+| 15   | 27 | *Aula Lab 03*                            |                  |
+| 16   | Out. 02 | *Prova Teórica*                     |                  |
+|      |         | **Boas Práticas, Modelagem**        |                  | 
+| 17   | 04 | Especificação e Modelagem                |                  |
+| 18   | 09 | Especificação e Modelagem                | *Entrega Lab 03* |
+| 19   | 11 | *Entrevistas Projeto*                    |                  |
+| 20   | 16 | Revisão de Código e Depuração            |                  |
+| 21   | 18 | Refatoração                              |                  |
+| 22   | 23 | *Entrega Lab 04 - Dúvidas no Lab*        |                  |
+| 23   | 25 | Testes de Unidade                        |                  |
+| 24   | 30 | Exceções                                 |                  |
+| 25   | Nov. 01 | Programação Defensiva               |                  |
+| 26   | 06 | *Entrega Lab 05 - Dúvidas no Lab*        |                  |
+| 27   | 08 | *Prova Teórica*                          |                  |
+| 27   | 13 | *Reposição*                              |                  |
+| 28   | 20 | *Entrevistas Projeto*                    |                  |
+| 29   | 22 | *Entrevistas Projeto*                    |                  |
+| 30   | 27 | *Entrevistas Projeto*                    |                  |
 
 ## TPs
 
