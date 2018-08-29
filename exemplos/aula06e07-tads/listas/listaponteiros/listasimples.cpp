@@ -19,7 +19,7 @@ ListaSimplesmenteEncadeada::~ListaSimplesmenteEncadeada() {
 }
 
 void ListaSimplesmenteEncadeada::inserir_elemento(int elemento) {
-  node_t *novo = new node_t;
+  node_t *novo = new node_t();
   novo->elemento = elemento;
   if (this->_inicio == nullptr) {
     this->_inicio = novo;
