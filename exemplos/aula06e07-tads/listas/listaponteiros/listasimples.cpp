@@ -21,7 +21,7 @@ ListaSimplesmenteEncadeada::~ListaSimplesmenteEncadeada() {
 void ListaSimplesmenteEncadeada::inserir_elemento(int elemento) {
   node_t *novo = new node_t;
   novo->elemento = elemento;
-  if (this->_inicio = nullptr) {
+  if (this->_inicio == nullptr) {
     this->_inicio = novo;
     this->_fim = novo;
   } else {
@@ -31,5 +31,10 @@ void ListaSimplesmenteEncadeada::inserir_elemento(int elemento) {
 }
 
 void ListaSimplesmenteEncadeada::imprimir() {
-
+  node_t *atual = this->_inicio;
+  while (atual != nullptr) {
+    std::cout << atual->elemento << " ";
+    atual = atual->proximo;
+  }
+  std::cout << std::endl;
 }
