@@ -2,21 +2,23 @@
 #define PDS2_LISTASIMPLES_H
 
 
+template <typename T>
 struct node_t {
-  int elemento;
+  T elemento;
   node_t *proximo;
 };
 
 
+template <typename T>
 class ListaSimplesmenteEncadeada {
 private:
-  node_t *_inicio;
-  node_t *_fim;
+  node_t<T> *_inicio;
+  node_t<T> *_fim;
   int _num_elementos_inseridos;
 public:
   ListaSimplesmenteEncadeada();
   ~ListaSimplesmenteEncadeada();
-  void inserir_elemento(int elemento);
+  void inserir_elemento(T elemento);
   void imprimir();
 };
 
