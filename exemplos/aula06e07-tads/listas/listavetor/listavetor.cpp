@@ -4,7 +4,6 @@
 
 
 ListaVetorInteiros::ListaVetorInteiros() {
-  this->_num_elementos = 0;
   this->_elementos = new int[TAMANHO_INICIAL]();
   this->_num_elementos_inseridos = 0;
   this->_capacidade = TAMANHO_INICIAL;
@@ -25,12 +24,12 @@ void ListaVetorInteiros::inserir_elemento(int elemento) {
     this->_elementos = new_data;
     this->_capacidade = this->_capacidade * 2;
   }
-  this->_elementos[this->_capacidade] = elemento;
+  this->_elementos[this->_num_elementos_inseridos] = elemento;
   this->_num_elementos_inseridos++;
 }
 
 void ListaVetorInteiros::imprimir() {
   for (int i = 0; i < this->_num_elementos_inseridos; i++)
-    std::cout << i << " ";
+    std::cout << this->_elementos[i] << " ";
   std::cout << std::endl;
 }
