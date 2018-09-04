@@ -1,3 +1,11 @@
+Compilação
+==========
+
+Compile seu código com -g
+```
+g++ -g arquivo.cpp -o main
+```
+
 Valgrind
 ========
 
@@ -106,4 +114,4 @@ Olhem os erros do DrMemory e/ou Valgrid para cada código acima!
 Mac Users
 =========
 
-Compilem com `gcc -m32`, dr memory não gosta de 64 bits no mac.
+Compilem com `g++ -m32`, dr memory não gosta de 64 bits no mac.
