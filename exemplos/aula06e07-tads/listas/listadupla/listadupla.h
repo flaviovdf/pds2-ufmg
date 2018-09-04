@@ -1,21 +1,22 @@
-#ifndef PDS2_LISTASIMPLES_H
-#define PDS2_LISTASIMPLES_H
+#ifndef PDS2_LISTADUPLA_H
+#define PDS2_LISTADUPLA_H
 
 
 struct node_t {
   int elemento;
+  node_t *anterior;
   node_t *proximo;
 };
 
 
-class ListaSimplesmenteEncadeada {
+class ListaDuplamenteEncadeada {
 private:
   node_t *_inicio;
   node_t *_fim;
   int _num_elementos_inseridos;
 public:
-  ListaSimplesmenteEncadeada();
-  ~ListaSimplesmenteEncadeada();
+  ListaDuplamenteEncadeada();
+  ~ListaDuplamenteEncadeada();
   void inserir_elemento(int elemento);
   void remove_iesimo(int i);
   void imprimir();
