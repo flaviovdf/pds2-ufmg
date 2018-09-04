@@ -44,6 +44,8 @@ void ListaDuplamenteEncadeada::remove_iesimo(int i) {
     atual = atual->proximo;
   if (atual->proximo != nullptr)
     atual->proximo->anterior = atual->anterior;
+  if (atual->anterior != nullptr)
+    atual->anterior->proximo = atual->proximo;
   if (i == 0)
     this->_inicio = atual->proximo;
   if (i == this->_num_elementos_inseridos - 1)
