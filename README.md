@@ -36,9 +36,9 @@ Sala Prática:
 | 6    | 28 | Práticas POO (Destrutor, Static, Copias) |                  |
 | 7    | 30 | Tipos Abstratos de Dados em C++          |                  |
 | 8    | Set. 04 | Tipos Abstratos de Dados em C++     | *Entrega Lab 01* |
-| 9    | 06 | Uso de TADs da Biblioteca Padrão         |                  |
+| 9    | 13 | *Aula Lab 02 - Dúvidas no Lab*           |                  |
+| 10   | 06 | Uso de TADs da Biblioteca Padrão         |                  |
 | 10   | 11 | Interfaces                               |                  |
-| 11   | 13 | *Aula Lab 02 - Dúvidas no Lab*           |                  |
 | 12   | 18 | Herança                                  |                  |
 | 13   | 20 | Polimorfismo                             |                  |
 | 14   | 25 | Composição                               | *Entrega Lab 02* |
