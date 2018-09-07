@@ -13,13 +13,24 @@ Valgrind
   1. http://pages.cs.wisc.edu/~bart/537/valgrind.html
 
 ```
-valgrind -tool=memcheck --leak-check=full --track-origins=yes --show-reachable=yes --track-fds=yes ./meu_programa
+valgrind --leak-check=full --track-origins=yes --show-reachable=yes --track-fds=yes ./meu_programa
+```
+
+Explicando cada comando:
+```
+--leak-check=full     # Procura leaks
+--track-origins=yes   # Procura qual local do código alocou o leak
+--show-reachable=yes  # Mostra quais elementos estão leaking
+--track-fds=yes       # Mostra quais arquivos ainda estão abertos
 ```
 
 DrMemory
 ========
 
-Alternativa ao valgrind para windows.
+Alternativa ao valgrind para Windows. Ao instalar o doctor memory e utilizar
+pela primeira vez, existe a possibilidade de surgir uma mensagem de erro de
+acordo com a sua versão do Windows. Leia a mensagem com cuidado, a mesma tem
+instruções de como baixar um arquivo que faz o doctor memory funcionar.
 
   1. http://www.drmemory.org/
   1. http://www.burningcutlery.com/derek/docs/drmem-CGO11.pdf
@@ -46,8 +57,8 @@ Dois problemas aqui:
 void f(void)
 {
   int* x = malloc(10 * sizeof(int));
-  x[10] = 0;        
-}                
+  x[10] = 0;
+}
 
 int main(void)
 {
