@@ -1,5 +1,5 @@
-| [Slides] | [Informes] | [Calendário] | [Exemplos] | [TPs] | [Livros] | [Listas] |
-|----------|------------|--------------|------------|-------|----------|----------|
+| [Slides] | [Informes] | [Calendário] | [Exemplos] | [TPs] | [Livros] | [Valgrind] |
+|----------|------------|--------------|------------|-------|----------|------------|
 - - -
 
 # DCCXXX: Programação e Desenvolvimento de Software 2
@@ -13,7 +13,7 @@ Aulas:
 Sala Teórica:
   1. **Ciência da Computação:** CAD 1 - 312
   1. **Controle e Automação:** CAD 3 - 309
-  
+
 Sala Prática:
   1. **Ciência da Computação:** 2011 e 2012 (ICEX)
   1. **Controle e Automação:** 2011 e 2012 (ICEX)
@@ -27,7 +27,7 @@ Sala Prática:
 
 | Aula | Data  | **Assunto**                           | Informações      |
 |------|----|------------------------------------------|------------------|
-|      |         | **POO e Memória em C++**            |                  | 
+|      |         | **POO e Memória em C++**            |                  |
 | 1    | Ago. 09 | Apresentação do curso/Básico de C++ |                  |
 | 2    | 14 | Armazenamento de dados em memória        |                  |
 | 3    | 16 | Programação Orientada a Objetos          |                  |
@@ -44,7 +44,7 @@ Sala Prática:
 | 14   | 25 | Composição                               | *Entrega Lab 02* |
 | 15   | 27 | *Aula Lab 03*                            |                  |
 | 16   | Out. 02 | *Prova Teórica*                     |                  |
-|      |         | **Boas Práticas, Modelagem**        |                  | 
+|      |         | **Boas Práticas, Modelagem**        |                  |
 | 17   | 04 | Especificação e Modelagem                |                  |
 | 18   | 09 | Especificação e Modelagem                | *Entrega Lab 03* |
 | 19   | 11 | *Entrevistas Projeto*                    |                  |
@@ -85,7 +85,7 @@ visto em aula. Abaixo segue alguns possíveis temas.
 
 1. Clean Code: A Handbook of Agile Software Craftsmanship.
    Robert C. Martin.
-   Prentice Hall, 2008. 
+   Prentice Hall, 2008.
 
 1. Code Complete: A Practical Handbook of Software Construction.
    Steve McConnell.
@@ -105,6 +105,6 @@ visto em aula. Abaixo segue alguns possíveis temas.
 [Informes]: #informes
 [TPs]: #tps
 [Bibliografia]: #bibliografia
-[Listas]: 404
 [Livros]: #livros
 [Exemplos]: ./exemplos
+[Valgrind]: ./valgriddrmem

@@ -4,8 +4,9 @@
 
 int main(void) {
   ListaSimplesmenteEncadeada lista = ListaSimplesmenteEncadeada();
-  for (int i = 0; i < 1000; i++)
-    lista.inserir_elemento(i);
-  // lista.imprimir();
+  lista.inserir_elemento(2);
+  lista.imprimir();
+  lista.remove_iesimo(0);
+  lista.imprimir();
   return 0;
 }

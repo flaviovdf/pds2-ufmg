@@ -7,7 +7,6 @@ private:
   Node *_esquerda;
   Node *_direita;
   int _elemento;
-  void _inserir_no(Node *node);
 public:
   Node(int valor);
   ~Node();

@@ -16,25 +16,20 @@ Node::~Node() {
     delete this->_direita;
 }
 
-void Node::_inserir_no(Node *node) {
-  if (node->_elemento < this->_elemento) {
+void Node::inserir_elemento(int elemento) {
+  if (elemento < this->_elemento) {
     if (this->_esquerda == nullptr) {
-      this->_esquerda = node;
+      this->_esquerda = new Node(elemento);
     } else {
-      this->_esquerda->_inserir_no(node);
+      this->_esquerda->inserir_elemento(elemento);
     }
-  } else if (node->_elemento > this->_elemento) {
+  } else if (elemento > this->_elemento) {
     if (this->_direita == nullptr) {
-      this->_direita = node;
+      this->_direita = new Node(elemento);
     } else {
-      this->_direita->_inserir_no(node);
+      this->_direita->inserir_elemento(elemento);
     }
   }
-}
-
-void Node::inserir_elemento(int elemento) {
-  if (!this->tem_elemento(elemento))
-    this->_inserir_no(new Node(elemento));
 }
 
 bool Node::tem_elemento(int elemento) {
