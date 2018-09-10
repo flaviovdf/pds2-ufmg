@@ -2,10 +2,12 @@
 
 #include "listasimples.h"
 
+// Temos que definir quais templates aceitamos
 template class ListaSimplesmenteEncadeada<int>;
 template class ListaSimplesmenteEncadeada<double>;
 template class ListaSimplesmenteEncadeada<std::string>;
 
+// Mesmo vale para o node
 template struct node_t<int>;
 template struct node_t<double>;
 template struct node_t<std::string>;

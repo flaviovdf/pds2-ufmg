@@ -15,6 +15,12 @@ compilar $files -o main
 cat > vpl_execution <<EEOOFF
 #!/bin/bash
 echo "<|--"
+valgrind ./main -nc -s 2>&1 | grep "All heap blocks were freed -- no leaks are possible"
+exitstatus=\$?
+if [ "\$exitstatus" -ne 0 ]; then
+  echo "Parece que seu programa tem memory leaks!!! Resolva os mesmos."
+fi
+
 ./main -nc -s
 exitstatus=\$?
 echo "--|>"
