@@ -36,26 +36,25 @@ Sala Prática:
 | 6    | 28 | Práticas POO (Destrutor, Static, Copias) |                  |
 | 7    | 30 | Tipos Abstratos de Dados em C++          |                  |
 | 8    | Set. 04 | Tipos Abstratos de Dados em C++     | *Entrega Lab 01* |
-| 9    | 13 | *Aula Lab 02 - Dúvidas no Lab*           |                  |
-| 10   | 06 | Uso de TADs da Biblioteca Padrão         |                  |
-| 11   | 11 | Interfaces                               |                  |
-| 12   | 13 | Herança                                  |                  |
-| 13   | 18 | Polimorfismo                             |                  |
-| 14   | 20 | Composição                               | *Entrega Lab 02* |
-| 15   | 25 | *Aula Lab 03*                            |                  |
-| 16   | 27 | Especificação e Modelagem                |                  |
-| 17   | Out. 02 | *Prova Teórica*                     |                  |
+| 9    | 06 | *Aula Lab 02 - Dúvidas no Lab*           |                  |
+| 10   | 11 | TADs da Biblioteca Padrão                |                  |
+| 11   | 13 | Uso de TADs da Biblioteca Padrão         |                  |
+| 12   | 18 | Interfaces e Polimorfismo                |                  |
+| 13   | 20 | Herança e Composição                     | *Entrega Lab 02* |
+| 14   | 25 | *Aula Lab 03*                            |                  |
+| 15   | 27 | Especificação e Modelagem                |                  |
+| 16   | Out. 02 | *Prova Teórica*                     |                  |
 |      |         | **Boas Práticas, Modelagem**        |                  |
-| 18   | 09 | *Entrevistas Projeto*                    | *Entrega Lab 03* |
-| 19   | 11 | *Entrevistas Projeto*                    |                  |
-| 20   | 16 | Revisão de Código e Depuração            |                  |
-| 21   | 18 | Refatoração                              |                  |
-| 22   | 23 | *Aula Lab 04 - Dúvidas no Lab*           |                  |
-| 23   | 25 | Testes de Unidade                        |                  |
-| 24   | 30 | Exceções                                 |                  |
-| 25   | Nov. 01 | Programação Defensiva               |                  |
-| 26   | 06 | *Aula Lab 05 - Dúvidas no Lab*           |                  |
-| 27   | 08 | *Prova Teórica*                          |                  |
+| 17   | 09 | *Entrevistas Projeto*                    | *Entrega Lab 03* |
+| 18   | 11 | *Entrevistas Projeto*                    |                  |
+| 19   | 16 | Revisão de Código e Depuração            |                  |
+| 20   | 18 | Refatoração                              |                  |
+| 21   | 23 | *Aula Lab 04 - Dúvidas no Lab*           |                  |
+| 22   | 25 | Testes de Unidade                        |                  |
+| 23   | 30 | Exceções                                 |                  |
+| 24   | Nov. 01 | Programação Defensiva               |                  |
+| 25   | 06 | *Aula Lab 05 - Dúvidas no Lab*           |                  |
+| 26   | 08 | *Prova Teórica*                          |                  |
 | 27   | 13 | *Reposição*                              |                  |
 | 28   | 20 | *Entrevistas Projeto*                    |                  |
 | 29   | 22 | *Entrevistas Projeto*                    |                  |
