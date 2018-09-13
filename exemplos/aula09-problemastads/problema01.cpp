@@ -2,11 +2,16 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <set>
+
+#include "aluno.h"
 
 int main() {
   std::string linha;
   std::string palavra;
   std::istringstream stream_string;
+
+  std::set<std::string> nomes;
 
   // 1. Lê o stream cin (padrão/teclado) linha a linha
   while (std::getline(std::cin, linha)) {
@@ -21,5 +26,12 @@ int main() {
     stream_string >> nome;
     stream_string >> matricula;
     stream_string >> codigo_disciplina;
+
+    Aluno aluno(nome, matricula);
+    nomes.insert(aluno.get_nome());
+  }
+
+  for (std::string nome : nomes) {
+    std::cout << nome << std::endl;
   }
 }
