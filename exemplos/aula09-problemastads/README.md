@@ -1,17 +1,12 @@
 # Aula09 - Problemas TADs
 
-## Roteiro
+## Problemas interessantes
 
 ### Problemas com Vector
 
 1. Filtro de atributos. Por exemplo, filtrar o nome de diversos objetos
    Paciente. Listar os Pacientes infectados etc.
 1. Estatísticas. Computar a média, mediana e desvio padrão de um vetor.
-
-### Problemas com List
-
-1. Lista de tarefas que devem ser executadas. Em algum momento, um usuário
-   pode cancelar suas tarefas.
 
 ### Problemas com Set
 
