@@ -3,6 +3,11 @@
 #include "mensagemtexto.h"
 #include "mensagemvoz.h"
 
+class MensagemVideo {
+public:
+  void exibir();
+};
+
 void exibir_na_tela(MensagemIF &msg) {
   msg.exibir();
 }

@@ -1,5 +1,5 @@
 #ifndef PDS2_MENSAGEMTEXTO_H
-#define PDS2_MENSAGEMTETXO_H
+#define PDS2_MENSAGEMTEXTO_H
 
 #include <string>
 #include "mensagem.h"
