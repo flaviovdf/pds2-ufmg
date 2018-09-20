@@ -18,8 +18,8 @@ public:
   ListaDuplamenteEncadeada();
   ~ListaDuplamenteEncadeada();
   void inserir_elemento(int elemento);
-  void remove_iesimo(int i);
   void imprimir();
+  void remove_iesimo(int i);
 };
 
 

@@ -12,8 +12,8 @@ public:
   BST();
   ~BST();
   void inserir_elemento(int elemento);
-  bool tem_elemento(int elemento);
   void imprimir();
+  bool tem_elemento(int elemento);
 };
 
 
