@@ -44,8 +44,8 @@ Sala Prática:
 | 14   | P3    | 25      | *Aula Lab 03*                            |                  |
 | 15   | T12   | 27      | Especificação e Modelagem                |                  |
 | 16   | A1    | Out. 02 | *Prova Teórica*                          |                  |
-| 17   | T13   | 04      | Especificação e Modelagem                |                  |
 |      |       |         | **Boas Práticas, Modelagem**             |                  |
+| 17   | T13   | 04      | Modularização                            |                  |
 | 18   | P3    | 09      | *Entrevistas Projeto*                    | *Entrega Lab 03* |
 | 19   | P4    | 11      | *Entrevistas Projeto*                    |                  |
 | 20   | T14   | 16      | Revisão de Código e Depuração            |                  |
