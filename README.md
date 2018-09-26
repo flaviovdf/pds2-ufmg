@@ -42,11 +42,11 @@ Sala Prática:
 | 12   | T10   | 18      | Interfaces e Polimorfismo                |                  |
 | 13   | T11   | 20      | Herança e Composição                     | *Entrega Lab 02* |
 | 14   | P3    | 25      | *Aula Lab 03*                            |                  |
-| 15   | T12   | 27      | Especificação e Modelagem                |                  |
+| 15   | T12   | 27      | Visibilidade + Revisão                   |                  |
 | 16   | A1    | Out. 02 | *Prova Teórica*                          |                  |
 |      |       |         | **Boas Práticas**                        |                  |
-| 17   | T13   | 04      | Modularização                            |                  |
-| 18   | P3    | 09      | *Entrevistas Projeto*                    | *Entrega Lab 03* |
+| 17   | T13   | 04      | Especificação e Modelagem                |                  |
+| 18   | P3    | 09      | Modularização                            | *Entrega Lab 03* |
 | 19   | P4    | 11      | *Entrevistas Projeto*                    |                  |
 | 20   | T14   | 16      | Revisão de Código e Depuração            |                  |
 | 21   | T15   | 18      | Refatoração                              |                  |
