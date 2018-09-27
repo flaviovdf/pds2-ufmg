@@ -11,12 +11,13 @@ void exibir_na_tela(MensagemBase &msg) {
   std::cout << "Avatar: " << msg.get_avatar();
   std::cout << std::endl;
   msg.exibir();
+  std::cout << msg.get_data() << std::endl;
   std::cout << "--" << std::endl;
 }
 
 int main(void) {
   auto avatar1 = ":|";
-  auto avatar2 = ":)";
+  std::string avatar2 = ":)";
   MensagemTexto texto(avatar1, "Oi, tem aula de PDS2 hoje?");
   MensagemVoz audio(avatar2, "audio.wav");
   MensagemImagem image(avatar1, "imagem03.ascii");

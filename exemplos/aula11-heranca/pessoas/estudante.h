@@ -5,7 +5,7 @@
 
 class Estudante : public Pessoa {
 private:
-  const int _matricula;
+  int _matricula;
 public:
   Estudante(std::string nome, int matricula);
   int get_matricula() const;
