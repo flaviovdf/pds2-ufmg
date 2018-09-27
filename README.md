@@ -46,7 +46,7 @@ Sala Prática:
 | 16   | A1    | Out. 02 | *Prova Teórica*                          |                  |
 |      |       |         | **Boas Práticas**                        |                  |
 | 17   | P4    | 04      | *Entrevistas Projeto*                    |                  |
-| 18   | T13   | 09      | Modularização                            | *Entrega Lab 03* |
+| 18   | T13   | 09      | Modelagem                                | *Entrega Lab 03* |
 |      |       | 11      | *Sem Aula*                               |                  |
 | 19   | T14   | 16      | Revisão de Código e Depuração            |                  |
 | 20   | T15   | 18      | Refatoração                              |                  |
