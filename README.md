@@ -45,20 +45,20 @@ Sala Prática:
 | 15   | T12   | 27      | Visibilidade + Revisão                   |                  |
 | 16   | A1    | Out. 02 | *Prova Teórica*                          |                  |
 |      |       |         | **Boas Práticas**                        |                  |
-| 17   | T13   | 04      | Especificação e Modelagem                |                  |
-| 18   | P3    | 09      | Modularização                            | *Entrega Lab 03* |
-| 19   | P4    | 11      | *Entrevistas Projeto*                    |                  |
-| 20   | T14   | 16      | Revisão de Código e Depuração            |                  |
-| 21   | T15   | 18      | Refatoração                              |                  |
-| 22   | P5    | 23      | *Aula Lab 04 - Dúvidas no Lab*           |                  |
-| 23   | T16   | 25      | Testes de Unidade                        |                  |
-| 24   | T17   | 30      | Exceções                                 |                  |
-| 25   | T18   | Nov. 01 | Programação Defensiva                    |                  |
-| 26   | P6    | 06      | *Aula Lab 05 - Dúvidas no Lab*           |                  |
-| 27   | A2    | 08      | *Prova Teórica*                          |                  |
-| 28   |       | 13      | *Reposição*                              |                  |
-| 29   | P7    | 20      | *Entrevistas Projeto*                    |                  |
-| 30   | P8    | 22      | *Entrevistas Projeto*                    |                  |
+| 17   | P4    | 04      | *Entrevistas Projeto*                    |                  |
+| 18   | T13   | 09      | Modularização                            | *Entrega Lab 03* |
+|      |       | 11      | *Sem Aula*                               |                  |
+| 19   | T14   | 16      | Revisão de Código e Depuração            |                  |
+| 20   | T15   | 18      | Refatoração                              |                  |
+| 21   | P5    | 23      | *Aula Lab 04 - Dúvidas no Lab*           |                  |
+| 22   | T16   | 25      | Testes de Unidade                        |                  |
+| 23   | T17   | 30      | Exceções                                 |                  |
+| 24   | T18   | Nov. 01 | Programação Defensiva                    |                  |
+| 25   | P6    | 06      | *Aula Lab 05 - Dúvidas no Lab*           |                  |
+| 26   | A2    | 08      | *Prova Teórica*                          |                  |
+| 27   |       | 13      | *Reposição*                              |                  |
+| 28   | P7    | 20      | *Entrevistas Projeto*                    |                  |
+| 29   | P8    | 22      | *Entrevistas Projeto*                    |                  |
 
 ## TPs
 
