@@ -4,7 +4,7 @@
 
 # DCCXXX: Programação e Desenvolvimento de Software 2
 
-Professor: Flavio Figueiredo
+Professor: Flavio Vinicius Diniz de Figueiredo
 
 Aulas:
   1. **Ciência da Computação:** Terças e Quintas 07:00 - 09:10;
