@@ -4,7 +4,7 @@
 
 struct aluno_comparator_mat_f {
   bool operator()(const Aluno &aluno1, const Aluno &aluno2) const {
-    return aluno1.get_matricula() < aluno2.get_matricula()
+    return aluno1.get_matricula() < aluno2.get_matricula();
   }
 };
 
