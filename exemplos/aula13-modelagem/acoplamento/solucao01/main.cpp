@@ -10,7 +10,7 @@ struct aluno_comparator_mat_f {
 
 struct aluno_comparator_nome_f {
   bool operator()(const Aluno &aluno1, const Aluno &aluno2) const {
-    return aluno1.get_nome() < aluno2.get_nome();
+    return aluno1.get_nome() < aluno2.get_nome()
   }
 };
 
