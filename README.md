@@ -50,15 +50,17 @@ Sala Prática:
 |      |       | 11      | *Sem Aula*                               |                  |
 | 19   | T14   | 16      | Revisão de Código e Depuração            |                  |
 | 20   | T15   | 18      | Refatoração                              |                  |
-| 21   | P5    | 23      | *Aula Lab 04 - Dúvidas no Lab*           |                  |
-| 22   | T16   | 25      | Testes de Unidade                        |                  |
-| 23   | T17   | 30      | Exceções                                 |                  |
-| 24   | T18   | Nov. 01 | Programação Defensiva                    |                  |
-| 25   | P6    | 06      | *Aula Lab 05 - Dúvidas no Lab*           |                  |
-| 26   | A2    | 08      | *Prova Teórica*                          |                  |
-| 27   |       | 13      | *Reposição*                              |                  |
-| 28   | P7    | 20      | *Entrevistas Projeto*                    |                  |
-| 29   | P8    | 22      | *Entrevistas Projeto*                    |                  |
+| 21   | P5    | 23      | Modularização                            |                  |
+| 22   | T16   | 25      | *Aula Lab 04*                            |                  |
+| 23   | T17   | 30      | Testes de Unidade                        |                  |
+| 24   | T18   | Nov. 01 | Exceções                                 | *Entrega Lab 04* |
+| 25   | P6    | 06      | Programação Defensiva                    |                  |
+| 26   | A2    | 08      | *Aula Lab 05*                            |                  |
+| 27   |       | 13      | *Prova Teórica*                          |                  |
+|      | A*    | 20      | *Reposição*                              |                  |
+|      |       | 22      | *Sem Aula. Reunião ATMOSPHERE*           | *Entrega Lab 05* |
+| 28   | P7    | 27      | *Entrevistas Projeto*                    |                  |
+| 29   | P8    | 29      | *Entrevistas Projeto*                    |                  |
 
 ## TPs
 
