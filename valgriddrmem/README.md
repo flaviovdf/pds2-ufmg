@@ -6,8 +6,8 @@ Compile seu código com -g
 g++ -g arquivo.cpp -o main
 ```
 
-Valgrind
-========
+Valgrind (Linux/Mac)
+====================
 
   1. http://cs.ecs.baylor.edu/~donahoo/tools/valgrind/
   1. http://pages.cs.wisc.edu/~bart/537/valgrind.html
@@ -24,8 +24,8 @@ Explicando cada comando:
 --track-fds=yes       # Mostra quais arquivos ainda estão abertos
 ```
 
-DrMemory
-========
+DrMemory (Mac/Windows)
+======================
 
 Alternativa ao valgrind para Windows. Ao instalar o doctor memory e utilizar
 pela primeira vez, existe a possibilidade de surgir uma mensagem de erro de
@@ -51,17 +51,13 @@ Dois problemas aqui:
   1. Lendo na posição errada
   2. Sem free!
 
-```c
-#include <stdlib.h>
-
-void f(void)
-{
-  int* x = malloc(10 * sizeof(int));
+```cpp
+void f(void) {
+  int *x = new int[10];
   x[10] = 0;
 }
 
-int main(void)
-{
+int main() {
  f();
  return 0;
 }
@@ -71,12 +67,11 @@ int main(void)
 
 Um erro aqui, 2 frees.
 
-```c
-#include <stdlib.h>
+```cpp
 int main(void) {
-  int *data = malloc(10 * sizeof(int));
-  free(data);
-  free(data);
+  int *data = new int[10];
+  delete data[];
+  delete data[];
   return 0;
 }
 ```
@@ -91,8 +86,8 @@ Dois erros:
 #include <stdlib.h>
 int main(void) {
   //Dois erros aqui
-  int *data = malloc(10 * sizeof(int));
-  data = NULL;
+  int *data = new int[10];
+  data = nullptr;
   data[2] = 20;
   return 0;
 }
@@ -100,23 +95,11 @@ int main(void) {
 
 *Quarto Exemplo: Não Inicializado*
 
-```c
+```cpp
 #include<stdio.h>
 int main(void) {
   int x;
-  printf ("x = %d\n", x);
-}
-```
-
-*QuintoExemplo: Arquivo aberto*
-
-```c
-#include<stdio.h>
-int main(void) {
-  FILE *file = fopen("lixo.txt", "w");
-  for (int i = 0; i < 100; i++) {
-    fprintf(file, "%d\n", i);
-  }
+  printf("x = %d\n", x);
 }
 ```
 
