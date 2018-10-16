@@ -3,13 +3,8 @@
 #include "mensagemtexto.h"
 #include "mensagemvoz.h"
 
-void f(MensagemVoz &voz) {
-
-}
-
 void exibir_na_tela(MensagemIF &msg) {
   msg.exibir();
-  f(msg);
 }
 
 int main(void) {

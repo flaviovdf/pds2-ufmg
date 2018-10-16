@@ -4,5 +4,6 @@ class Objeto {};
 
 int main() {
   std::vector<Objeto *> v;
-  v.push_back(new Objeto());
+  Objeto *o = new Objeto();
+  v.push_back(o);
 }
