@@ -13,7 +13,7 @@ ListaSimplesmenteEncadeada::~ListaSimplesmenteEncadeada() {
   node_t *anterior = nullptr;
   node_t *proximo = this->_inicio;
   while (proximo != nullptr) {
-    proximo = anterior->proximo;
+    proximo = proximo->proximo;
     anterior = proximo;
     delete anterior;
   }
