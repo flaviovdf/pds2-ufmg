@@ -1,13 +1,13 @@
 #include <iostream>
 
-int find_max(int *array, int len, int &max) {
+int find_max(int *array, int len, int max) {
   max = array[0];
-  for(int i = 1; i < len; i++) {
+  for(int i = 1; i <= len; i++) {
     if(max < array[i]) {
       max = array[i];
     }
   }
-  return max;
+  return 0;
 }
 
 int main() {
