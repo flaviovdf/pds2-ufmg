@@ -50,12 +50,12 @@ Sala Prática:
 |      |       | 11      | *Sem Aula*                               |                  |
 | 19   | T14   | 16      | Revisão de Código e Depuração            |                  |
 | 20   | T15   | 18      | Refatoração                              |                  |
-| 21   | T16   | 23      | Modularização                            |                  |
-| 22   | P5    | 25      | *Aula Lab 04*                            |                  |
-| 23   | T17   | 30      | Testes de Unidade                        |                  |
-| 24   | T18   | Nov. 01 | Exceções                                 | *Entrega Lab 04* |
-| 25   | T29   | 06      | Programação Defensiva                    |                  |
-| 26   | P6    | 08      | *Aula Lab 05*                            |                  |
+| 21   | P5    | 23      | *Aula lab 04*                            |                  |
+| 22   | T17   | 25      | Testes de Unidade                        |                  |
+| 23   | T18   | 30      | Exceções                                 |                  |
+| 24   | T19   | Nov. 01 | Programação Defensiva                    | *Entrega Lab 04* |
+| 25   | P6    | 06      | *Aula Lab 05*                            |                  |
+| 26   | T20   | 08      | Revisão Prova                            |                  |
 | 27   | A2    | 13      | *Prova Teórica*                          |                  |
 |      | A*    | 20      | *Reposição*                              |                  |
 |      |       | 22      | *Sem Aula. Reunião ATMOSPHERE*           | *Entrega Lab 05* |
