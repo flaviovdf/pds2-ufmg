@@ -2,7 +2,7 @@
 #include <cmath>
 
 int fatorial(int num) {
-  int fat = 0;
+  int fat = 1;
   for (int i = 1; i <= num; i++)
     fat = fat * i;
   return fat;
