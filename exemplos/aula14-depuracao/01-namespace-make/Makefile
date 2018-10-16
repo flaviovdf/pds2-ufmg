@@ -7,11 +7,11 @@ CFLAGS := -g -Wall -O3 -std=c++11 -I include/
 all: main
 
 magic:
-	@mkdir build/magic/
+	@mkdir -p build/magic/
 	$(CC) $(CFLAGS) -c src/magic/carta.cpp -o build/magic/carta.o
 
 uno:
-	@mkdir build/uno/
+	@mkdir -p build/uno/
 	$(CC) $(CFLAGS) -c src/uno/carta.cpp -o build/uno/carta.o
 
 main: magic uno
