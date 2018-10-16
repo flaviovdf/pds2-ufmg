@@ -20,4 +20,3 @@ int main() {
   std::cout << "Valor maximo e: " << max << std::endl;
   return 0;
 }
-
