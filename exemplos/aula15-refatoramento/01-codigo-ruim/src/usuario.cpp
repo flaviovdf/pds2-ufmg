@@ -18,21 +18,21 @@ double Usuario::total_gastos() {
     switch(midia.get_tipo()) {
       case Tipo::EPISODIO_SERIE:
           if (item.foi_compra()) {
-            total_gastos = 12.0;
+            total_gastos += 12.0;
           } else {
             total_gastos += 3.50;
           }
         break;
       case Tipo::LANCAMENTO:
           if (item.foi_compra()) {
-            total_gastos = 32.0;
+            total_gastos += 32.0;
           } else {
             total_gastos += 16.00;
           }
         break;
       case Tipo::NORMAL:
           if (item.foi_compra()) {
-            total_gastos = 15.0;
+            total_gastos += 15.0;
           } else {
             total_gastos += 7;
           }

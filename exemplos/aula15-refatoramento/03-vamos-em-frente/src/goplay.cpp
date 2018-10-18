@@ -31,13 +31,11 @@ int GoPlay::adicionar_midia(std::string nome, Tipo tipo) {
 void GoPlay::realiza_aluguel(int id_usuario, int id_midia) {
   Usuario &usuario = *this->_usuarios[id_usuario];
   usuario.inserir_item(Item(*this->_midias[id_midia], false));
-  this->_usuarios[id_usuario];
 }
 
 void GoPlay::realiza_compra(int id_usuario, int id_midia) {
   Usuario &usuario = *this->_usuarios[id_usuario];
   usuario.inserir_item(Item(*this->_midias[id_midia], true));
-  this->_usuarios[id_usuario];
 }
 
 Usuario &GoPlay::get_usuario(int id_usuario) {
