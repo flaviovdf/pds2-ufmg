@@ -9,13 +9,6 @@ enum Tipo {NORMAL, LANCAMENTO, EPISODIO_SERIE};
 
 class Midia {
 private:
-  static double const ALUGUEL_NORMAL;
-  static double const COMPRA_NORMAL;
-  static double const ALUGUEL_LANCAMENTO;
-  static double const COMPRA_LANCAMENTO;
-  static double const ALUGUEL_SERIE;
-  static double const COMPRA_SERIE;
-
   std::string _nome;
   double _preco_aluguel;
   double _preco_compra;
