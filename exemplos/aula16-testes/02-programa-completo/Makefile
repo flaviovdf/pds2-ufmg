@@ -33,7 +33,7 @@ all: main
 
 coverage:
 	@mkdir -p coverage/
-	@gcov $(SOURCES) -r -l -p -o build/
+	@gcov $(SOURCES) -l -p -o build/
 	@lcov -c --no-external --directory . --output-file coverage/coverage.info
 	@genhtml coverage/coverage.info --output-directory coverage/
 	$(RM) *.gcda *.gcno

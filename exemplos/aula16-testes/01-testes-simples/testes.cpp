@@ -1,17 +1,22 @@
 #include "doctest.h"
 #include "fatorial.h"
 
-TEST_CASE("Testando o caso especial") {
+TEST_CASE("Testando caso especial") {
   CHECK(fatorial(0) == 1);
 }
 
-TEST_CASE("Testando o fatorial geral") {
+TEST_CASE("Testando alguns casos simples") {
   CHECK(fatorial(2) == 2);
   CHECK(fatorial(3) == 6);
-  CHECK(fatorial(4) == 24);
-  CHECK(fatorial(10) == 3628800);
 }
 
-//TEST_CASE("Testando o caso invalido") {
-//  CHECK_THROWS(fatorial(-1));
-//}
+TEST_CASE("Testando com base em uma tabela") {
+  int tabela[] = {1, 1, 2, 6, 24, 120};
+  for (int i = 0; i < 6; i++) {
+    CHECK(fatorial(i) == tabela[i]);
+  }
+}
+
+TEST_CASE("Testando negativo") {
+   CHECK_THROWS(fatorial(-2));
+}
