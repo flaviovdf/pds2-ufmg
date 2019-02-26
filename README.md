@@ -6,61 +6,16 @@
 
 Professor: Flavio Vinicius Diniz de Figueiredo
 
-Aulas:
-  1. **Ciência da Computação:** Terças e Quintas 07:00 - 09:10;
-  1. **Controle e Automação:**  Terças e Quintas 13:00 - 14:40.
+Aulas: Terças e Quintas 19:00 - 20:40.
 
-Sala Teórica:
-  1. **Ciência da Computação:** CAD 1 - 312
-  1. **Controle e Automação:** CAD 3 - 309
+Sala Teórica: Auditório 1a - CAD 1
 
-Sala Prática:
-  1. **Ciência da Computação:** 2011 e 2012 (ICEX)
-  1. **Controle e Automação:** 2011 e 2012 (ICEX)
+Sala Monitoria: Laboratórios 2011 e 2012 DCC. Sexta feira. Marque horário.
 
 ## Informes
 
-* **INF01**: Aulas iniciam no dia 09/08.
-* **INF02**: Sala da turma da computação: CAD 1 - 312
-
-## Calendário
-
-| Aula | Tipo  | Data    | **Assunto**                              | Informações      |
-|------|-------|---------|------------------------------------------|------------------|
-|      |       |         | **POO e Memória em C++**                 |                  |
-| 1    | T1    | Ago. 09 | Apresentação do curso/Básico de C++      |                  |
-| 2    | T2    | 14      | Armazenamento de dados em memória        |                  |
-| 3    | T3    | 16      | Programação Orientada a Objetos          |                  |
-| 4    | T4    | 21      | POO Classes e Módulos                    |                  |
-| 5    | P1    | 23      | *Aula Lab 01 - Dúvidas no Lab*           |                  |
-| 6    | T5    | 28      | Boas Práticas POO (Destrutores, Cópias)  |                  |
-| 7    | T6    | 30      | Tipos Abstratos de Dados em C++          |                  |
-| 8    | T7    | Set. 04 | Tipos Abstratos de Dados em C++          | *Entrega Lab 01* |
-| 9    | P2    | 06      | *Aula Lab 02 - Dúvidas no Lab*           |                  |
-| 10   | T8    | 11      | TADs da Biblioteca Padrão                |                  |
-| 11   | T9    | 13      | Uso de TADs da Biblioteca Padrão         |                  |
-| 12   | T10   | 18      | Interfaces e Polimorfismo                |                  |
-| 13   | T11   | 20      | Herança e Composição                     | *Entrega Lab 02* |
-| 14   | P3    | 25      | *Aula Lab 03*                            |                  |
-| 15   | T12   | 27      | Visibilidade + Revisão                   |                  |
-| 16   | A1    | Out. 02 | *Prova Teórica*                          |                  |
-|      |       |         | **Boas Práticas**                        |                  |
-| 17   | P4    | 04      | *Entrevistas Projeto*                    |                  |
-| 18   | T13   | 09      | Modelagem                                | *Entrega Lab 03* |
-|      |       | 11      | *Sem Aula*                               |                  |
-| 19   | T14   | 16      | Revisão de Código e Depuração            |                  |
-| 20   | T15   | 18      | Refatoração                              |                  |
-| 21   | P5    | 23      | *Aula lab 04*                            |                  |
-| 22   | T17   | 25      | Testes de Unidade                        |                  |
-| 23   | T18   | 30      | Exceções                                 |                  |
-| 24   | T19   | Nov. 01 | Programação Defensiva                    | *Entrega Lab 04* |
-| 25   | P6    | 06      | *Aula Lab 05*                            |                  |
-| 26   | T20   | 08      | Revisão Prova                            |                  |
-| 27   | A2    | 13      | *Prova Teórica*                          |                  |
-|      | A*    | 20      | *Reposição*                              |                  |
-|      |       | 22      | *Sem Aula. Reunião ATMOSPHERE*           | *Entrega Lab 05* |
-| 28   | P7    | 27      | *Entrevistas Projeto*                    |                  |
-| 29   | P8    | 29      | *Entrevistas Projeto*                    |                  |
+* **INF01**: Aulas iniciam no dia 26/02.
+* **INF02**: Sala da turma da computação: CAD 1 - Auditório 1A
 
 ## TPs
 
@@ -102,7 +57,7 @@ visto em aula. Abaixo segue alguns possíveis temas.
 
 
 [Slides]: https://drive.google.com/drive/folders/12AeGYRaQ0__plj503WBZSlYxJSNeIhcs?usp=sharing
-[Calendário]: #calendário
+[Calendário]: https://docs.google.com/spreadsheets/d/17oiFhHFAfqk-2KnugCHexSA_wCDhTp6tJExfyfv-4gk/edit?usp=sharing
 [Informes]: #informes
 [TPs]: #tps
 [Bibliografia]: #bibliografia
