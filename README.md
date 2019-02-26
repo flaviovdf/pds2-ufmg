@@ -1,8 +1,8 @@
-| [Slides] | [Informes] | [Calendário] | [Exemplos] | [TPs] | [Livros] | [Valgrind] |
-|----------|------------|--------------|------------|-------|----------|------------|
+| [Slides] | [Ementa] | [Objetivos] | [Informes] | [Calendário] | [Exemplos] | [TPs] | [Livros] | [Valgrind] |
+|----------|----------|-------------|------------|--------------|------------|-------|----------|------------|
 - - -
 
-# DCCXXX: Programação e Desenvolvimento de Software 2
+# DCC204: Programação e Desenvolvimento de Software 2
 
 Professor: Flavio Vinicius Diniz de Figueiredo
 
@@ -11,6 +11,27 @@ Aulas: Terças e Quintas 19:00 - 20:40.
 Sala Teórica: Auditório 1a - CAD 1
 
 Sala Monitoria: Laboratórios 2011 e 2012 DCC. Sexta feira. Marque horário.
+
+## Ementa 
+
+Programação estruturada e linguagem de programação modular. Metodologias de desenvolvimento
+de software. Compreensão, corretude e depuração de programas. Resolução de problemas de forma
+modular e eficiente.
+
+## Objetivos 
+
+O objetivo da disciplina é apresentar técnicas básicas de desenvolvimento, teste e análise de
+programas de computador, para a resolução de problemas de forma eficaz. É esperado que nesta
+disciplina os alunos desenvolvam seus primeiros programas de tamanho moderado, motivando a
+necessidade de uso de boas práticas de desenvolvimento, fixando os conteúdos abordados através de
+atividades práticas. Concluindo o curso, os alunos deverão dominar as técnicas mais básicas
+utilizadas no processo de desenvolvimento de software.
+
+## Avaliação
+
+* Provas Teóricas (2 x 20 pts): 40 pontos.
+* Atividades práticas (15 – 20): 30 pontos.
+* Projeto: 30 pontos.
 
 ## Informes
 
