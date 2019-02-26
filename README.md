@@ -1,5 +1,5 @@
-| [Slides] | [Ementa] | [Objetivos] | [Informes] | [Calendário] | [Exemplos] | [TPs] | [Livros] | [Valgrind] |
-|----------|----------|-------------|------------|--------------|------------|-------|----------|------------|
+| [Slides] | [Ementa] | [Objetivos] | [Avaliação] | [Informes] | [Calendário] | [Exemplos] | [TPs] | [Livros] | [Valgrind] |
+|----------|----------|-------------|-------------|------------|--------------|------------|-------|----------|------------|
 - - -
 
 # DCC204: Programação e Desenvolvimento de Software 2
@@ -79,7 +79,10 @@ visto em aula. Abaixo segue alguns possíveis temas.
 
 [Slides]: https://drive.google.com/drive/folders/12AeGYRaQ0__plj503WBZSlYxJSNeIhcs?usp=sharing
 [Calendário]: https://docs.google.com/spreadsheets/d/17oiFhHFAfqk-2KnugCHexSA_wCDhTp6tJExfyfv-4gk/edit?usp=sharing
+[Ementa]: #ementa
+[Objetivos]: #objetivos
 [Informes]: #informes
+[Avaliação]: #avaliação
 [TPs]: #tps
 [Bibliografia]: #bibliografia
 [Livros]: #livros
