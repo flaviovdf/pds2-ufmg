@@ -19,6 +19,10 @@ Matriz::~Matriz() {
   delete[] this->_dados;
 }
 
+void Matriz::seta(int i, int j, int v) {
+  this->_dados[i][j] = v;
+}
+
 int Matriz::valor(int i, int j) {
   return this->_dados[i][j];
 }

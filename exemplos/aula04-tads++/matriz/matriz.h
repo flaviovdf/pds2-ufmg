@@ -13,6 +13,7 @@ struct Matriz {
   ~Matriz();
 
   // Métodos
+  void seta(int i, int j, int v);
   int valor(int i, int j);
   Matriz soma(Matriz &outra);
 };
