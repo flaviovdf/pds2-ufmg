@@ -9,14 +9,14 @@ struct node_t {
 };
 
 
-class ListaDuplamenteEncadeada {
-private:
+struct ListaDuplamenteEncadeada {
   node_t *_inicio;
   node_t *_fim;
   int _num_elementos_inseridos;
-public:
+
   ListaDuplamenteEncadeada();
   ~ListaDuplamenteEncadeada();
+
   void inserir_elemento(int elemento);
   void imprimir();
   void remove_iesimo(int i);

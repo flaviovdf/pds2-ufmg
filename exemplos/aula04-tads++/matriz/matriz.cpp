@@ -3,9 +3,9 @@
 
 Matriz::Matriz(int n_linhas, int n_colunas) {
   std::cout << "Construindo uma matriz" << std::endl;
-  this->_dados = new int*[n_linhas]();
+  _dados = new int*[n_linhas]();
   for (int i = 0; i < n_linhas; i++) {
-    this->_dados[i] = new int[n_colunas];
+    _dados[i] = new int[n_colunas];
   }
   _n_linhas = n_linhas;
   _n_colunas = n_colunas;
@@ -13,18 +13,18 @@ Matriz::Matriz(int n_linhas, int n_colunas) {
 
 Matriz::~Matriz() {
   std::cout << "Destruindo uma matriz" << std::endl;
-  for (int i = 0; i < this->_n_linhas; i++) {
-    delete[] this->_dados[i];
+  for (int i = 0; i < _n_linhas; i++) {
+    delete[] _dados[i];
   }
-  delete[] this->_dados;
+  delete[] _dados;
 }
 
 void Matriz::seta(int i, int j, int v) {
-  this->_dados[i][j] = v;
+  _dados[i][j] = v;
 }
 
 int Matriz::valor(int i, int j) {
-  return this->_dados[i][j];
+  return _dados[i][j];
 }
 
 Matriz Matriz::soma(Matriz &outra) {
