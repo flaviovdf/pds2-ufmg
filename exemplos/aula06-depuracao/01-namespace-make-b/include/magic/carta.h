@@ -4,11 +4,11 @@
 #include <string>
 
 namespace magic {
-  class Carta {
-  private:
+  struct Carta {
+
     std::string _nome;
     double _dano;
-  public:
+
     Carta(std::string nome, double dano);
     double get_dano() const;
     std::string get_nome() const;

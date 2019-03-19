@@ -8,14 +8,14 @@ struct node_t {
 };
 
 
-class ListaSimplesmenteEncadeada {
-private:
+struct ListaSimplesmenteEncadeada {
   node_t *_inicio;
   node_t *_fim;
   int _num_elementos_inseridos;
-public:
+
   ListaSimplesmenteEncadeada();
   ~ListaSimplesmenteEncadeada();
+
   void inserir_elemento(int elemento);
   void remove_iesimo(int i);
   void imprimir();
