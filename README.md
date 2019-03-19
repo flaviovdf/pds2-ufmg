@@ -10,7 +10,9 @@ Aulas: Terças e Quintas 19:00 - 20:40.
 
 Sala Teórica: Auditório 1a - CAD 1
 
-Sala Monitoria: Laboratórios 2011 e 2012 DCC. Sexta feira. Marque horário.
+Monitoria: Terça e Quinta, 17:00 ou Sexta-Feira 19:00. **Com horário marcado!!** Ver e-mail do monitor no moodle.
+
+Sala Monitoria: 3009 Terça e Quinta. 2011/2012 Sexta feira.
 
 ## Ementa 
 
