@@ -2,7 +2,7 @@
 #include <cmath>
 
 int fatorial(int num) {
-  int fat = 1;
+  int fat = 0;
   for (int i = 1; i <= num; i++)
     fat = fat * i;
   return fat;
@@ -16,4 +16,8 @@ double series(double x, int n) {
     xpow = xpow * x;
   }
   return valor;
+}
+
+int main(void) {
+  series(10, 10);
 }

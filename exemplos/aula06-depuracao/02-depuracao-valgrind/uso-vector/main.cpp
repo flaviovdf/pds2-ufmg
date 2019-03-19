@@ -1,9 +1,9 @@
 #include <vector>
 
-class Objeto {};
+struct QQCoisa {};
 
 int main() {
-  std::vector<Objeto *> v;
-  Objeto *o = new Objeto();
+  std::vector<QQCoisa *> v;
+  QQCoisa *o = new QQCoisa();
   v.push_back(o);
 }

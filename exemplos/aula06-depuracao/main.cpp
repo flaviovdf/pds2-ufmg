@@ -1,6 +1,10 @@
 #include <iostream>
 
 int *f() {
-  int *rv[20];
+  int rv[20];
   return rv;
+}
+
+int main() {
+  f();
 }
