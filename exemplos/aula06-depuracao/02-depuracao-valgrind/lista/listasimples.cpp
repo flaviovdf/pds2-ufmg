@@ -15,6 +15,7 @@ ListaSimplesmenteEncadeada::~ListaSimplesmenteEncadeada() {
   while (proximo != nullptr) {
     anterior = proximo;
     proximo = proximo->proximo;
+    delete anterior;
   }
 }
 

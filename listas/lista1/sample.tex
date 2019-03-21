@@ -1,0 +1,260 @@
+\documentclass[fleqn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage{mathexam}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{dred}{rgb}{0.545,0,0}
+\definecolor{dblue}{rgb}{0,0,0.545}
+\definecolor{lgrey}{rgb}{0.9,0.9,0.9}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\lstdefinelanguage{cpp}{
+%backgroundcolor=\color{lgrey},
+basicstyle=\footnotesize \ttfamily \color{black} \bfseries,
+breakatwhitespace=false,
+breaklines=true,
+captionpos=n,
+commentstyle=\color{dkgreen},
+deletekeywords={...},
+escapeinside={\%*}{*)},
+frame=single,
+language=C++,
+keywordstyle=\color{purple},
+morekeywords={BRIEFDescriptorConfig,string,TiXmlNode,DetectorDescriptorConfigContainer,istringstream,cerr,exit},
+identifierstyle=\color{black},
+stringstyle=\color{blue},
+numbers=left,
+numbersep=5pt,
+numberstyle=\tiny\color{black},
+rulecolor=\color{black},
+showspaces=false,
+showstringspaces=false,
+showtabs=false,
+stepnumber=1,
+tabsize=5,
+title=\lstname,
+}
+
+
+\fancyfoot{}
+\fancyhead[R]{}
+
+\ExamClass{Programação e desenvolvimento de software 2}
+\ExamName{Lista -- Prova 1}
+%\ExamHead{\today}
+
+\let\ds\displaystyle
+
+\begin{document}
+
+\ExamInstrBox{Armazenamento de dados em memória (revisão de ponteiros e alocação dinâmica), Listas encadeadas}
+
+\begin{enumerate}
+
+   \item{
+      Para cada um dos itens seguintes, escreva uma única instrução que realiza a tarefa indicada. Suponha que as variáveis do tipo inteiro \texttt{long value1} e \texttt{value2} tenham sido declaradas e que value1 tenha sido inicializado como $200000$.
+      \begin{enumerate}
+         \item{Declare a variável \texttt{longPtr} como um ponteiro para um objeto do tipo \texttt{long}.}
+         \item{Atribua o endereço da variável \texttt{value1} à variável ponteiro \texttt{longPtr}.}
+         \item{Imprima o valor do objeto apontado por \texttt{longPtr}.}
+         \item{Atribua o valor do objeto apontado por \texttt{longPtr} à variável \texttt{value2}.}
+         \item{Imprima o valor de \texttt{value2}.}
+         \item{Imprima o endereço de \texttt{value1}.}
+         \item{Imprima o endereço armazenado em \texttt{longPtr} . O valor impresso é o mesmo que o endereço de \texttt{value1}?}
+      \end{enumerate}
+   }
+
+   \item{
+      Para cada um dos itens a seguir, escreva instruções C++ que realizam a tarefa especificada. Suponha que inteiros sem sinal estejam armazenados em dois bytes e que o endereço inicial do array esteja na posição 1002500 da memória.
+
+      \begin{enumerate}
+         \item{Declare um array do tipo \texttt{unsigned int} chamado \texttt{values} com cinco elementos e inicialize os elementos para os inteiros pares de $2$ a $10$. Suponha que a constante simbólica \texttt{SIZE} foi definida como $5$.}
+         \item{Declare um ponteiro \texttt{vPtr} que aponta para um objeto do tipo \texttt{unsigned int}.}
+         \item{Utilize uma instrução \texttt{for} para imprimir os elementos do array \texttt{values} usando notação de array subscrito.}
+         \item{Escreva duas instruções separadas que atribuem o endereço inicial do array values à variável ponteiro \texttt{vPtr}.}
+         \item{Utilize uma instrução \texttt{for} para imprimir os elementos do array \texttt{values} utilizando a notação de ponteiro/deslocamento.}
+         \item{Utilize uma instrução \texttt{for} para imprimir os elementos do array \texttt{values} utilizando a notação de ponteiro/deslocamento com o nome de array como o ponteiro.}
+         \item{Utilize uma instrução for para imprimir os elementos do array \texttt{values} utilizando subscritos no ponteiro para o array.}
+         \item{Referencie o quinto elemento de \texttt{values} utilizando a notação de subscrito de array, a notação de ponteiro/deslocamento com o nome de array como o ponteiro, a notação de subscrito de ponteiro e a notação de ponteiro/deslocamento.}
+         \item{Mostre que endereço é referenciado por \texttt{vPtr + $3$}, e que valor é armazenado nessa localização.}
+         \item{Supondo que \texttt{vPtr} aponte para \texttt{values[4]}, que endereço é referenciado por \texttt{vPtr -= 4}? Que valor é armazenado nessa localização?}
+      \end{enumerate}
+   }
+
+   \item{
+      Implemente um código para remover duplicatas de uma lista encadeada não ordenada.
+   }
+
+   \item{
+      Implemente um código para encontrar o k-ésimo elemento de uma lista encadeada.}
+
+   \item{
+      Escreve um código para particionar uma lista encadeada em volta de um valor \texttt{x}, tal que todos os nós menores que \texttt{x} venham antes de todos os nós maiores que ou iguais à \texttt{x}. Se \texttt{x} estiver contido dentro da lista, os valores de \texttt{x} só precisam vir depois dos elementos menores do que \texttt{x}. O elemento \texttt{x} pode aparecer em qualquer posição na partição direita, ele não precisa aparecer entre as partições esquerda e direita.
+   }
+
+   \item{
+      Implemente uma função para checar se uma lista duplamente encadeada é um palíndromo.
+   }
+
+   \item{
+      Dado uma lista ordenada de inteiros distintos, escreva um algoritmo para criar uma árvore binária de pesquisa com altura mínima.
+   }
+
+   \item{
+      Escreva um código para encontrar o ``próximo'' nó (sucessor em-ordem) de um dado nó em uma árvore binária de pesquisa. Assuma que cada nó tem um ponteiro para seu pai.
+   }
+
+   \item{
+      Escreva uma função para encontrar o primeiro ancestral comum de dois nós em uma árvore binária.
+   }
+
+   \item{
+      Você está implementando uma classe de árvore binária que, além das funções \texttt{insere}, \texttt{busca}, e \texttt{deleta}, tem um método \texttt{getNoAleatorio} que retorna um nó aleatório da árvore. Todos os nós possuem a mesma probabilidade de serem escolhidos. Implemente o código para a função \texttt{getNoAleatorio}.
+   }
+
+\end{enumerate}
+
+\pagebreak
+\ExamInstrBox{Depuração}
+
+\begin{enumerate}
+
+    \item{
+      Localize o erro em cada um dos seguintes segmentos de programa e explique como o erro pode ser corrigido.
+      \begin{enumerate}
+        \item{
+          \lstinputlisting[language=cpp]{1.a.cpp}
+        }
+        \item{
+          \lstinputlisting[language=cpp]{1.b.cpp}
+        }
+        \item{
+          \lstinputlisting[language=cpp]{1.c.cpp}
+        }
+        \item{
+          \lstinputlisting[language=cpp]{1.d.cpp}
+        }
+      \end{enumerate}
+    }
+
+    \item{
+      O que o seguinte programa faz?
+      \lstinputlisting[language=cpp]{2.cpp}
+    }
+
+    \item{
+      Encontre o erro em cada um dos seguintes segmentos de programa. Suponha as seguintes declarações e instruções:
+      \lstinputlisting[language=cpp]{3.cpp}
+      \begin{enumerate}
+        \item{
+          \lstinputlisting[language=cpp]{3.a.cpp}
+        }
+        \item{
+          \lstinputlisting[language=cpp]{3.b.cpp}
+        }
+        \item{
+          \lstinputlisting[language=cpp]{3.c.cpp}
+        }
+        \item{
+          \lstinputlisting[language=cpp]{3.d.cpp}
+        }
+        \item{
+          \lstinputlisting[language=cpp]{3.e.cpp}
+        }
+     \end{enumerate}
+    }
+
+    \item{
+      Encontre o(s) erro(s) do seguinte programa.
+      \lstinputlisting[language=cpp]{4.cpp}
+    }
+
+    \item{
+      Localize o(s) erro(s) em cada uma das seguintes sequências e explique como corrigi-lo(s):
+      \begin{enumerate}
+        \item{\lstinputlisting[language=cpp]{5a.cpp}}
+        \item{A seguinte definição é uma definição parcial da classe Tempo: \lstinputlisting[language=cpp]{5b.cpp}}
+      \end{enumerate}
+    }
+
+    \item{
+      Localize os erros na seguinte classe e explique como corrigi-los:
+      \lstinputlisting[language=cpp]{6.cpp}
+    }
+
+\end{enumerate}
+
+\pagebreak
+\ExamInstrBox{Programação Orientada a Objetos}
+
+\begin{enumerate}
+
+   \item{
+      Crie uma classe \texttt{Data} com três atributos inteiros: \texttt{dia}, \texttt{mês} e \texttt{ano}. Faça um construtor que inicializa as três variáveis e suponha que os valores passados serão corretos. A classe deve possuir um método para exibir a data em formato de números separados por barra: dia/mes/ano e outro método para exibir a data por extenso (ex: 12 de janeiro de 2015).
+   }
+
+   \item{
+      Crie uma classe \texttt{Rectangle} com atributos \texttt{length} e \texttt{width}, cada um dos quais assume o padrão de 1. Forneça funções-membro que calculam os atributos \texttt{perimeter} e \texttt{area} do retângulo. Além disso, forneça as funções \texttt{set} e \texttt{get} para os atributos \texttt{length} e \texttt{width}. As funções \texttt{set} devem verificar se \texttt{length} e \texttt{width} são números de ponto flutuante maiores que $0,0$ e menores que $20,0$.
+   }
+
+   \item{
+      Implemente em C++ uma classe chamada \texttt{Aquecedor}. Ela deve ter um único atributo chamado \texttt{temperatura}, cujo tipo deve ser um ponto flutuante de precisão dupla. Defina um construtor que não recebe parâmetros e inicializa a temperatura em 20 graus. Crie os métodos aquecer e resfriar que aumentam e diminuem a temperatura em 5 graus, respectivamente. Defina um método para retornar o valor da temperatura.
+   }
+
+   \item{
+      Altere a classe do exercício anterior para que ela tenha três novos atributos: temperatura mínima, temperatura máxima e fator de incremento da temperatura. Os dois primeiros devem ser inicializados com $10$ e $40$ graus respectivamente no construtor. A classe deve ter um construtor sem parâmetros, que definirá o fator de incremento em $5$ graus, um segundo construtor que recebe a temperatura inicial e um terceiro que recebe a temperatura inicial e o fator de incremento.
+
+      Altere os métodos existentes na classe de forma apropriada com o objetivo de manter o estado do objeto sempre válido (ex: o fator de incremento deve ser usado toda vez que os métodos aquecer e resfriar forem chamados). Escreva mensagens na saída padrão quando uma ação não puder ser executada por não ser um estado de objeto válido.
+
+      Por fim, crie um método que permita alterar o fator de incremento da temperatura depois de um objeto já ter sido criado.
+   }
+
+   \item{
+      Crie uma classe \texttt{SavingsAccount}. Utilize um membro de dados \texttt{static annualInterestRate} para armazenar a taxa de juros anual para cada um dos correntistas. Cada membro da classe contém um membro de dados \texttt{private savingsBalance} para indicar a quantia que os correntistas têm atualmente em depósito. Forneça a função-membro \texttt{calculateMonthlyInterest} que calcula os juros mensais multiplicando o \texttt{balance} [saldo] pelo \texttt{annualInterestRate} dividido por 12; esses juros devem ser adicionados a \texttt{savingsBalance}. Forneça uma função-membro \texttt{static modifyInterestRate} que configura o \texttt{static annualInterestRate} com um novo valor. Escreva um programa de driver para testar a classe \texttt{SavingsAccount}. Instancie dois objetos diferentes da classe \texttt{SavingsAccount}, \texttt{saver1} e \texttt{saver2}, com saldos de \$ $2.000,00$ e \$ $3.000,00$, respectivamente. Configure o \texttt{annualInterestRate} como $3$\%. Em seguida, calcule os juros mensais e imprima os novos saldos de cada um dos correntistas. Então configure o \texttt{annualInterestRate} como $4$\%, calcule os juros do próximo mês e imprima os novos saldos para cada um dos poupadores.
+   }
+
+\end{enumerate}
+
+\pagebreak
+\ExamInstrBox{Encapsulamento, Herança e Composição}
+
+\begin{enumerate}
+
+  \item{
+    Desenhe uma hierarquia de herança para alunos universitários. Utilize Aluno como a classe básica da hierarquia, então inclua as classes AlunoDeGraduação e AlunoGraduado que derivam de Aluno. Continue a estender a hierarquia o mais profundamente (isto é, com muitos níveis) possível. Por exemplo, Primeiranistas, Segundanistas, Terceiranistas e Quartanistas poderiam derivar de AlunoDeGraduação; e AlunoDeDoutorado e AlunoDeMestrado poderiam derivar de AlunoGraduado. Depois de desenhar a hierarquia, discuta os relacionamentos entre as classes.
+  }
+
+  \item{
+    Os serviços de correio expresso, como FedEx, DHLe UPS, oferecem várias opções de entrega, cada qual com custos específicos. Crie uma hierarquia de herança para representar vários tipos de pacotes. Utilize \texttt{Package} como a classe básica da hierarquia, então inclua as classes \texttt{TwoDayPackage} e \texttt{OvernightPackage} que derivam de \texttt{Package}. A classe básica \texttt{Package} deve incluir membros de dados que representam nome, endereço, cidade, estado e CEP tanto do remetente como do destinatário do pacote, além dos membros de dados que armazenam o peso (em quilos) e o custo por quilo para a entrega do pacote. O construtor \texttt{Package} deve inicializar esses membros de dados. Assegure que o peso e o custo por quilo contenham valores positivos. \texttt{Package} deve fornecer uma função-membro \texttt{public calculateCost} que retorna um \texttt{double} indicando o custo associado com a entrega do pacote. A função \texttt{calculateCost} de \texttt{Package} deve determinar o custo multiplicando o peso pelo custo (em quilos). A classe derivada \texttt{TwoDayPackage} deve herdar a funcionalidade da classe básica \texttt{Package}, mas também incluir um membro de dados que representa uma taxa fixa que a empresa de entrega cobra pelo serviço de entrega de dois dias. O construtor \texttt{TwoDayPackage} deve receber um valor para inicializar esse membro de dados. \texttt{TwoDayPackage} deve redefinir a função-membro \texttt{calculateCost} para que ela calcule o custo de entrega adicionando a taxa fixa ao custo baseado em peso calculado pela função \texttt{calculateCost} da classe básica Package. A classe \texttt{OvernightPackage} deve herdar diretamente da classe \texttt{Package} e conter um membro de dados adicional para representar uma taxa adicional por quilo cobrado pelo serviço de entrega noturno. \texttt{OvernightPackage} deve redefinir a função-membro \texttt{calculateCost} para que ela acrescente a taxa adicional por quilo ao custo-padrão por quilo antes de calcular o custo da entrega. Escreva um programa de teste que cria objetos de todos os tipos de \texttt{Package} e testa a função-membro \texttt{calculateCost}.
+  }
+
+  \item{
+    Use a hierarquia de herança \texttt{Package} criada no exercício anterior para criar um programa que exibe asinformações de endereço e calcula os custos de entrega de vários \texttt{Package}s. O programa deve conter um vector de ponteiros \texttt{Package} para objetos das classes \texttt{TwoDayPackage} e \texttt{OvernightPackage}. Faça um loop pelo \texttt{vector} para processar o \texttt{Package}s polimorficamente. Para cada \texttt{Package}, invoque as funções \texttt{get} para obter as informações de endereço do remetente e do destinatário, e então imprima os dois endereços da maneira que apareceriam nos pacotes de correio. Além disso, chame a função-membro \texttt{calculateCost} de cada \texttt{Package} e imprima o resultado. Monitore o custo de entrega total de todos os \texttt{Package}s no \texttt{vector} e exiba esse total quando o loop terminar.
+  }
+
+  \item{
+    O mundo das formas é muito rico. Anote todas as formas que puder imaginar — bidimensionais e tridimensionais — e as forme em uma hierarquia \texttt{Forma} com o maior número de níveis possível que imaginar. Sua hierarquia deve ter a classe básica \texttt{Forma} a partir da qual a classe \texttt{FormaBiDimensional} e a \texttt{FormaTriDimensional} são derivadas. Implemente a hierarquia \texttt{Forma} projetada anteriormente. Cada \texttt{FormaBidimensional} deve conter a função \texttt{obterArea} para calcular a área da forma bidimensional. Cada \texttt{FormaTridimensional} deve ter funções-membro \texttt{obterArea} e \texttt{obterVolume} para calcular a área do volume e da superfície, respectivamente, da forma tridimensional. Crie um programa que utilize um vector de ponteiros \texttt{Forma} para objetos de cada classe concreta na hierarquia. O programa deve imprimir o objeto para o qual cada elemento \texttt{vector} aponta. Além disso, no loop que processa todas as formas no \texttt{vector}, determine se cada forma é uma \texttt{FormaBidimensional} ou \texttt{FormaTridimensional}. Se uma forma for uma \texttt{FormaBidimensional}, exiba sua área. Se uma forma for uma \texttt{FormaTridimensional}, exiba sua área e volume.
+  }
+
+  \item{
+    Crie uma hierarquia de herança que um banco possa utilizar para representar as contas bancárias dos clientes. Todos os clientes nesse banco podem depositar (isto é, creditar) dinheiro em suas contas e retirar (isto é, debitar) o dinheiro delas. Há também tipos mais específicos de contas. As contas de poupança, por exemplo, recebem juros pelo dinheiro depositado nelas. As contas bancárias, por outro lado, cobram uma taxa por transação (isto é, crédito ou débito).
+
+    Crie uma hierarquia de herança contendo classe básica \texttt{Account} e classes derivadas \texttt{SavingsAccount} e \texttt{CheckingAccount} que herdam da classe \texttt{Account}. A classe básica \texttt{Account} deve incluir um membro de dados do tipo \texttt{double} para representar o saldo da conta. A classe deve fornecer um construtor que recebe um saldo inicial e o utiliza para inicializar o membro de dados. O construtor deve validar o saldo inicial para assegurar que ele é maior que ou igual a $0.0$. Caso contrário, o saldo deve ser configurado como $0.0$ e o construtor deve exibir uma mensagem de erro, indicando que o saldo inicial era inválido. A classe deve fornecer três funções-membro. A função-membro \texttt{credit} deve adicionar uma quantia ao saldo atual. A função-membro \texttt{debit} deve retirar dinheiro de \texttt{Account} e assegurar que o valor do débito não exceda o saldo de \texttt{Account}. Se exceder, o saldo deve permanecer inalterado e a função deve imprimir a mensagem ``Debit amount exceeded account balance'' [ Saldo insuficiente ]. A função-membro \texttt{getBalance} deve retornar o saldo atual.
+
+    A classe derivada \texttt{SavingsAccount} deve herdar a funcionalidade de uma \texttt{Account}, mas também incluir um membro de dados do tipo \texttt{double} para indicar a taxa de juros (porcentagem) atribuída à \texttt{Account}. O construtor \texttt{SavingsAccount} deve receber o saldo inicial, bem como um valor inicial para a taxa de juros de \texttt{SavingsAccount}. \texttt{SavingsAccount} deve fornecer uma função-membro \texttt{public calculateInterest} que retorna um \texttt{double} para indicar os juros auferidos por uma conta. A função-membro \texttt{calculateInterest} deve determinar esse valor multiplicando a taxa de juros pelo saldo da conta. Nota: \texttt{SavingsAccount} deve herdar as funções-membro \texttt{credit} e \texttt{debit} exatamente como são sem redefini-las.
+
+    A classe derivada \texttt{CheckingAccount} deve herdar da classe básica \texttt{Account} e incluir um membro adicional de dados do tipo \texttt{double} que representa a taxa cobrada por transação. O construtor \texttt{CheckingAccount} deve receber o saldo inicial, bem como um parâmetro que indica o valor de uma taxa. A classe \texttt{CheckingAccount} deve redefinir as funções-membro \texttt{credit} e \texttt{debit} para que subtraiam a taxa do saldo da conta sempre que qualquer uma das transações for realizada com sucesso. As versões \texttt{CheckingAccount} dessas funções devem invocar a versão \texttt{Account} da classe básica para realizar as atualizações de saldo de uma conta. A função \texttt{debit} de \texttt{CheckingAccount} deve cobrar uma taxa somente se o dinheiro for realmente retirado (isto é, o valor do débito não exceder ao do saldo da conta). Dica: Defina a função \texttt{debit} de \texttt{Account} para que ela retorne um \texttt{bool} indicando se houve retirada de dinheiro. Em seguida, utilize o valor de retorno para determinar se uma taxa deve ser cobrada.
+
+    Depois de definir as classes nessa hierarquia, escreva um programa que cria objetos de cada classe e testa suas funções-membro. Adicione os juros ao objeto \texttt{SavingsAccount} invocando primeiro sua função \texttt{calculateInterest} e, então, passando o valor retornado dos juros para a função \texttt{credit} do objeto.
+  }
+
+
+\end{enumerate}
+
+\end{document}
+
