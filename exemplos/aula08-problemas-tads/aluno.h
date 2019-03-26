@@ -3,12 +3,12 @@
 
 #include <string>
 
-class Aluno {
-private:
+struct Aluno {
   const std::string _nome;
   const int _matricula;
-public:
+
   Aluno(std::string nome, int matricula);
+
   std::string get_nome() const;
   int get_matricula() const;
 };
