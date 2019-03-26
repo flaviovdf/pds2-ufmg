@@ -63,12 +63,18 @@ O desenvolvimento e a entrega deverão ser feitos utilizando o sistema de contro
 
 | Atividade| Data     |
 |----------|----------|
-| Definição do tema (Moodle) | Até 26/03 |
-| Entrega parcial(Github) | Até 30/04 |
-| Apresentaçãoem sala de aula/Entrevista | 11/06 e 13/06
-| Entrega final (Github) | 13/06
+| Definição do tema (Moodle) | Até 16/04 |
+| Entrega parcial(Github)    | Até 30/04 |
+| Apresentação em sala de aula/Entrevista | 11/06 e 13/06
+| Entrega final (Github)                  | 16/06
 
+### Primeira Entrega
 
+A primeira entrega consiste de **User Stories**. As UserStories são  uma  forma simples de apresentar  osrequisitos  funcionais  desejados  para um determinado sistema. São  artefatos  de  desenvolvimento  utilizados  principalmente  em  processos baseados em metodologias ágeis. As descrições são intencionalmente genéricas, dando liberdade ao grupo para decidir detalhes da implementação. O grupo deverá identificar possíveis funcionalidades interessantes de serem incorporadas ao sistema e  propor  pelo  menos  **seis**  User  Stories. 
+
+### Segunda Entrega
+
+Repositório com código completo, README.md indicando como compilar e executar o código.
 
 ## Livros
 
