@@ -42,10 +42,9 @@ utilizadas no processo de desenvolvimento de software.
 
 ## TPs
 
-Além dos laboratórios, a disciplina deve contar com um TP. Para fazer o
-mesmo, montem grupos de 4 pessoas. Tal TP será um projeto de software
-de pequeno/médio porte. O importante é que o mesmo aplique os conceitos
-visto em aula. Abaixo segue alguns possíveis temas.
+Além dos laboratórios, a disciplina deve contar com um TP. Para fazer o mesmo, montem grupos de 4 ou 5 pessoas. Tal TP será um projeto de software de pequeno/médio porte. O importante é que o mesmo aplique os conceitos visto em aula. 
+
+O grupo deve escolher um problema de seu interesse e realizar todo o processo de desenvolvimento de um sistema de médio porte (análise, projeto e implementação), aplicando os conceitos e técnicas vistos durante o curso (modelagem, POO, testes unitários, etc). O programa deve ser feito baseado na linguagem C++11. Uma lista de sugestões de temas é apresentada abaixo. Entretanto, o tema é aberto à negociação caso o grupo tenha outra ideia.
 
   1. Batalha RPG
   1. Jogo de Magic
@@ -59,6 +58,23 @@ visto em aula. Abaixo segue alguns possíveis temas.
   1. Biblioteca de Grafos
   1. Indexador de Arquivos
   1. Seu Tema!
+
+O desenvolvimento e a entrega deverão ser feitos utilizando o sistema de controle de versão GitHub. Sugere-se que commits/pushs sejam feitos de maneira frequente, pelo menos uma vez ao dia. O calendário de atividades do trabalho é mostrado abaixo:
+
+| Atividade| Data     |
+|----------|----------|
+| Definição do tema (Moodle) | Até 16/04 |
+| Entrega parcial(Github)    | Até 30/04 |
+| Apresentação em sala de aula/Entrevista | 11/06 e 13/06
+| Entrega final (Github)                  | 16/06
+
+### Primeira Entrega
+
+A primeira entrega consiste de **User Stories**. As UserStories são  uma  forma simples de apresentar  osrequisitos  funcionais  desejados  para um determinado sistema. São  artefatos  de  desenvolvimento  utilizados  principalmente  em  processos baseados em metodologias ágeis. As descrições são intencionalmente genéricas, dando liberdade ao grupo para decidir detalhes da implementação. O grupo deverá identificar possíveis funcionalidades interessantes de serem incorporadas ao sistema e  propor  pelo  menos  **seis**  User  Stories. 
+
+### Segunda Entrega
+
+Repositório com código completo, README.md indicando como compilar e executar o código.
 
 ## Livros
 
