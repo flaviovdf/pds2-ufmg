@@ -64,7 +64,7 @@ O desenvolvimento e a entrega deverão ser feitos utilizando o sistema de contro
 | Atividade| Data     |
 |----------|----------|
 | Definição do tema (Moodle)  | Até 16/04 |
-| Entrega parcial (Entrevista + README.md Github)    | Até 30/04 |
+| Entrega parcial (README.md Github com User Stores)    | Até 30/04 |
 | Apresentação em sala de aula/Entrevista | 11/06 e 13/06
 | Entrega final (Github)                  | 16/06
 
