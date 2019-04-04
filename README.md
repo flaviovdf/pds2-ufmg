@@ -63,8 +63,8 @@ O desenvolvimento e a entrega deverão ser feitos utilizando o sistema de contro
 
 | Atividade| Data     |
 |----------|----------|
-| Definição do tema (Moodle) | Até 16/04 |
-| Entrega parcial(Github)    | Até 30/04 |
+| Definição do tema (Moodle)  | Até 16/04 |
+| Entrega parcial (Entrevista + README.md Github)    | Até 30/04 |
 | Apresentação em sala de aula/Entrevista | 11/06 e 13/06
 | Entrega final (Github)                  | 16/06
 
@@ -74,6 +74,7 @@ A primeira entrega consiste de **User Stories**. As UserStories são  uma  forma
 
 1. A primeira entrega de tema + user stories vale 5pts do projeto final.
 1. Depois disso, iniciem o trabalho no tema, vamos ter uma entrevista apoós a primeira prova.
+1. Até a entrevista, tente criar ao menos um README.md no seu github!
 
 ### Segunda Entrega
 
