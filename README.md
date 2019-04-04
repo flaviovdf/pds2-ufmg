@@ -72,6 +72,9 @@ O desenvolvimento e a entrega deverão ser feitos utilizando o sistema de contro
 
 A primeira entrega consiste de **User Stories**. As UserStories são  uma  forma simples de apresentar  osrequisitos  funcionais  desejados  para um determinado sistema. São  artefatos  de  desenvolvimento  utilizados  principalmente  em  processos baseados em metodologias ágeis. As descrições são intencionalmente genéricas, dando liberdade ao grupo para decidir detalhes da implementação. O grupo deverá identificar possíveis funcionalidades interessantes de serem incorporadas ao sistema e  propor  pelo  menos  **seis**  User  Stories. 
 
+1. A primeira entrega de tema + user stories vale 5pts do projeto final.
+1. Depois disso, iniciem o trabalho no tema, vamos ter uma entrevista apoós a primeira prova.
+
 ### Segunda Entrega
 
 Repositório com código completo, README.md indicando como compilar e executar o código.
