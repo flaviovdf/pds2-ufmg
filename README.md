@@ -80,6 +80,21 @@ A primeira entrega consiste de **User Stories**. As UserStories são  uma  forma
 
 Repositório com código completo, README.md indicando como compilar e executar o código.
 
+1. Documentação (3pts).
+  1. Detalhamento do projeto.
+  1. Doxygen, comentários, endentação.
+1. Funcionamento correto (5 pts).
+  1. Compila e executa, não apresenta crash, etc.
+1. Uso correto das boas práticas e dos conceitos de OO (10 pts).
+  1. Abstração, Encapsulamento, Herança e Polimorfismo.
+  1. Modularidade e componentes reusáveis.
+  1. Tratamento de exceções.
+1. Testes de Unidade (3pts).
+1. Entrevista (2pts).
+1. Participação individual (2pts).
+1. Criatividade, extras (+2pts).
+
+
 ## Livros
 
 1. Clean Code: A Handbook of Agile Software Craftsmanship.
