@@ -8,11 +8,9 @@ Professor: Flavio Vinicius Diniz de Figueiredo
 
 Aulas: Terças e Quintas 19:00 - 20:40.
 
-Sala Teórica: Auditório 1a - CAD 1
+Sala: Sala 311 - CAD 3
 
-Monitoria: Terça e Quinta, 17:00 ou Sexta-Feira 19:00. **Com horário marcado!!** Ver e-mail do monitor no moodle.
-
-Sala Monitoria: 3009 Terça e Quinta. 2011/2012 Sexta feira.
+Monitoria: Em breve
 
 ## Ementa 
 
@@ -37,8 +35,7 @@ utilizadas no processo de desenvolvimento de software.
 
 ## Informes
 
-* **INF01**: Aulas iniciam no dia 26/02.
-* **INF02**: Sala da turma da computação: CAD 1 - Auditório 1A
+* **INF01**: Aulas iniciam no dia 03/03.
 
 ## TPs
 
@@ -63,10 +60,10 @@ O desenvolvimento e a entrega deverão ser feitos utilizando o sistema de contro
 
 | Atividade| Data     |
 |----------|----------|
-| Definição do tema (Moodle)  | Até 16/04 |
+| Definição do tema (Moodle)  | Até 23/04 |
 | Entrega parcial (README.md Github com User Stores)    | Até 30/04 |
-| Apresentação em sala de aula/Entrevista | 11/06 e 13/06
-| Entrega final (Github)                  | 16/06
+| Apresentação em sala de aula/Entrevista | 18/06 e 23/06
+| Entrega final (Github)                  | 30/06
 
 ### Primeira Entrega
 
@@ -114,8 +111,8 @@ Repositório com código completo, README.md indicando como compilar e executar 
    Addison-Wesley Professional, 2013. 1st Edition.
 
 
-[Slides]: https://drive.google.com/drive/folders/12AeGYRaQ0__plj503WBZSlYxJSNeIhcs?usp=sharing
-[Calendário]: https://docs.google.com/spreadsheets/d/17oiFhHFAfqk-2KnugCHexSA_wCDhTp6tJExfyfv-4gk/edit?usp=sharing
+[Slides]: https://drive.google.com/drive/u/0/folders/17RTBnIh59bcqJuhHzW8OeVRvOdAdsEvi
+[Calendário]: https://docs.google.com/spreadsheets/d/1KNM6ooXa-ebYEHcK4YsNxN3yv3kizxGzvosB4Hwj3dE/edit?usp=sharing
 [Ementa]: #ementa
 [Objetivos]: #objetivos
 [Informes]: #informes
