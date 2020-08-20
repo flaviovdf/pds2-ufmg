@@ -1,4 +1,5 @@
 #include <string>
+#include <iostream>
 
 #include "listasimples.h"
 
