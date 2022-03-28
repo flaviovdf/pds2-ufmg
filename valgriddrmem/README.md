@@ -6,7 +6,7 @@ Compile seu código com -g
 g++ -g arquivo.cpp -o main
 ```
 
-Valgrind (Linux/Mac)
+Valgrind (WSL/Linux/Mac)
 ====================
 
   1. http://cs.ecs.baylor.edu/~donahoo/tools/valgrind/
@@ -27,9 +27,9 @@ Explicando cada comando:
 DrMemory (Mac/Windows)
 ======================
 
-Alternativa ao valgrind para Windows. Ao instalar o doctor memory e utilizar
-pela primeira vez, existe a possibilidade de surgir uma mensagem de erro de
-acordo com a sua versão do Windows. Leia a mensagem com cuidado, a mesma tem
+Alternativa ao valgrind para Windows (sem WSL). Ao instalar o doctor memory e
+utilizar pela primeira vez, existe a possibilidade de surgir uma mensagem de erro
+de acordo com a sua versão do Windows. Leia a mensagem com cuidado, a mesma tem
 instruções de como baixar um arquivo que faz o doctor memory funcionar.
 
   1. http://www.drmemory.org/

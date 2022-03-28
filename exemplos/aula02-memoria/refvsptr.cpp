@@ -6,6 +6,6 @@ void f(int &v) {
 
 int main() {
   int *v = new int;
-  f(v);
+  f(*v);
   delete v;
 }

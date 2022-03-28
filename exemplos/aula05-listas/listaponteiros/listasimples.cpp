@@ -43,13 +43,14 @@ void ListaSimplesmenteEncadeada::remove_iesimo(int i) {
     anterior = atual;
     atual = atual->proximo;
   }
-  if (anterior != nullptr)
+  if (anterior != nullptr && atual != nullptr)
     anterior->proximo = atual->proximo;
   if (i == 0)
     _inicio = atual->proximo;
   if (i == _num_elementos_inseridos - 1) {
     _fim = anterior;
-    _fim->proximo = nullptr;
+    if (_fim != nullptr)
+      _fim->proximo = nullptr;
   }
   _num_elementos_inseridos--;
   delete atual;
