@@ -3,7 +3,7 @@
 ## Flavio Vinicius Diniz de Figueiredo (flavio 'arroba' dcc ufmg br)
 ## DCC - UFMG - 2022.1
 
-[https://github.com/flaviovdf/pds2](https://github.com/flaviovdf/pds2)
+[https://github.com/flaviovdf/programacao-2](https://github.com/flaviovdf/programacao-2)
 
 ---
 
