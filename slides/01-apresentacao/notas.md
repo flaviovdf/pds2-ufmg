@@ -27,8 +27,8 @@
 
 1. PDS2 é um curso voltado ao entendimento de como *modelar* um software
 1. Isto complementa o ponto de vista de PDS2
-  1. Comandos básicos para desenvolver programas
-  1. Noções de algoritmos
+    - Comandos básicos para desenvolver programas
+    - Noções de algoritmos
 
 ## Nossos Objetivos
 
@@ -38,6 +38,223 @@
 
 ---
 
+# Ementa
+
+1. Programação estruturada e linguagem de programação modular.
+1. Metodologias de desenvolvimento de software.
+1. Compreensão, corretude e depuração de programas.
+1. Resolução de problemas de forma modular e eficiente.
+
+---
+
+# Avaliação
+
+1. 2 Provas (**30 pontos**)
+1. 1 VPL por Aula (**40 pontos**)
+1. 1 Projeto (**20 pontos**)
+
+Existe também um pequeno Quiz por aula que vocês podem responde no Moodle.
+Tais quizzes não valem pontos.
+
+---
+
+# Projeto
+
+1. Tema da sua escolha
+1. Temos uma lista de possíveis
+1. Grupos de 3/4 alunos
+    1. Código no github
+1. Repositório privado
+
+---
+
+# Tarefas de hoje
+
+1. Criar conta no [Github](https://github.com)
+1. Instalar e configurar o [WSL](https://docs.microsoft.com/pt-br/windows/wsl/install)
+    - Falo mais em breve.
+1. Instalar e configurar o
+    - [Code](https://code.visualstudio.com/)
+    - [WSL+Visual Studio Code](https://docs.microsoft.com/pt-br/windows/wsl/tutorials/wsl-vscode)
+
+---
+
+# Desenvolvimento de Software
+
+## Lacuna de PDS1
+
+1. Saber programar é apenas o passo inicial
+1. Em pouco tempo conseguimos fazer uso de:
+    - if, while, else, for, funções
+
+1. **Como modelar um programa?**
+1. **Como representar um conceito?**
+
+## Exemplo do mundo real
+
+1. Como desenvolver um sistema de banco?
+    - Clientes
+    - Transações
+    - Contas
+    - . . .
+
+---
+
+# Programação Orientada a Objetos
+
+1. Uma das formas de modelar o mundo
+1. Cada entidade do mundo real pode virar um ``struct``. Será que deve?
+1. Atributos
+    - saldo
+    - nome
+    - conta
+
+---
+
+# Uso e Aplicação de Estruturas de Dados
+
+1. A forma que você representa os dados guia seu programa. Quando é o melhor
+   momento de usar um mapa/dicionário? Uma lista?
+1. [Biblioteca STL de C++](https://en.wikipedia.org/wiki/Standard_Template_Library)
+
+---
+
+# Boas práticas
+
+1. Programação é uma atividade social (acreditem ou não)
+1. PDS2 é o passo `0` para desenvolver software
+
+---
+
+# C++ Através de Exemplos
+
+1. Compilando
+1. Olá Mundo
+1. String
+1. Vector
+1. `namespace std`
+
+---
+
+## Olá Mundo!
+
+```cpp
+#include <iostream>
+
+int main() {
+  std::cout << "Hello World!" << std::endl;
+  return 0;
+}
+```
+
+---
+
+# Strings
+
+1. Finalmente! Vamos esquecer o `'\0'` por um tempo
+1. C++ tem suporte nativo para strings
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+  std::string hello("Olá mundo!\n");
+  std::string pds2("Vamos iniciar PDS2\n");
+  std::cout << hello;
+  std::cout << std::endl;
+  std::cout << pds2;
+
+  std::string maisuma = "Mais uma!";
+  std::cout << maisuma.size();
+  std::cout << std::endl;
+  return 0;
+}
+```
+---
+
+# Strings
+
+## Diferentes formas de declarar
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+  std::string hello1("Olá mundo!\n");
+
+  std::string hello2 = "Olá mundo!\n";
+}
+```
+
+```cpp
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+  string hello1("Olá mundo!\n");
+  string hello2 = "Olá mundo!\n";
+}
+```
+
+---
+
+# Strings
+## Suporte nativo ajuda bastante
+
+1. Chamadas como: .size
+    - Tamanho da string
+    - Observe que a chamada é na string
+    - Estilo um campo de um struct
+
+1. Note a diferença: `str.size() vs strlen(str)`
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+  std::string hello("Olá mundo!\n");
+  std::string hello2("Olá mundo!\n");
+  if (hello == hello2) {
+    std::cout << "c++ faz overload do == para strings!!!!.\n";
+  }
+  if (hello.compare(hello2) == 0) {
+    std::cout << "Strings iguais.\n";
+  }
+  return 0;
+}
+```
+
+---
+
+# Vectors
+
+```cpp
+#include <iostream>
+#include <vector>
+
+int main()  {
+  std::vector<int> dados = {};
+  int v = 0;
+  int i = 0;
+  while (v >= 0) {
+    std::cout << "Digite o " << i+1 << "-ésimo número (-1 para terminar): ";
+    std::cin >> v;
+    if (v < 0) break;
+    dados.push_back(v);
+  }
+
+  for (int x : dados)
+    std::cout << x << std::endl;
+}
+```
+
+1. Nova forma de iterar
+1. Vetor redimensionável, uma lista com array por baixo.
 
 ---
 
