@@ -2,8 +2,9 @@
 |----------|----------|-------------|-------------|--------------|
 - - -
 
-# DCC204: Programação e Desenvolvimento de Software 2
+# Programação e Desenvolvimento de Software 2
 
+Código: DCC204
 Professor: Flavio Vinicius Diniz de Figueiredo
 Sala: Sala 211 - CAD 3
 
