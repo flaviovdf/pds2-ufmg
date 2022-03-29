@@ -1,8 +1,7 @@
 # Programação e Desenvolvimento de Software 2
 
-## Flavio Vinicius Diniz de Figueiredo (flavio 'arroba' dcc ufmg br)
 ## DCC - UFMG - 2022.1
-
+## Flavio Vinicius Diniz de Figueiredo (flavio 'arroba' dcc ufmg br)
 [https://github.com/flaviovdf/programacao-2](https://github.com/flaviovdf/programacao-2)
 
 ---
@@ -14,10 +13,11 @@
 1. Meu nome: Flavio Figueiredo
 1. Prédio do DCC (Anexado ao ICEX) sala 4030
 
-## Dúvidas?
+---
+
+# Dúvidas?
 
 1. Moodle/Sala de Aula
-
 
 ---
 
@@ -29,8 +29,9 @@
 1. Isto complementa o ponto de vista de PDS2
     - Comandos básicos para desenvolver programas
     - Noções de algoritmos
+---
 
-## Nossos Objetivos
+# Nossos Objetivos
 
 1. Entender o problema
 1. Modelar os dados
@@ -90,6 +91,10 @@ Tais quizzes não valem pontos.
 1. **Como modelar um programa?**
 1. **Como representar um conceito?**
 
+---
+
+# Desenvolvimento de Software
+
 ## Exemplo do mundo real
 
 1. Como desenvolver um sistema de banco?
@@ -133,6 +138,30 @@ Tais quizzes não valem pontos.
 1. String
 1. Vector
 1. `namespace std`
+
+---
+
+# Compilando
+
+1. Sempre faremos uso de `g++`
+
+```bash
+g++ -std=c++20 codigo.cpp -o main
+```
+
+1. Vamos por partes:
+    - `g++` é o nome do compilador
+    - `-std=c++20` é apenas para garantir que estamos na versão mais nova
+    - `codigo.cpp` é seu código
+    - `-o main` indica o programa de saída
+
+---
+
+# Executando
+
+```bash
+./main
+```
 
 ---
 
