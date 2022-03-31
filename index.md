@@ -1,12 +1,37 @@
-| [Slides] | [Ementa] | [Objetivos] | [Avaliação] | [Calendário] |
-|----------|----------|-------------|-------------|--------------|
-- - -
+---
+layout: home
+title: DCC 202
+nav_exclude: true
+seo:
+  type: Course
+  name: Programação e Desenvolvimento de Software 2
+---
 
-# Programação e Desenvolvimento de Software 2
+# {{ site.tagline }}
+{: .mb-2 }
+{{ site.description }}
+{: .fs-6 .fw-300 }
 
-Código: DCC204
-Professor: Flavio Vinicius Diniz de Figueiredo
-Sala: Sala 211 - CAD 3
+{% if site.announcements %}
+{{ site.announcements.last }}
+[Avisos](announcements.md){: .btn .btn-outline .fs-3 }
+{% endif %}
+
+---
+
+## Sumário
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+{: .no_toc .mb-2 }
+
+Uma introdução ao ciclo de ciência de dados em quatro partes.
+{: .fs-6 .fw-300 }
+
 
 ## Ementa
 
