@@ -1,7 +1,9 @@
 # Tipos Abstratos de Dados
 
 **Programação e Desenvolvimento de Software 2**
+
 **DCC - UFMG - 2022.1**
+
 **Flavio Vinicius Diniz de Figueiredo (flavio 'arroba' dcc ufmg br)**
 [https://github.com/flaviovdf/programacao-2](https://github.com/flaviovdf/programacao-2)
 
@@ -10,8 +12,11 @@
 # Tipos Abstratos de Dados (TADs)
 
 1. Modelo matemático, acompanhado das operações definidas sobre o modelo.
-    - Conjunto dos inteiros acompanhado das operações de adição, subtração e multiplicação.
-	- A implementação do algoritmo em uma linguagem de programação exige a representação do TAD em termos dos tipos de dados e dos operadores suportados.
+    - Conjunto dos inteiros acompanhado das operações de adição, subtração e
+      multiplicação.
+    - A implementação do algoritmo em uma linguagem de programação exige a
+      representação do TAD em termos dos tipos de dados e dos operadores
+      suportados.
 
 ## Contrato
 1. TADs são contratos
@@ -49,9 +54,12 @@
 ## TADs
 
 1. Contrato + Memória
-1. Podemos considerar TADs como generalizações de tipos primitivos e procedimentos como generalizações de operações primitivas.
-1. O TAD encapsula tipos de dados. A definição do tipo e todas as operações ficam localizadas numa seção do programa.
-1. Os usuários do TAD só tem acesso a algumas operações disponibilizadas sobre esses dados
+1. Podemos considerar TADs como generalizações de tipos primitivos e
+   procedimentos como generalizações de operações primitivas.
+1. O TAD encapsula tipos de dados. A definição do tipo e todas as operações
+   ficam localizadas numa seção do programa.
+1. Os usuários do TAD só tem acesso a algumas operações disponibilizadas sobre
+   esses dados
 
 ## Em outras Linguagens
 
@@ -112,7 +120,7 @@ int main() {
 1. Depois damos um nome `ponto_t`.
 	- Eu pessoalmente gosto de nomear *structs* com `_t` no fim
 	- Eu também gosto de colocar um `_` antes dos nomes dos campos internos. Isto é estilo. Não é uma regra.
-	
+
 ```c
 typedef struct {
   double _x;
@@ -133,7 +141,7 @@ class Ponto {
   private:
     double _x;
     double _y;
-  
+
   public:
     Ponto(double x, double y) {
       _x = x;
@@ -157,16 +165,39 @@ int main() {
 1. PUBLIC
 1. PRIVATE!
 
---- 
+---
 
 # Visibilidade
+
+TODO
 
 ---
 
 # Construtores
 
-1. Funções que iniciam o struct
+1. Funções que iniciam o `struct`
 1. Chamadas de construtores
+
+```cpp
+// ...
+
+public:
+  Ponto(double x, double y) {
+    _x = x;
+    _y = y;
+  }
+
+// ...
+```
+
+1. Observe como a mesma apenas seta a memória!
+1. Preste atenção no passo a passo do C++ tutor acima.
+
+---
+
+# Métodos
+
+TODO
 
 ---
 
@@ -182,22 +213,47 @@ int main() {
 
 ---
 
+# Em sala de Aula
+
+## Vamos criar um TAD String
+
+1. Entender melhor como criar um TAD
+1. Operações além da impressão
+    - Substring
+    - Starts With (Começa com)
+    - Size
+1. Código aqui pós aula
+
+---
+
+# std::string
+
+1. Na prática já temos um tipo `string` para fazer uso
+1. Basta realizar `include <string>` como na aula anterior
+1. O nosso exemplo foi apenas para motivar TADs
+1. Leia a documentação da `string` de C++
+   [aqui](https://www.cplusplus.com/reference/string/string/)
+
+---
+
 # Próximas Aulas
 
 1. Usando alguns TADs mais complexos
 1. Criando TADs mais complexos
 1. Separando em módulos
 
-Aonde queremos chegar
-Com TADs queremos que o resto do programa seja cliente. Apenas use as operações do mesmo.
+*Aonde queremos chegar Com TADs queremos que o resto do programa seja cliente.
+Apenas use as operações do mesmo.*
 
 ---
 
-# Exercícios
+# Exercícios para Casa
 
 - Como fazer um TAD aluno?
 - Como fazer um TAD matriz?
 
 ## Primeiro problema
 1. Quais dados temos que representar?
+
+## Segundo problema
 1. Quais operações o aluno suporta?
