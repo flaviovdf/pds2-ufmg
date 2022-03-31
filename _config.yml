@@ -18,7 +18,7 @@ tagline: Programação e Desenvolvimento de Software 2
 description: Curso Ofertado Pelo DCC-UFMG
 author: Flavio Figueiredo
 baseurl: ~
-url: 'https://flaviovdf.github.io/pds2'
+url: 'https://flaviovdf.github.io/'
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
 # Theme settings

@@ -12,12 +12,6 @@ description: Tipos Abstratos de Dados
 Entendendo TADs e criando TADs simples
 {: .fs-6 .fw-300 }
 
----
-**Sumário**
-1. TOC
-{:toc}
----
-
 # Tipos Abstratos de Dados (TADs)
 
 1. Modelo matemático, acompanhado das operações definidas sobre o modelo.
@@ -178,7 +172,29 @@ int main() {
 
 # Visibilidade
 
-TODO
+1. O `public` indica tudo que você tem acesso
+1. O `private` você não tem
+1. Por exemplo, o código abaixo vai falhar:
+
+```cpp
+class Ponto {
+  private:
+    double _x;
+    double _y;
+
+    Ponto(double x, double y) {
+      _x = x;
+      _y = y;
+    }
+};
+
+int main() {
+  Ponto p = Ponto(2.0, 3.0);
+  return 0;
+}
+```
+
+*É impossível fora da Classe acessar campos private**.
 
 ---
 
@@ -206,7 +222,33 @@ public:
 
 # Métodos
 
-TODO
+1. Um método pode ser visto como uma função em C
+1. Porém a mesma pertence ao objeto. Falamos com o mesmo.
+
+```cpp
+class Ponto {
+  private:
+    double _x;
+    double _y;
+
+  public:
+    Ponto(double x, double y) {
+      _x = x;
+      _y = y;
+    }
+
+    void imprime() {
+      std::cout << _x;
+      std::cout << _y;
+    }
+};
+
+int main() {
+  Ponto p = Ponto(2.0, 3.0);
+  p.imprime();
+  return 0;
+}
+```
 
 ---
 

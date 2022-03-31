@@ -12,13 +12,6 @@ description: Apresentação do Curso
 Visão Geral do Curso, Introdução C++ e Logística
 {: .fs-6 .fw-300 }
 
----
-**Sumário**
-1. TOC
-{:toc}
----
-
-
 # Pessoal
 
 ## Quem sou eu?
