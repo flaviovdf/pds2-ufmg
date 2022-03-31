@@ -1,7 +1,7 @@
 # Programação e Desenvolvimento de Software 2
 
-## DCC - UFMG - 2022.1
-## Flavio Vinicius Diniz de Figueiredo (flavio 'arroba' dcc ufmg br)
+**DCC - UFMG - 2022.1**
+**Flavio Vinicius Diniz de Figueiredo (flavio 'arroba' dcc ufmg br)**
 [https://github.com/flaviovdf/programacao-2](https://github.com/flaviovdf/programacao-2)
 
 ---
@@ -175,6 +175,8 @@ int main() {
   return 0;
 }
 ```
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23include%20%3Ciostream%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%0Aint%20main%28%29%20%7B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20std%3A%3Acout%20%3C%3C%20%22Hello%20World!%22%20%3C%3C%20std%3A%3Aendl%3B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20return%200%3B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%7D&codeDivHeight=400&codeDivWidth=350&curInstr=0&origin=opt-frontend.js&py=cpp_g%2B%2B9.3.0&rawInputLstJSON=%5B%5D"> </iframe>
 
 ---
 
