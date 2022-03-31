@@ -1,12 +1,23 @@
+---
+layout: page
+title: Apresentação
+has_children: true
+has_toc: false
+description: Apresentação do Curso
+---
+
 # Apresentação
+{: .no_toc .mb-2 }
 
-**DCC - UFMG - 2022.1**
-
-**Flavio Vinicius Diniz de Figueiredo (flavio 'arroba' dcc ufmg br)**
-
-[https://github.com/flaviovdf/programacao-2](https://github.com/flaviovdf/programacao-2)
+Visão Geral do Curso, Introdução C++ e Logística
+{: .fs-6 .fw-300 }
 
 ---
+**Sumário**
+1. TOC
+{:toc}
+---
+
 
 # Pessoal
 

@@ -1,12 +1,21 @@
-# Tipos Abstratos de Dados
+---
+layout: page
+title: Tipos Abstratos de Dados
+has_children: true
+has_toc: false
+description: Tipos Abstratos de Dados
+---
 
-**Programação e Desenvolvimento de Software 2**
+# Apresentação
+{: .no_toc .mb-2 }
 
-**DCC - UFMG - 2022.1**
+Entendendo TADs e criando TADs simples
+{: .fs-6 .fw-300 }
 
-**Flavio Vinicius Diniz de Figueiredo (flavio 'arroba' dcc ufmg br)**
-[https://github.com/flaviovdf/programacao-2](https://github.com/flaviovdf/programacao-2)
-
+---
+**Sumário**
+1. TOC
+{:toc}
 ---
 
 # Tipos Abstratos de Dados (TADs)
