@@ -1,6 +1,6 @@
 ---
 layout: home
-title: DCC 202
+title: DCC 204
 nav_exclude: true
 seo:
   type: Course
@@ -28,9 +28,6 @@ seo:
 ---
 
 {: .no_toc .mb-2 }
-
-Uma introdução ao ciclo de ciência de dados em quatro partes.
-{: .fs-6 .fw-300 }
 
 
 ## Ementa
