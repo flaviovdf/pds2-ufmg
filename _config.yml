@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Programação e Desenvolvimento de Software 2
+title: PDS2
 tagline: PDS2
-description: Curso Ofertado Pelo DCC-UFMG
+description: Programação e Desenvolvimento de Software 2
 author: Flavio Figueiredo
 baseurl: ~
 url: 'https://flaviovdf.github.io'
