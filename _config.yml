@@ -27,7 +27,7 @@ color_scheme: light
 search_enabled: true
 heading_anchors: true
 permalink: pretty
-aux_links_new_tab: true2footer_content: 'Flavio Figueiredo &copy; 2022 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
+aux_links_new_tab: true
 footer_content: 'Flavio Figueiredo &copy; 2022 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
 # Collections for website data
 collections:
