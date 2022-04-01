@@ -12,23 +12,9 @@ seo:
 {{ site.description }}
 {: .fs-6 .fw-300 }
 
-{% if site.announcements %}
-{{ site.announcements.last }}
-[Avisos](announcements.md){: .btn .btn-outline .fs-3 }
-{% endif %}
-
----
-
-## Sumário
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
 ---
 
 {: .no_toc .mb-2 }
-
 
 ## Ementa
 
