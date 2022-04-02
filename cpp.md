@@ -1,10 +1,14 @@
 ---
 layout: page
-title: C++ do Zero
-description: Pequena Introdução de C++ (Douglas Macharet).
+title: C++ do Zero ao Um
+description: Pequena Introdução de C++
 ---
 
-# Pequena Introdução de C++ (Douglas Macharet)
+# Pequena Introdução de C++
+
+{: .no_toc .mb-2 }
+
+Por Douglas Macharet {: .fs-6 .fw-300 }
 
 ---
 
