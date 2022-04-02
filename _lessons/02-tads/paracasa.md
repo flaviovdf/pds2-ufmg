@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Exercícios para Casa
+parent: Tipos Abstratos de Dados
 ---
 
 # Exercícios para Casa
