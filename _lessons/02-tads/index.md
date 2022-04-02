@@ -252,18 +252,6 @@ int main() {
 
 ---
 
-# Notas Finais
-
-1. Estamos iniciando o assunto da matéria
-1. Lembre-se que:
-	- TADs → dados + operações
-	- TADs guardam estado
-
-1. Podemos usar um struct em C
-1. Em C++ usamos classes
-
----
-
 # Em sala de Aula
 
 ## Vamos criar um TAD String
@@ -273,7 +261,17 @@ int main() {
     - Substring
     - Starts With (Começa com)
     - Size
-1. Código aqui pós aula
+1. O código inicial se encontra abaixo
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23include%20%3Ccstring%3E%20//%20fun%C3%A7%C3%B5es%20de%20C%20para%20strings%0A%23include%20%3Ciostream%3E%0A%0Ausing%20namespace%20std%3B%0A%0Aclass%20MinhaString%20%7B%0A%20%20private%3A%0A%20%20%20%20char%20*_data%3B%0A%20%20%20%20int%20_size%3B%0A%20%20public%3A%0A%20%20%20%20MinhaString%28char%20*data%29%20%7B%0A%20%20%20%20%20%20_data%20%3D%20data%3B%0A%20%20%20%20%20%20_size%20%3D%20strlen%28data%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20int%20size%28%29%20%7B%0A%20%20%20%20%20%20return%20_size%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20void%20print%28%29%20%7B%0A%20%20%20%20%20%20cout%20%3C%3C%20_data%3B%0A%20%20%20%20%7D%0A%7D%3B%0A%0Aint%20main%28%29%20%7B%0A%20%20MinhaString%20ms%20%3D%20MinhaString%28%22PDS2!%22%29%3B%0A%20%20ms.print%28%29%3B%0A%0A%20%20//Descomente%20para%20gerar%20um%20erro%0A%20%20//ms._size%20%3D%2020%20%0A%20%20//quebraria%20a%20coerencia%20se%20fosse%20poss%C3%ADvel!%0A%7D&codeDivHeight=400&codeDivWidth=350&curInstr=0&origin=opt-frontend.js&py=cpp_g%2B%2B9.3.0&rawInputLstJSON=%5B%5D"> </iframe>
+
+---
+
+# Importância da Visibilidade
+
+1. Descomente as linhas que tentam acessar o `_size` do exemplo
+2. Temos um erro de compilação!
+3. Nunca quebramos a coerência do estado!
 
 ---
 
@@ -284,6 +282,18 @@ int main() {
 1. O nosso exemplo foi apenas para motivar TADs
 1. Leia a documentação da `string` de C++
    [aqui](https://www.cplusplus.com/reference/string/string/)
+
+---
+
+# Notas Finais
+
+1. Estamos iniciando o assunto da matéria
+1. Lembre-se que:
+	- TADs → dados + operações
+	- TADs guardam estado
+
+1. Podemos usar um struct em C
+1. Em C++ usamos classes
 
 ---
 
