@@ -295,16 +295,3 @@ int main() {
 
 *Aonde queremos chegar Com TADs queremos que o resto do programa seja cliente.
 Apenas use as operações do mesmo.*
-
----
-
-# Exercícios para Casa
-
-- Como fazer um TAD aluno?
-- Como fazer um TAD matriz?
-
-## Primeiro problema
-1. Quais dados temos que representar?
-
-## Segundo problema
-1. Quais operações o aluno suporta?
