@@ -7,12 +7,20 @@ parent: Tipos Abstratos de Dados
 # Exercícios para Casa
 {: .no_toc .mb-2 }
 
-Vários Exercícios Fernando Quintão
+Vários Exercícios por Fernando Quintão
 {: .fs-6 .fw-300 }
 
 Lembre-se do passo a passo:
 - Quais dados temos que representar?
 - Quais operações o temos que implementar suporta?
+
+---
+
+**Sumário**
+1. Tarefas
+{:toc}
+
+---
 
 ---
 
