@@ -8,7 +8,8 @@ description: Pequena Introdução de C++
 
 {: .no_toc .mb-2 }
 
-Por Douglas Macharet {: .fs-6 .fw-300 }
+Por Douglas Macharet 
+{: .fs-6 .fw-300 }
 
 ---
 
