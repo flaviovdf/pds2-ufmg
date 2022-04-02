@@ -6,6 +6,11 @@ description: Sobre o Projeto.
 
 # Projeto
 
+{: .no_toc .mb-2 }
+
+Praticar a matéria fazendo um software não trivial
+{: .fs-6 .fw-300 }
+
 ---
 
 Além dos laboratórios, a disciplina deve contar com um TP. Para fazer o mesmo,
@@ -49,7 +54,7 @@ grupo deverá identificar possíveis funcionalidades interessantes de serem
 incorporadas ao sistema e  propor  pelo  menos  **seis**  User  Stories.
 
 1. A primeira entrega de tema + user stories vale 5pts do projeto final.
-1. Depois disso, iniciem o trabalho no tema, vamos ter uma entrevista apoós a primeira prova.
+1. Depois disso, iniciem o trabalho no tema, vamos ter uma entrevista após a primeira prova.
 1. Até a entrevista, tente criar ao menos um README.md no seu github!
 
 ## Segunda Entrega
