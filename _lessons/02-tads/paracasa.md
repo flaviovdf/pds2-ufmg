@@ -12,7 +12,7 @@ Lembre-se do passo a passo:
 
 1. Como fazer um TAD aluno?
 
-<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@flaviovdf1/02-tads#main.cpp?embed=true"></iframe>
+<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@flaviovdf1/02-tads?embed=true"></iframe>
 
 
 1. Como fazer um TAD matriz?
