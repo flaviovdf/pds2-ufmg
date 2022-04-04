@@ -27,7 +27,7 @@ Lembre-se do passo a passo:
 ## TAD Conta
 
 Considere que uma conta de banco pode ser representada pelo tipo abstrato de dados
-(TAD) CONTA. O TAD deve respeitar os seguintes requisitos:
+(TAD) `Conta`. O TAD deve respeitar os seguintes requisitos:
 - Toda conta deve possui um dono e um saldo;
 - O saldo é sempre um número inteiro;
 - O dono é representado pelo seu nome;
@@ -36,31 +36,54 @@ Considere que uma conta de banco pode ser representada pelo tipo abstrato de dad
 - O saldo da conta deve ser sempre atualizado após um deposito ou uma retirada;
 - O saldo nunca deve ser negativo.
 
-(a) Quais atributos e opera ̧c ̃oes o tipo abstrato de dados CONTA deve possuir?
-(b) Escreva, em c++, uma implementa ̧c ̃ao do tipo abstrato de dados CONTA.
-(c) Agora, considere que  ́e poss ́ıvel ter v ́arias contas. Escreva, em c++, uma imple-
-menta ̧c ̃ao do tipo abstrato de dados CONTAS.
-(d) Considere que  ́e poss ́ıvel transferir dinheiro de uma conta para outra. Escreva,
-em c++, uma fun ̧c ̃ao transferencia que transfere um determinado valor de uma
-conta A para outra conta B. Se achar necess ́ario, adicione novos atributos e
-opera ̧c ̃oes ao tipo abstrados de dados CONTA. Uma possibilidade para o m ́etodo
-transferencia  ́e:
-void transferencia(CONTAS contas, int conta1, int conta2, int valor);
+(a) Quais atributos e operações o tipo abstrato de dados `Conta` deve possuir?
+(b) Escreva, em c++, uma implementação do tipo abstrato de dados `Conta`.
 
 ---
 
 ## TAD Fração
 
-2. Considere que o Tipo Abstrato de Dados (TAD) `Fracao` representa um n ́umero
-fracion ́ario. Escreva, em c++, uma implementa ̧c ̃ao de `Fracao` considerando as
-seguintes opera ̧c ̃oes: multiplicacao, divisao, soma e subtracao.
-Obs: cada uma das opera ̧c ̃oes pode ser realizada entre duas fran ̧c ̃oes ou entre uma
-fran ̧c ̃ao e um inteiro.
+2. Considere que o Tipo Abstrato de Dados (TAD) `Fracao` representa um número
+fracionário. Escreva, em C++, uma implementação de `Fracao` considerando as
+seguintes operações:
+- multiplicação,
+- divisão,
+- soma e
+- subtração.
+
+Obs: cada uma das operações pode ser realizada entre duas frações ou entre uma
+fração e um inteiro.
+
+Esqueleto abaixo
+```cpp
+class Fracao {
+  private:
+    int _numerador;
+    int _denominador;
+  public:
+    // Observe dois métodos com mesmo nome e assinaturas diferentes!
+    Fracao soma(int outro_valor) {
+      // código aqui
+    }
+    Fracao soma(Fracao outro_valor) {
+      // código aqui
+    }
+    // Resto do TAD
+};
+```
 
 ---
 
-## Como fazer um TAD aluno? Esqueleto abaixo:
+## TAD Aluno
 
+Complicando um pouco, vamos fazer um TAD `Aluno`. Além de informações base do
+discente, vide exemplo abaixo, queremos que o aluno armazene uma lista de
+disciplinas qual cursa. Observe no esqueleto abaixo que usamos um `vector` para
+tal.
+
+
+
+Esqueleto abaixo:
 ```cpp
 #include <iostream>
 #include <string>
@@ -104,4 +127,7 @@ int main() {
 
 ---
 
-## Como fazer um TAD matriz?
+## TAD Matriz
+
+Usando um `vector<vector<int>>`, ou seja um Vector de Vectors, como fazer um
+TAD matriz?
