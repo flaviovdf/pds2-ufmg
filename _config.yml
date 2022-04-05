@@ -17,8 +17,9 @@ title: PDS2
 tagline: PDS2
 description: Programação e Desenvolvimento de Software 2
 author: Flavio Figueiredo
-baseurl: ~
 url: 'https://flaviovdf.github.io'
+baseurl: '/pds2-ufmg'
+
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
 # Theme settings
