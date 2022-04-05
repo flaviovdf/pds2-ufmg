@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Exercícios para Casa
-parent: Tipos Abstratos de Dados
+parent: Vector
 ---
 
 # Exercícios para Casa
@@ -17,6 +17,13 @@ Vários Exercícios por Douglas Macharet
 {:toc}
 
 ---
+
+1. Faça um TAD `Banco` que contém um vector de outro TAD `Agencia`
+1. Faça um programa que lê um arquivo de texto e guarda as palavras em um
+   `vector`
+    - Imprima os elementos (um por linha)
+1. Faça um programa que remove as palavras duplicadas do exercício anterior
+    - Imprima os elementos (um por linha)
 
 ---
 

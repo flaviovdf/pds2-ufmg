@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Leitura Complementar
-parent: Tipos Abstratos de Dados
+parent: Vector
 ---
 
 # Leitura Complementar
@@ -12,6 +12,7 @@ Material Complementar
 
 ---
 
+1. []()
 1. Capítulos 8, 9 e 11 do [ThinkCPP](https://greenteapress.com/wp/think-c/)
    cobrem a parte de TADs e Construtores. Observe que o autor usa `sruct` e
    não class
