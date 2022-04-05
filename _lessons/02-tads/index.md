@@ -33,6 +33,24 @@ Entendendo TADs e criando TADs simples
 
 ---
 
+# Definindo Contratos
+
+## O que é um contrato?
+
+1. Acordo entre duas ou mais partes
+    - Quais contratos existem em um programa?
+    - Requisitos de funcionalidade, desempenho, ...
+1. Operações disponíveis em um TAD
+    - Entradas e saídas
+
+---
+
+# Ideia de Contratos
+
+![](./fig0.png)
+
+---
+
 # TADs vs Structs
 
 ## Então TADs são structs?
@@ -294,6 +312,41 @@ int main() {
 
 1. Podemos usar um struct em C
 1. Em C++ usamos classes
+
+---
+
+# Notas Finais
+
+## Esses TADs são iguais ou diferentes?
+
+```cpp
+class Ponto {
+  float x;
+  float y;
+}
+```
+
+```cpp
+class Ponto {
+  float r;
+  float theta;
+}
+```
+
+1. Iguais (conceito) e Diferentes (dados)!
+1. ** Tipo/TAD **
+    - Elementos com propriedades semelhantes
+    - Clientes dependem do conceito geral
+
+---
+
+# Notas Finais
+
+1. A implementação não deve ser conhecida
+1. A abstração deve prover os métodos que serão utilizados para manipular os
+   dados
+
+![](./fig1.png)
 
 ---
 
