@@ -55,6 +55,14 @@ just_the_docs:
     lessons:
       name: Material
 
+
+# Assets
+prefix: "/assets"
+sources:
+  - _assets/
+  - _assets/img
+
+# Mathjax
 markdown: kramdown
 kramdown:
    math_engine: mathjax

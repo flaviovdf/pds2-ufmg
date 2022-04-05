@@ -47,7 +47,7 @@ Entendendo TADs e criando TADs simples (com Douglas Macharet)
 
 # Ideia de Contratos
 
-![](/assets/02-tads/fig0.png)
+![](/assets/img/02-tads-fig1.png)
 
 ---
 
@@ -346,7 +346,7 @@ class Ponto {
 1. A abstração deve prover os métodos que serão utilizados para manipular os
    dados
 
-![](/assets/02-tads/fig1.png)
+![](/assets/img/02-tads-fig1.png)
 
 ---
 
