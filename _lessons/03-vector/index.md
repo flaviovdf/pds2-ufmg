@@ -111,7 +111,7 @@ características desta estrutura, implementando o produto final (“algo”).*
 # Namespaces
 
 ```cpp
-using namespace std
+using namespace std;
 ```
 
 Um espaço de nomes ("namespace" em inglês) é um delimitador abstrato
