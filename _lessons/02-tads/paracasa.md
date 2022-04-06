@@ -131,3 +131,35 @@ int main() {
 
 Usando um `vector<vector<int>>`, ou seja um Vector de Vectors, como fazer um
 TAD matriz?
+
+```cpp
+#include <vector>
+
+using namespace std;
+
+class Matriz {
+  private:
+    int _nlinhas;
+    int _ncolunas;
+    vector<vector<float>> _dados;
+  public:
+    Matriz(int nlinhas, int ncolunas) {
+      _nlinhas = nlinhas;
+      _ncolunas = ncolunas;
+      for (int linha = 0; linha < _nlinhas; linha++) {
+        vector<float> dados_linha;
+        _dados.push_back(dados_linha);
+        for (int _ = 0; _ < _ncolunas; _++) {
+          _dados[linha].push_back(0);
+        }
+      }
+    }
+    void preenche(int linha, int coluna, float valor) {
+
+    }
+
+    Matriz soma(Matriz outra) {
+
+    }
+};
+``` 
