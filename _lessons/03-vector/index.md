@@ -138,6 +138,27 @@ std::vector<std::string> palavras = {"gato","pi"};
 
 ---
 
+# Qual o problema abaixo?
+
+
+```cpp
+#include <vector>
+
+using namespace std;
+
+class vector {
+
+};
+
+int main() {
+  vector a;
+}
+```
+
+**Não temos como saber qual vector estamos usando, erro de compilação**
+
+---
+
 # Funcionalidades através de headers
 
 ```cpp
