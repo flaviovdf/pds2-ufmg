@@ -4,6 +4,7 @@ title: Vector
 has_children: true
 has_toc: false
 description: Entendendo o TAD Vector
+nav_order: 3
 ---
 
 # Vector
@@ -89,8 +90,8 @@ características desta estrutura, implementando o produto final (“algo”).*
     - Um sistema é implementado pela adição de componentes para preencher
       lacunas
 
-[Leitura Adicional 01](http://blog.cedrotech.com/api-bibliotecas-e-frameworks-entenda-diferenca-entre-eles/)
-[Leitura Adicional 02](https://becode.com.br/framework-biblioteca-api-entenda-as-diferencas/)
+- [Leitura Adicional 01](http://blog.cedrotech.com/api-bibliotecas-e-frameworks-entenda-diferenca-entre-eles/)
+- [Leitura Adicional 02](https://becode.com.br/framework-biblioteca-api-entenda-as-diferencas/)
 
 ---
 
@@ -464,7 +465,7 @@ public:
 };
 ```
 
-*Nosso main**
+*Nosso main*
 ```cpp
 #include <iostream>
 #include <string>
@@ -505,4 +506,92 @@ int main() {
   std::cout << pessoas.at(1).get_nome() << std::endl;
   return 0;
 }
+```
+
+---
+
+# Exemplos
+
+## Uma Pequena Rede Social
+
+1. Agora vamos assumir que pessoas podem ser amigas de outras pessoas;
+1. Para tal, podemos ter um atributo na pessoa que é um vector de outras.
+
+```cpp
+#include <iostream>
+#include <string>
+#include <vector>
+
+class Pessoa {
+private:
+  std::string _nome;
+  int _idade;
+  std::vector<Pessoa> _amizades; // Não precisa inicializar no construtor
+
+public:
+  Pessoa(std::string nome, int idade) {
+    _nome = nome;
+    _idade = idade;
+  }
+
+  std::string get_nome() {
+    return _nome;
+  }
+
+  int get_idade() {
+    return _idade;
+  }
+
+  void adiciona_amizade(Pessoa outra) {
+    _amizades.push_back(outra);
+  }
+
+  std::vector<Pessoa> get_amizades() {
+    return _amizades;
+  }
+
+  void imprime() {
+    std::cout << "Meu nome é: " << _nome << std::endl;
+    std::cout << "Tenho " << _idade << " anos" << std::endl;
+    std::cout << "Minhas amizades são:" << std::endl;
+    for (Pessoa amiga : _amizades) {
+      std::cout << "   " << amiga.get_nome();
+      std::cout << std::endl;
+    }
+  }
+};
+
+
+int main() {
+  Pessoa ana = Pessoa("Ana", 18);
+  Pessoa pedro = Pessoa("Pedro", 19);
+  Pessoa will = Pessoa("William", 21);
+
+  pedro.adiciona_amizade(ana);
+  pedro.adiciona_amizade(will);
+  will.adiciona_amizade(pedro);
+
+  pedro.imprime();
+  ana.imprime();
+  will.imprime();
+  return 0;
+}
+```
+
+*Ao executar o programa a saída deve ser*
+```
+Meu nome é: Pedro
+Tenho 19 anos
+Minhas amizades são:
+   Ana
+   William
+
+Meu nome é: Ana
+Tenho 18 anos
+Minhas amizades são:
+
+Meu nome é: William
+Tenho 21 anos
+Minhas amizades são:
+   Pedro
 ```

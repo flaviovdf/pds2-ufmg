@@ -4,6 +4,7 @@ title: Tipos Abstratos de Dados
 has_children: true
 has_toc: false
 description: Tipos Abstratos de Dados
+nav_order: 2
 ---
 
 # Tipos Abstratos de Dados
@@ -47,7 +48,7 @@ Entendendo TADs e criando TADs simples (com Douglas Macharet)
 
 # Ideia de Contratos
 
-![](/assets/img/02-tads-fig1.png)
+![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/02-tads-fig0.png)
 
 ---
 
@@ -346,7 +347,7 @@ class Ponto {
 1. A abstração deve prover os métodos que serão utilizados para manipular os
    dados
 
-![](/assets/img/02-tads-fig1.png)
+![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/02-tads-fig1.png)
 
 ---
 
