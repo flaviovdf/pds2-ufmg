@@ -6,13 +6,13 @@ has_toc: false
 description: Tipos Abstratos de Dados
 ---
 
-# Apresentação
+# Tipos Abstratos de Dados
 {: .no_toc .mb-2 }
 
 Entendendo TADs e criando TADs simples (com Douglas Macharet)
 {: .fs-6 .fw-300 }
 
-# Tipos Abstratos de Dados (TADs)
+# Definição
 
 1. Modelo matemático, acompanhado das operações definidas sobre o modelo.
     - Conjunto dos inteiros acompanhado das operações de adição, subtração e
