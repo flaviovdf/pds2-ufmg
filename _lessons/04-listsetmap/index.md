@@ -364,7 +364,25 @@ int main() {
 
 ---
 
-# Comparators
+# Comparators (avançado)
+
+1. C++ sabe comparar números e strings
+1. Não sabe comparar seus TADs
+1. Para tal, precisamos criar um `functor comparator`
+    - nome feio para um `struct` com uma única função:
+        - comparar
+
+```cpp
+struct nome_do_comparator {
+  bool operator()(Tad t1, Tad t2) {
+    // compara
+  }
+}
+```
+
+---
+
+# Comparators (exemplo de uso)
 
 ```cpp
 // O comparator sempre verificar se é <. Com < podemos criar >, == e != . Note que:
@@ -383,7 +401,8 @@ int main() {
   pessoas.insert(Pessoa("Ana", 18));
   pessoas.insert(Pessoa("Pedro", 19));
   pessoas.insert(Pessoa("Ana", 18));
-
+  
+  // apenas uma ana no set
   for (Pessoa p : pessoas)
     std::cout << p.get_nome() << std::endl;
 
@@ -395,7 +414,7 @@ int main() {
 
 # Por fim...
 
-- Vimos muitas estruturas de dados. Você pode explicar quando usamos cada um?
+- Vimos muitas estruturas de dados. Você pode explicar quando usamos cada uma?
 - `vector`
     - indexação por inteiros
     - inserção no final
