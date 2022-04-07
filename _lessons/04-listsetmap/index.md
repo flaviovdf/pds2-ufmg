@@ -18,7 +18,7 @@ Ampliando o entendimento de containers via outros TADs comuns
 
 # Até Agora...
 
-## Basicamente fizemos uso de *Vector*
+## Basicamente fizemos uso de Vector
 
 1. Vamos ampliar para outros `containers`
 
@@ -169,7 +169,7 @@ int main() {
 
 ---
 
-# Containers Associativos (oi Conjutos sem Repetiç
+# Containers Associativos (ou Conjutos sem Repetiç
 
 1. Elementos não possuem ordem específica
 1. Projetados para suportar o acesso direto aos elementos usando chaves pré-determinadas
@@ -353,7 +353,7 @@ int main() {
 
 ---
 
-# Por fim...
+# Outros Maps/Sets
 
 1. Por padrão, maps/sets são implementados como árvores binárias de busca
 1. Existem versões unordered_*
@@ -390,4 +390,8 @@ int main() {
   return 0;
 }
 ```
+
+---
+
+# Por fim...
 
