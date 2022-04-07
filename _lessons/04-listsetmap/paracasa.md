@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Exercícios para Casa
-parent: Vector
+parent: List, Set e Map
 ---
 
 # Exercícios para Casa

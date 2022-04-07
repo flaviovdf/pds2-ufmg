@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Leitura Complementar
-parent: Vector
+parent: List, Set e Map
 ---
 
 # Leitura Complementar
