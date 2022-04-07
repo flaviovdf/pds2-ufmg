@@ -13,4 +13,4 @@ Material Complementar
 ---
 
 1. [Tutorial da STL com Vários Containers](https://www.geeksforgeeks.org/cpp-stl-tutorial/)
-1. Capítulo 10 do [ThinkCPP](https://greenteapress.com/wp/think-c/)
+1. Capítulo 10 e 12 do [ThinkCPP](https://greenteapress.com/wp/think-c/)
