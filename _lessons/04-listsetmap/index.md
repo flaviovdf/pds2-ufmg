@@ -25,7 +25,7 @@ Ampliando o entendimento de containers via outros TADs comuns
 
 ---
 
-# Uma visão geral do `vector` e dos outros
+# Uma visão geral do Vector e dos outros
 
 1. Na memória, o `vector` é um vetor (`array`) mesmo.
 1. Apenas **encapsulou-se** o fato do mesmo crescer e reduzir de tamanho
@@ -37,16 +37,52 @@ Ampliando o entendimento de containers via outros TADs comuns
 
 # List
 
+*A lista é implementada com ponteiros 😱*
+```
+3 <-> 7 <-> 9 <-> 8
+```
+
 1. Lista duplamente encadeada
 1. Não temos mais acesso via índice. Motivo?
-1. Iterador para acessar os elementos
+    - Não tem um vetor por baixo como o vector
+    - Cada "número" guarda ponteiros para quem vem antes e depois
+        - É errado dizer que o número guarda os ponteiros, mas estou
+          simplificando.
+        - Na prática é um struct, vide exemplo abaixo
 
-![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/04-stl-fig2.png)
+```cpp
+struct node_t {
+  int valor;
+  node_t *anterior;
+  node_t *próximo;
+}
+```
 
 ---
 
-# Iteradores
+# Detalhes da List
 
+## Observe o uso do iterador para acessar os elementos
+
+```cpp
+#include <iostream>
+#include <list>
+
+int main() {
+  std::list<int> l = {7, 5, 16, 8};
+
+  l.push_front(25);
+  l.push_back(13);
+
+  std::list<int>::iterator it = l.begin();
+  auto ptr = next(it);
+  while (ptr != l.end()) {
+    std::cout << *ptr << std::endl;
+    ptr = next(ptr);
+  }
+  return 0;
+}
+```
 ---
 
 # Containers Associativos
