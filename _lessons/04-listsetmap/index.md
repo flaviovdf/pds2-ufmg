@@ -64,6 +64,10 @@ struct node_t {
 
 ---
 
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23include%20%3Ciostream%3E%0A%0Astruct%20node_t%20%7B%0A%20%20int%20valor%3B%0A%20%20node_t%20*anterior%3B%0A%20%20node_t%20*proximo%3B%0A%7D%3B%0A%0Avoid%20imprime_lista%28node_t%20*primeiro%29%20%7B%0A%20%20node_t%20*atual%20%3D%20primeiro%3B%0A%20%20while%20%28atual%20!%3D%20nullptr%29%20%7B%0A%20%20%20%20std%3A%3Acout%20%3C%3C%20atual-%3Evalor%20%3C%3C%20std%3A%3Aendl%3B%0A%20%20%20%20atual%20%3D%20atual-%3Eproximo%3B%0A%20%20%7D%0A%7D%0A%0Aint%20main%28%29%20%7B%0A%20%20%0A%20%20node_t%20primeiro%20%3D%20%7B7,%20nullptr,%20nullptr%7D%3B%0A%20%20node_t%20segundo%20%3D%20%7B2,%20%26primeiro,%20nullptr%7D%3B%0A%20%20primeiro.proximo%20%3D%20%26segundo%3B%0A%20%20%0A%20%20node_t%20terceiro%20%3D%20%7B15,%20%26segundo,%20nullptr%7D%3B%0A%20%20segundo.proximo%20%3D%20%26terceiro%3B%0A%20%20%0A%20%20imprime_lista%28%26primeiro%29%3B%0A%20%20%0A%20%20return%200%3B%0A%7D&codeDivHeight=400&codeDivWidth=350&curInstr=0&origin=opt-frontend.js&py=cpp_g%2B%2B9.3.0&rawInputLstJSON=%5B%5D"> </iframe>
+
+---
+
 # Detalhes da List
 
 ## Observe o uso do iterador para acessar os elementos
