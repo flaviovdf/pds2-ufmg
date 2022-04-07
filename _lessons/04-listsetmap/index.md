@@ -395,3 +395,12 @@ int main() {
 
 # Por fim...
 
+- Vimos muitas estruturas de dados. Você pode explicar quando usamos cada um?
+- `vector`
+    - indexação por inteiros
+    - inserção no final
+- `set`
+    - recuperação rápida de itens
+    - saída ordenada
+- `map`
+    - quando necessário para construir tabelas
