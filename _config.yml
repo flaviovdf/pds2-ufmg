@@ -30,12 +30,14 @@ heading_anchors: true
 permalink: pretty
 aux_links_new_tab: true
 footer_content: 'Flavio Figueiredo &copy; 2022 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
+
 # Collections for website data
 collections:
   modules:
   lessons:
     permalink: '/:path/'
     output: true
+
 # Default layouts for each collection type
 defaults:
   - scope:
@@ -55,12 +57,11 @@ just_the_docs:
     lessons:
       name: Material
 
-
 # Assets
 prefix: "/assets"
 sources:
-  - _assets/
-  - _assets/img
+  - assets/
+  - assets/img
 
 # Mathjax
 markdown: kramdown
