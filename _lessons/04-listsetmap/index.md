@@ -17,7 +17,7 @@ Ampliando o entendimento de containers via outros TADs comuns
 
 # Até Agora...
 
-## Basicamente fizemos uso de `vector` e `string`
+## Basicamente fizemos uso de *Vector*
 
 1. Vamos ampliar para outros `containers`
 
@@ -41,6 +41,9 @@ Ampliando o entendimento de containers via outros TADs comuns
 ```
 3 <-> 7 <-> 9 <-> 8
 ```
+
+![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/04-stl-fig2.png)
+
 
 1. Lista duplamente encadeada
 1. Não temos mais acesso via índice. Motivo?
@@ -75,6 +78,77 @@ int main() {
   l.push_back(13);
 
   std::list<int>::iterator it = l.begin();
+  auto ptr = next(it); // o auto ajuda quando não queremos determinar o tipo
+  while (ptr != l.end()) {
+    std::cout << *ptr << std::endl;
+    ptr = next(ptr);
+  }
+  return 0;
+}
+```
+
+---
+
+# Iteradores
+
+1. Geralmente não acessamos elementos usando índices quando usamos uma lista encadeada
+    - Pode ser feito, só que é mais lento
+1. Uma forma de iterar uma container sem usar índices
+1. Todo container da biblioteca padrão oferece as funções `begin()` e `end()`
+    - `begin()`: Retorna um iterador pro primeiro element
+    - `end()`: Indica o fim do container (último elemento da coleção)
+1. Usando um "iterador", podemos dizer: 
+    - "me dê o próximo, me dê o próximo, me dê o próximo, ..." até acabar
+        - `next(it)` ou `it++`
+
+---
+
+# Iteradores C++
+
+1. Se comportam como ponteiros (😱)
+1. `ptr++` anda para frente e 
+
+*As duas chamadas abaixo são equivalentes*
+
+```cpp
+std::list<int>::iterator it = l.begin();
+auto ptr = next(it);
+std::cout << *ptr << std::endl
+ptr = next(it);
+```
+
+*Aqui usamos aritmética de ponteiros, mas pode fazer com next se achar mais simples*
+
+```cpp
+std::list<int>::iterator it = l.begin();
+std::cout << *(it++) << std::endl
+```
+
+---
+
+# Pequeno Desvio (o auto)
+
+1. No exemplo acima eu fiz uso de um tipo estranho `auto` (?)
+1. Na prática, eu estou dizendo: ei C++, sou preguiçoso
+    - Digite o tipo para mim
+    - Se for possível, será feito
+1. O exemplo abaixo funciona pois:
+    - `l.begin()` sempre retorna um tipo `std::list<int>::iterator` 
+        - Assim o compilador sabe inferir o tipo
+    - `next(it)` sempre retorna um ponteiro para um número na lista
+        - Assim o compilador sabe inferir o tipo
+
+```cpp
+#include <iostream>
+#include <list>
+
+int main() {
+  std::list<int> l = {7, 5, 16, 8};
+
+  l.push_front(25);
+  l.push_back(13);
+
+  auto it = l.begin();
   auto ptr = next(it);
   while (ptr != l.end()) {
     std::cout << *ptr << std::endl;
@@ -83,9 +157,18 @@ int main() {
   return 0;
 }
 ```
+
 ---
 
-# Containers Associativos
+# List vs Vector
+
+1. Quando queremos uma sequência de elementos, podemos escolher entre vector e list
+1. A não ser que tenha um motivo, use vector.
+    - desempenho melhor no geral
+
+---
+
+# Containers Associativos (oi Conjutos sem Repetiç
 
 1. Elementos não possuem ordem específica
 1. Projetados para suportar o acesso direto aos elementos usando chaves pré-determinadas
@@ -104,6 +187,10 @@ int main() {
 # Set
 
 1. Guarda uma coleção de elementos distintos
+
+![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/04-stl-fig5.png)
+
+
 1. Dados armazenados (ordenados) em uma *Árvores Binárias de Busca*
   - Já explico
 1. Comparáveis de acordo com algum critério
@@ -112,6 +199,46 @@ int main() {
     - Tem que usar um *comparator*, explicado mais afrente.
 
 ![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/04-stl-fig3.png)
+
+---
+
+# Exemplo com Set
+
+```cpp
+#include <iostream>
+#include <set>
+ 
+int main() {
+  std::set<int> s; 
+  for(int i = 1; i <= 10; i++) {
+    s.insert(i);
+  }
+
+  std::cout << "(" << s.size() << ")" << std::endl;
+  for (int e : s) {
+     std::cout << e << std::endl;
+  }
+
+  s.insert(7);
+ 
+  std::cout << "(" << s.size() << ")" << std::endl;
+  for (int e : s) {
+     std::cout << e << std::endl;
+  }
+  for(int i = 2; i <= 10; i += 2) {
+    s.erase(i);
+  }
+ 
+  std::cout << "(" << s.size() << ")" << std::endl;
+  for (int e : s) {
+     std::cout << e << std::endl;
+  }
+  return 0;
+}
+```
+
+![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/04-stl-fig6.png)
+
 
 ---
 
@@ -175,16 +302,59 @@ Pra qualquer nó:
 
 # Map
 
+1. Um mapa armazena pares (chave, valor) chamados itens
+    - Chaves e valores podem ser de qualquer tipo
+    - Elemento e Valor são sinônimos
+1. A chave é utilizada para achar um elemento rapidamente
+    - Estruturas especiais são usadas para que a pesquisa seja rápida
+1. Diz-se portanto que um mapa "mapeia chaves para valores"
+    - O mapa pode ser mantido ordenado ou não (com respeito às chaves)
+    - Em C++ implementada como BST
+    - Também pode ser uma Tabela Hash
+        - Assunto de Estruturas de Dados
+
 ![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/04-stl-fig4.png)
 
 ---
 
-Por padrão, maps/sets são implementados como árvores binárias de busca
-Existem versões unordered_*
-Mais eficazes na prática
-Porém, não conseguimos ordenar as chaves
-Iterador em um map/set
-Sempre em ordem
+# Exemplo Map
+
+1. Observe aqui o iterator mais complicado
+1. Tem que me indicar a chave e o valor
+1. Acesso com `->` pois se comporta como ponteiro
+
+```cpp
+include <iostream>
+#include <string>
+#include <map>
+ 
+int main() {
+  std::map<int,std::string> m;
+  m.insert(std::pair<int,std::string>(2017123456, "Joao"));
+ 
+  m[2016123456] = "Maria";
+  m[2018123456] = "Carlos";
+  m[2015123456] = "Jose";
+  m[2014123456] = "Joana";
+ 
+  std::map<int,std::string>::iterator it;
+  for (it = m.begin(); it != m.end(); it++) {
+    std::cout << it->first << ": " << it->second << std::endl;
+  }
+  return 0;
+}
+``` 
+
+---
+
+# Por fim...
+
+1. Por padrão, maps/sets são implementados como árvores binárias de busca
+1. Existem versões unordered_*
+    - Mais eficazes na prática
+1. Porém, não conseguimos ordenar as chaves
+1. Iterador em um map/set
+    - Sempre em ordem
 
 ---
 
@@ -212,5 +382,6 @@ int main() {
     std::cout << p.get_nome() << std::endl;
 
   return 0;
-}```
+}
+```
 
