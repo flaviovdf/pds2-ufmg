@@ -169,7 +169,7 @@ int main() {
 
 ---
 
-# Containers Associativos (ou Conjutos sem Repetiç
+# Containers Associativos (ou Conjutos sem Repetição)
 
 1. Elementos não possuem ordem específica
 1. Projetados para suportar o acesso direto aos elementos usando chaves pré-determinadas
