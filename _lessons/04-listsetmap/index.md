@@ -64,11 +64,19 @@ struct node_t {
 
 ---
 
+# List (Ideia)
+
+## O código abaixo mostra a ideia da lista no CPPTutor
+
+1. Observe que estamos apenas mostrando como encadear Nó
+1. Observe que para caminhar temos que usar os ponteiros
+    - Voltaremos para uma 'list do zero' em aulas futuras
+
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23include%20%3Ciostream%3E%0A%0Astruct%20node_t%20%7B%0A%20%20int%20valor%3B%0A%20%20node_t%20*anterior%3B%0A%20%20node_t%20*proximo%3B%0A%7D%3B%0A%0Avoid%20imprime_lista%28node_t%20*primeiro%29%20%7B%0A%20%20node_t%20*atual%20%3D%20primeiro%3B%0A%20%20while%20%28atual%20!%3D%20nullptr%29%20%7B%0A%20%20%20%20std%3A%3Acout%20%3C%3C%20atual-%3Evalor%20%3C%3C%20std%3A%3Aendl%3B%0A%20%20%20%20atual%20%3D%20atual-%3Eproximo%3B%0A%20%20%7D%0A%7D%0A%0Aint%20main%28%29%20%7B%0A%20%20%0A%20%20node_t%20primeiro%20%3D%20%7B7,%20nullptr,%20nullptr%7D%3B%0A%20%20node_t%20segundo%20%3D%20%7B2,%20%26primeiro,%20nullptr%7D%3B%0A%20%20primeiro.proximo%20%3D%20%26segundo%3B%0A%20%20%0A%20%20node_t%20terceiro%20%3D%20%7B15,%20%26segundo,%20nullptr%7D%3B%0A%20%20segundo.proximo%20%3D%20%26terceiro%3B%0A%20%20%0A%20%20imprime_lista%28%26primeiro%29%3B%0A%20%20%0A%20%20return%200%3B%0A%7D&codeDivHeight=400&codeDivWidth=350&curInstr=0&origin=opt-frontend.js&py=cpp_g%2B%2B9.3.0&rawInputLstJSON=%5B%5D"> </iframe>
 
 ---
 
-# Detalhes da List
+# Exemplo de código com a List
 
 ## Observe o uso do iterador para acessar os elementos
 
@@ -82,8 +90,8 @@ int main() {
   l.push_front(25);
   l.push_back(13);
 
-  std::list<int>::iterator it = l.begin();
-  auto ptr = next(it); // o auto ajuda quando não queremos determinar o tipo
+  // iterator de uma lista de inteiros
+  std::list<int>::iterator ptr = l.begin();
   while (ptr != l.end()) {
     std::cout << *ptr << std::endl;
     ptr = next(ptr);
@@ -116,8 +124,7 @@ int main() {
 *As duas chamadas abaixo são equivalentes*
 
 ```cpp
-std::list<int>::iterator it = l.begin();
-auto ptr = next(it);
+std::list<int>::iterator ptr = l.begin();
 std::cout << *ptr << std::endl
 ptr = next(it);
 ```
@@ -133,16 +140,6 @@ std::cout << *(it++) << std::endl
 
 # Pequeno Desvio (o auto)
 
-1. No exemplo acima eu fiz uso de um tipo estranho `auto` (?)
-1. Na prática, eu estou dizendo: ei C++, sou preguiçoso
-    - Digite o tipo para mim
-    - Se for possível, será feito
-1. O exemplo abaixo funciona pois:
-    - `l.begin()` sempre retorna um tipo `std::list<int>::iterator` 
-        - Assim o compilador sabe inferir o tipo
-    - `next(it)` sempre retorna um ponteiro para um número na lista
-        - Assim o compilador sabe inferir o tipo
-
 ```cpp
 #include <iostream>
 #include <list>
@@ -153,12 +150,47 @@ int main() {
   l.push_front(25);
   l.push_back(13);
 
-  auto it = l.begin();
-  auto ptr = next(it);
+  auto ptr = l.begin();
   while (ptr != l.end()) {
     std::cout << *ptr << std::endl;
     ptr = next(ptr);
   }
+  return 0;
+}
+```
+
+1. No exemplo acima eu fiz uso de um tipo estranho `auto` (?)
+1. Na prática, eu estou dizendo: ei C++, sou preguiçoso
+    - Digite o tipo para mim
+    - Se for possível, será feito
+1. O exemplo abaixo funciona pois:
+    - `l.begin()` sempre retorna um tipo `std::list<int>::iterator` 
+        - Assim o compilador sabe inferir o tipo
+    - `next(it)` sempre retorna um ponteiro para um número na lista
+        - Assim o compilador sabe inferir o tipo
+
+---
+
+# Mais Alto
+
+## Aqui o compilador sabe o retorno da função, o auto funciona
+
+```cpp
+double funcao() {
+  return 0.0
+}
+
+int main() {
+  auto var = funcao(); //função retorna int, então var é int
+  return 0;
+}
+```
+
+## Aqui teremos um erro de compilação
+
+```cpp
+int main() {
+  auto var;
   return 0;
 }
 ```
@@ -170,6 +202,11 @@ int main() {
 1. Quando queremos uma sequência de elementos, podemos escolher entre vector e list
 1. A não ser que tenha um motivo, use vector.
     - desempenho melhor no geral
+1. Caso faça deleções e inserções em vários locais, use `list`
+    - Com `std::list<int> l = {7, 5, 16, 8};`
+    - `l.push_front(0)` vira `{0, 7, 5, 16, 8}`
+    - `l.push_back(32)` vira `{0, 7, 5, 16, 8, 32}`
+1. O vector não suporta push_front
 
 ---
 
@@ -275,6 +312,7 @@ Pra qualquer nó:
           2     4    15
 ```
 
+![](https://commons.wikimedia.org/wiki/File:Optimal-binary-search-tree-from-sorted-array.gif)
 <a href="https://commons.wikimedia.org/wiki/File:Optimal-binary-search-tree-from-sorted-array.gif">Y.samadzadeh</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
 
 ---
@@ -292,7 +330,19 @@ Pra qualquer nó:
   - Se for maior, mais para a direita
   - Use recursividade para descer na árvore
 
+![](https://commons.wikimedia.org/wiki/File:Binary-search-tree-insertion-animation.gif)
 <a href="https://commons.wikimedia.org/wiki/File:Binary-search-tree-insertion-animation.gif">Y.samadzadeh</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
+
+
+---
+
+# BST (Ideia)
+
+## O BST abaixo mostra a ideia da lista no CPPTutor
+
+1. Observe que estamos apenas mostrando como inserir um elemento
+1. Chamada recursiva que desce até a posição correta, estilo o gif acima
+1. A `BST` é assunto de Estruturas de Dados
 
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=struct%20node_t%20%7B%0A%20%20int%20value%3B%0A%20%20node_t%20*esq%3B%0A%20%20node_t%20*dir%3B%0A%7D%3B%0A%0Avoid%20insere%28node_t%20*raiz,%20node_t%20*novo_no%29%20%7B%0A%20%20if%20%28novo_no-%3Evalue%20%3C%20raiz-%3Evalue%29%20%7B%0A%20%20%20%20if%20%28raiz-%3Eesq%20%3D%3D%20nullptr%29%20%7B%0A%20%20%20%20%20%20raiz-%3Eesq%20%3D%20novo_no%3B%20%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20insere%28raiz-%3Eesq,%20novo_no%29%3B%0A%20%20%20%20%7D%0A%20%20%7D%20else%20if%20%28novo_no-%3Evalue%20%3E%20raiz-%3Evalue%29%20%7B%0A%20%20%20%20if%20%28raiz-%3Edir%20%3D%3D%20nullptr%29%20%7B%0A%20%20%20%20%20%20raiz-%3Edir%20%3D%20novo_no%3B%20%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20insere%28raiz-%3Edir,%20novo_no%29%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%0Aint%20main%28%29%20%7B%0A%20%20node_t%20no_raiz%20%3D%20%7B7,%20nullptr,%20nullptr%7D%3B%0A%20%20node_t%20no2%20%3D%20%7B15,%20nullptr,%20nullptr%7D%3B%0A%20%20node_t%20no3%20%3D%20%7B16,%20nullptr,%20nullptr%7D%3B%0A%20%20node_t%20no4%20%3D%20%7B5,%20nullptr,%20nullptr%7D%3B%0A%20%20%0A%20%20insere%28%26no_raiz,%20%26no2%29%3B%0A%20%20insere%28%26no_raiz,%20%26no3%29%3B%0A%20%20insere%28%26no_raiz,%20%26no4%29%3B%0A%20%20%0A%20%20return%200%3B%0A%7D&codeDivHeight=400&codeDivWidth=700&curInstr=0&origin=opt-frontend.js&py=cpp_g%2B%2B9.3.0&rawInputLstJSON=%5B%5D"> </iframe>
 
@@ -305,7 +355,15 @@ Pra qualquer nó:
 1. Como seria um algoritmo para achar um elemento em um vector?
 1. Percorre *TODOS* os elementos até achar.
 1. Observe abaixo como a árvore é mais rápida.
+    - Em cada passo eu pulo metade dos elementos
+    - n/2 várias vezes é `log(n)`
+        - 16 / 2 = 8; 8 / 2 = 4; 4 / 2 = 2; 2 / 2 = 1.
+        - log2(16) = 4
+        - 4 divisões acima
+    - Em `log2(n)` passos acho um elemento
+    - No vector eu tenho que percorrer todos os elementos, 
 
+![](https://commons.wikimedia.org/wiki/File:Binary_search_tree_example.gif)
 <a href="https://commons.wikimedia.org/wiki/File:Binary_search_tree_example.gif">A.gholamzade</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
 
 ---
