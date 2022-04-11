@@ -314,7 +314,8 @@ Pra qualquer nó:
           2     4    15
 ```
 
-![](https://commons.wikimedia.org/wiki/File:Optimal-binary-search-tree-from-sorted-array.gif)
+![](https://upload.wikimedia.org/wikipedia/commons/9/9c/Optimal-binary-search-tree-from-sorted-array.gif?20200610182412)
+
 <a href="https://commons.wikimedia.org/wiki/File:Optimal-binary-search-tree-from-sorted-array.gif">Y.samadzadeh</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
 
 ---
@@ -332,7 +333,8 @@ Pra qualquer nó:
   - Se for maior, mais para a direita
   - Use recursividade para descer na árvore
 
-![](https://commons.wikimedia.org/wiki/File:Binary-search-tree-insertion-animation.gif)
+![](https://upload.wikimedia.org/wikipedia/commons/8/83/Binary-search-tree-insertion-animation.gif?20200610182643)
+
 <a href="https://commons.wikimedia.org/wiki/File:Binary-search-tree-insertion-animation.gif">Y.samadzadeh</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
 
 
@@ -365,7 +367,8 @@ Pra qualquer nó:
     - Em `log2(n)` passos acho um elemento
     - No vector eu tenho que percorrer todos os elementos, 
 
-![](https://commons.wikimedia.org/wiki/File:Binary_search_tree_example.gif)
+![](https://upload.wikimedia.org/wikipedia/commons/9/9b/Binary_search_tree_example.gif?20160606165900)
+
 <a href="https://commons.wikimedia.org/wiki/File:Binary_search_tree_example.gif">A.gholamzade</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
 
 ---
