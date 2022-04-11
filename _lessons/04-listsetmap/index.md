@@ -188,7 +188,7 @@ int main() {
 
 ## Aqui teremos um erro de compilação
 
-1. N
+1. Não temos como saber o tipo de `var
 
 ```cpp
 int main() {
