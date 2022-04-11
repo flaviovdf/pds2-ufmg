@@ -171,7 +171,7 @@ int main() {
 
 ---
 
-# Mais Alto
+# Mais Auto
 
 ## Aqui o compilador sabe o retorno da função, o auto funciona
 
@@ -187,6 +187,8 @@ int main() {
 ```
 
 ## Aqui teremos um erro de compilação
+
+1. N
 
 ```cpp
 int main() {
