@@ -17,3 +17,4 @@ Material Complementar
    não class
 1. O Capítulo 14 do [ThinkCPP](https://greenteapress.com/wp/think-c/)
    cobre Classes em mais detalhes.
+1. Capítulo 8 do curso [Programming and Data Structures](https://eecs280staff.github.io/notes/08_ADTs_in_C++.html)
