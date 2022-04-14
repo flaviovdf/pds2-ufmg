@@ -85,11 +85,20 @@ description: Modularização
 
 # Compilacao
 
-![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/06-mod-fig0.png)
+![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/06-mod-fig1.png)
 
 ---
 
 # Um exemplo
+
+---
+
+# Uma visão abstrata do processo
+
+1. Cada passa gera código de máquina
+1. O linker cola tudo junto
+
+![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/06-mod-fig2.png)
 
 ---
 
