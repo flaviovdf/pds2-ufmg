@@ -88,8 +88,32 @@ description: Modularização
 
 ---
 
-# Exemplo Makefike
+# Exemplo Makefile
 
+```make
+CC=g++
+CFLAGS=-std=c++11 -Wall
+
+all: main
+
+ponto.o: ponto.h ponto.cpp
+    ${CC} ${CFLAGS} -c ponto.cpp
+
+main.o: ponto.h main.cpp
+    ${CC} ${CFLAGS} -c main.cpp
+
+main: main.o ponto.o
+    ${CC} ${CFLAGS} -o main main.o ponto.o
+
+clean:
+    rm -f main *.o
+```
+
+---
+
+# Exemplo Makefile "Genérico"
+
+1. Copie e cole, funciona em sistemas unix
 
 ```make
 CC := g++
