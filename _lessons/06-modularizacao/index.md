@@ -70,6 +70,33 @@ description: Modularização
 
 ---
 
+# Projeto Modular
+## Propriedades
+
+1. Decomposição
+1. Composição
+1. Significado fechado
+1. Continuidade
+1. Proteção
+
+---
+
+# Decomposição
+
+1. Nível de Projeto
+    - Capaz de separar uma tarefa em subtarefas, que podem ser abordadas separadamente
+1. Nível de Software
+    - Capaz de trabalhar em cada um dos módulos do software independente do outros módulos
+1. O que pode prejudicar a decomposição?
+
+---
+
+# Composição
+
+1. Capacidade de conseguir combinar de forma livre diferentes elementos de software
+
+---
+
 # Compilação
 
 1. Grandes sistemas
