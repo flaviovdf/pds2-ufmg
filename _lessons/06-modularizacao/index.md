@@ -32,7 +32,20 @@ description: Modularização
 1. Os arquivos `.h` moram na pasta `include` (inclua isso)
 1. Por um `Makefile` vai compilar tudo
 
-![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/06-mod-fig0.png)
+
+```
+. project
+├── Makefile
+├── build
+│  └── [objects]
+├── include
+│  └── ponto.h
+│  └── retangulo.h
+└── src 
+│  └── ponto.cpp
+│  └── retangulo.cpp
+
+```
 
 ---
 
