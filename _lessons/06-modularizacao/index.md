@@ -16,7 +16,8 @@ description: Modularização
 
 # Lembrando do nosso objetivo
 
-## Com TADs queremos que o resto do programa seja cliente. Apenas use as operações do mesmo.
+1. Com TADs queremos que o resto do programa seja cliente
+1. Apenas use as operações do mesmo.
 
 ![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/02-tads-fig0.png)
 
@@ -79,6 +80,12 @@ description: Modularização
 
 1. Princípio do encapsulamento
     - Separar a especificação de como a classe é usada dos detalhes de como é implementada
+
+--- 
+
+# Compilacao
+
+![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/06-mod-fig0.png)
 
 ---
 
