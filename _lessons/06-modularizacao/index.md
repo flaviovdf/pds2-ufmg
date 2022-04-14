@@ -140,4 +140,15 @@ clean:
 .PHONY: clean
 ```
 
+---
+
+# Considerações Finais
+
+- Maior reusabilidade
+- Melhoria da legibilidade
+- Modificações facilitadas (e mais seguras)
+- Maior confiabilidade
+- Aumento da produtividade
+
+
 
