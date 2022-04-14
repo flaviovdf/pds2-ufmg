@@ -1,23 +1,40 @@
 ---
 layout: page
-title: List, Set e Map
+title: Prática de Containers
 has_children: true
 has_toc: false
 description: Prática de Containers
+nav_order: 5
 ---
 
-# Outros Containers (List, Set e Map)
+# Prática de Containers
 {: .no_toc .mb-2 }
 
-Ampliando o entendimento de containers via outros TADs comuns
-(com Douglas Macharet)
+Brincando um pouco com containers
 {: .fs-6 .fw-300 }
 
 ---
 
-# Até Agora...
+# Vamos práticar com containers um pouco
 
-## Basicamente fizemos uso de *Vector*
+## Considere o esqueleto de TAD de Aluno abaixo
+
+
+```
+class Aluno {
+  private:
+    std::string _nome;
+    int _matricula;
+  public:
+    Aluno(std::string nome, 
+};
+```
+
+Dado um TAD Aluno
+Data um arquivo de Nome, Mat, Matéria
+Como:
+Alocar um novo aluno para cada registro (linha)
+
 
 1. Vamos ampliar para outros `containers`
 
