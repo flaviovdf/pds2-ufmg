@@ -95,6 +95,29 @@ description: Modularização
 
 1. Capacidade de conseguir combinar de forma livre diferentes elementos de software
 
+![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/06-mod-fig0.png)
+
+---
+
+# Continuidade
+
+
+1. Alterações em parte da especificação demandam alterações em poucos módulos
+   - Bom exemplo
+1. Utilização de constantes
+   - Mau exemplo
+1. Dependência forte de um único módulo
+
+---
+
+# Proteção
+
+1. Situações anormais em tempo de execução não são propagadas para outros módulos
+    - Erros não detectados em outras partes
+1. Extensibilidade
+    - Validação dos dados nos módulos
+    - Tipos, asserções, exceções
+
 ---
 
 # Compilação
