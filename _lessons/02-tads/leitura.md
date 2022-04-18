@@ -7,7 +7,7 @@ parent: Tipos Abstratos de Dados
 # Leitura Complementar
 {: .no_toc .mb-2 }
 
-Material Complementar
+Para ler e reler 📚 🤓
 {: .fs-6 .fw-300 }
 
 ---
