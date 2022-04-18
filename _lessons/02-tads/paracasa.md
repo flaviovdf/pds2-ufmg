@@ -39,6 +39,45 @@ Considere que uma conta de banco pode ser representada pelo tipo abstrato de dad
 (a) Quais atributos e operações o tipo abstrato de dados `Conta` deve possuir?
 (b) Escreva, em c++, uma implementação do tipo abstrato de dados `Conta`.
 
+<details>
+<summary>Solução</summary>
+  
+```cpp
+#include <string>
+  
+using namespace std;
+  
+class Conta {
+  private:
+    int _numero;
+    double _saldo;
+  public:
+    Conta(int numero);
+
+    /*
+     * Saca um valor. Levanta exceção caso o saldo fique negativo.
+     */
+    void sacar(double valor);
+
+    /*
+     * Deposita um valor.
+     */
+    void depositar(double valor);
+
+    /*
+     * Retorna o número da conta.
+     */
+    int get_numero();
+
+    /*
+     * Retorna o saldo da conta.
+     */
+    double get_saldo();
+};
+```
+  
+</details>
+
 ---
 
 ## TAD Fração
