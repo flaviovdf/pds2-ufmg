@@ -19,4 +19,4 @@ Brincando um pouco com containers
 
 ## Por enquanto, fazer uso dos slides abaixo:
 
-[Slides](https://docs.google.com/presentation/d/1VuzsmsKkgtQiFidEZw-sKHz0Me4Bo0a5SRJy5KgdO24/edit#slide=id.p)
+[Slides](https://docs.google.com/presentation/d/1ZKOCTtnZ_p-lgFUx5yILSJDpMWkPFwY4L26ZXg5eisA/edit)
