@@ -3,19 +3,19 @@ layout: page
 title: Mais Conceitos de POO
 has_children: true
 has_toc: false
-description: Encapsulamento e outros conceitos
-nav_order: 8
+description: Listas Lineares
+nav_order: 10
 ---
 
-# Encapsulamento e outros conceitos
+# Listas Lineares
 {: .no_toc .mb-2 }
 
-Ligando o resto do assunto com POO
+Implementando o vector e a list
 {: .fs-6 .fw-300 }
 
 ---
 
-# Encapsulamento e outros conceitos
+# Listas Lineares
 
 ## Por enquanto, fazer uso dos slides abaixo:
 
