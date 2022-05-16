@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mais Conceitos de POO
+title: Listas Lineares
 has_children: true
 has_toc: false
 description: Listas Lineares
