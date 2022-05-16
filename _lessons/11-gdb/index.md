@@ -3,34 +3,40 @@ layout: page
 title: Mais Conceitos de POO
 has_children: true
 has_toc: false
-description: Encapsulamento e outros conceitos
-nav_order: 8
+description: Depuração
+nav_order: 11
 ---
 
-# Encapsulamento e outros conceitos
+# Depuração
 {: .no_toc .mb-2 }
 
-Ligando o resto do assunto com POO
+Entendendo como usar o GDB
 {: .fs-6 .fw-300 }
 
 ---
 
-# Encapsulamento e outros conceitos
+# Slides
 
 ## Por enquanto, fazer uso dos slides abaixo:
 
 [Slides](https://docs.google.com/presentation/d/1Lk1-yu9tzvXGvZQEuCnRKyJoapGwud34cUxAmnMv734)
 
-Compilação
-==========
+---
+
+# Passo a passo
+
+## Compilação
 
 Compile seu código com -g
+
 ```
 g++ -g arquivo.cpp -o main
 ```
 
-Valgrind (WSL/Linux/Mac)
-====================
+---
+
+## Valgrind (WSL/Linux/Mac)
+
 
   1. http://cs.ecs.baylor.edu/~donahoo/tools/valgrind/
   1. http://pages.cs.wisc.edu/~bart/537/valgrind.html
@@ -47,8 +53,9 @@ Explicando cada comando:
 --track-fds=yes       # Mostra quais arquivos ainda estão abertos
 ```
 
-DrMemory (Mac/Windows)
-======================
+---
+
+## DrMemory (Mac/Windows)
 
 Alternativa ao valgrind para Windows (sem WSL). Ao instalar o doctor memory e
 utilizar pela primeira vez, existe a possibilidade de surgir uma mensagem de erro
@@ -62,8 +69,9 @@ instruções de como baixar um arquivo que faz o doctor memory funcionar.
 drmemory -check_uninitialized -check_leaks -results_to_stderr -show_reachable -fetch_symbols -- ./meu_programa
 ```
 
-Exemplos
-========
+---
+
+## Exemplos
 
 Compile os códigos abaixo e teste os mesmos no DrMemory ou Valgrind.
 
@@ -128,7 +136,6 @@ int main(void) {
 
 Olhem os erros do DrMemory e/ou Valgrid para cada código acima!
 
-Mac Users
-=========
+## Mac Users
 
 Compilem com `g++ -m32`, dr memory não gosta de 64 bits no mac.
