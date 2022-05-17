@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Depuraç
+title: Depuração
 has_children: true
 has_toc: false
 description: Depuração
