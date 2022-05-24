@@ -59,15 +59,12 @@ incorporadas ao sistema e  propor  pelo  menos  **seis**  User  Stories.
 
 ## Entrevistas
 
-Entre a primeira entrega e a entrega final, os alunos devem marcar ao menos **uma**
-entrevista parcial e mais **uma** entrevista final com o monitor. Ou seja, um total
-de **duas** entrevistas.
-
-Os alunos que não realizarem as duas apresentações, onde a segunda tem que ter um
-projeto **quase pronto**. Terão penalizações na nota.
+Entre a primeira entrega e a entrega final, os alunos devem marcar ao menos **duas**
+entrevistas com o monitor. Os alunos que não realizarem as duas apresentações, onde
+a segunda tem que ter um projeto **quase pronto**. Terão penalizações na nota.
 
 1. Faltar a primeira apresentação (-5pts)
-1. Faltar a apresentação final (-5pts)
+1. Faltar a segunda apresentação (-5pts)
 
 ## Segunda Entrega
 
@@ -87,3 +84,7 @@ código.
 1. Entrevista (2pts).
 1. Participação individual (2pts).
 1. Criatividade, extras (+2pts).
+
+## Avaliações Finais
+
+Depois da segunda prova teremos as avaliaç
