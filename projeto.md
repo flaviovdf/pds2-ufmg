@@ -14,7 +14,7 @@ Praticar a matéria fazendo um software não trivial
 ---
 
 Além dos laboratórios, a disciplina deve contar com um TP. Para fazer o mesmo,
-montem grupos de 4 ou 5 pessoas. Tal TP será um projeto de software de
+montem grupos de **3 ou 4** pessoas. Tal TP será um projeto de software de
 pequeno/médio porte. O importante é que o mesmo aplique os conceitos visto em
 aula.
 
@@ -56,6 +56,18 @@ incorporadas ao sistema e  propor  pelo  menos  **seis**  User  Stories.
 1. A primeira entrega de tema + user stories vale 5pts do projeto final.
 1. Depois disso, iniciem o trabalho no tema, vamos ter uma entrevista após a primeira prova.
 1. Até a entrevista, tente criar ao menos um README.md no seu github!
+
+## Entrevistas
+
+Entre a primeira entrega e a entrega final, os alunos devem marcar ao menos **uma**
+entrevista parcial e mais **uma** entrevista final com o monitor. Ou seja, um total
+de **duas** entrevistas.
+
+Os alunos que não realizarem as duas apresentações, onde a segunda tem que ter um
+projeto **quase pronto**. Terão penalizações na nota.
+
+1. Faltar a primeira apresentação (-5pts)
+1. Faltar a apresentação final (-5pts)
 
 ## Segunda Entrega
 
