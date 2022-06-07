@@ -1,0 +1,10 @@
+{
+  "makefile.extensionOutputFolder": "./.vscode",
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "/home/flaviovdf/workspace/pds2-ufmg/_old/exemplos/aula12-heranca/pessoas",
+      "binaryPath": "/home/flaviovdf/workspace/pds2-ufmg/_old/exemplos/aula12-heranca/pessoas/main",
+      "binaryArgs": []
+    }
+  ]
+}

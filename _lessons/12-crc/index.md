@@ -3,7 +3,7 @@ layout: page
 title: Modelagem
 has_children: true
 has_toc: false
-description: Depuração
+description: Modelagem e Cartões CRC
 nav_order: 12
 ---
 

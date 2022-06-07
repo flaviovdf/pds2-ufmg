@@ -26,65 +26,92 @@ Lembre-se do passo a passo:
 
 ## TAD Conta
 
-Considere que uma conta de banco pode ser representada pelo tipo abstrato de dados
-(TAD) `Conta`. O TAD deve respeitar os seguintes requisitos:
+Considere que uma conta de banco pode ser representada pelo
+tipo abstrato de dados (TAD) `Conta`. O TAD deve respeitar
+os seguintes requisitos:
 - Toda conta deve possui um dono e um saldo;
 - O saldo é sempre um número inteiro;
 - O dono é representado pelo seu nome;
-- Deve ser possível descobrir o saldo e o dono de qualquer conta;
 - Deve ser possível depositar e retirar dinheiro da conta;
-- O saldo da conta deve ser sempre atualizado após um deposito ou uma retirada;
+- O saldo da conta deve ser sempre atualizado após um
+  deposito ou uma retirada;
 - O saldo nunca deve ser negativo.
 
 (a) Quais atributos e operações o tipo abstrato de dados `Conta` deve possuir?
+
+<details>
+<summary>Solução</summary>
+
+Atributos
+- Dono da conta (string)
+- Saldo (inteiro)
+
+Operações
+- Retirar
+- Depositar
+
+<details>
+
+
 (b) Escreva, em c++, uma implementação do tipo abstrato de dados `Conta`.
 
 <details>
 <summary>Solução</summary>
-  
+
 ```cpp
 #include <string>
-  
+
 using namespace std;
-  
+
 class Conta {
   private:
-    int _numero;
-    double _saldo;
+    string _dono;
+    unsigned int _saldo;
   public:
-    Conta(int numero);
+    Conta(string dono) {
+      _dono = dono;
+      _saldo = 0;
+    }
 
     /*
-     * Saca um valor. Levanta exceção caso o saldo fique negativo.
+     * Saca um valor.
+     * Retornar um erro caso o saldo fique negativo.
      */
-    void sacar(double valor);
+    boolean sacar(unsigned int valor) {
+      if (valor > _saldo) {
+        return false;
+      }
+
+      _saldo -= valor;
+      return true;
+    }
 
     /*
      * Deposita um valor.
      */
-    void depositar(double valor);
-
-    /*
-     * Retorna o número da conta.
-     */
-    int get_numero();
+    void depositar(unsigned int valor) {
+      _saldo += valor;
+    }
 
     /*
      * Retorna o saldo da conta.
      */
-    double get_saldo();
+    unsigned int get_saldo() {
+      return _saldo;
+    }
 };
 ```
-  
+
 </details>
 
 ---
 
 ## TAD Fração
 
-2. Considere que o Tipo Abstrato de Dados (TAD) `Fracao` representa um número
-fracionário. Escreva, em C++, uma implementação de `Fracao` considerando as
-seguintes operações:
+2. Considere que o Tipo Abstrato de Dados (TAD) `Fracao`
+   representa um número fracionário. Escreva, em C++,
+   uma implementação de `Fracao` considerando as seguintes
+   operações:
 - multiplicação,
 - divisão,
 - soma e
@@ -201,4 +228,4 @@ class Matriz {
 
     }
 };
-``` 
+```

@@ -1,12 +1,20 @@
 #include "pessoa.h"
 
-Pessoa::Pessoa(std::string nome):
-  _nome(nome) {}
+Pessoa::Pessoa(
+  std::string nome,
+  unsigned long cpf
+): _nome(nome),
+   _cpf(cpf) {
+}
 
 std::string Pessoa::get_nome() const {
   return this->_nome;
 }
 
-std::string Pessoa::defina_meu_tipo() const {
-  return "Sou uma pessoa!";
+unsigned long Pessoa::get_cpf() const {
+  return _cpf;
+}
+
+Acesso Pessoa::acesso_moodle() const {
+  return Acesso::SEM_ACESSO;
 }

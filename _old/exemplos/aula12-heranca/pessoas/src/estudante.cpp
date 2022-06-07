@@ -1,12 +1,16 @@
 #include "estudante.h"
 
-Estudante::Estudante(std::string nome, int matricula):
-  Pessoa(nome), _matricula(matricula) {};
+Estudante::Estudante(
+  std::string nome,
+  unsigned long cpf,
+  unsigned int matricula
+): Pessoa(nome, cpf),
+   _matricula(matricula) {};
 
-int Estudante::get_matricula() const {
-  return this->_matricula;
+unsigned int Estudante::get_matricula() const {
+  return _matricula;
 }
 
-std::string Estudante::defina_meu_tipo() const {
-  return "Sou um estudante";
+Acesso Estudante::acesso_moodle() const {
+  return Acesso::BAIXO;
 }

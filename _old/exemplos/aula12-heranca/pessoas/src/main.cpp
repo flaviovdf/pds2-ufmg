@@ -3,15 +3,17 @@
 #include "estudante.h"
 #include "pessoa.h"
 
+using namespace std;
+
 void f(Pessoa &pessoa) {
-  std::cout << "Na função: " << pessoa.defina_meu_tipo() << std::endl;
+  cout << "Na função: " << pessoa.acesso_moodle() << endl;
 }
 
 int main() {
-  Pessoa pessoa("Flavio F.");
-  Estudante estudante("Jane Doe", 20180101);
-  std::cout << "A pessoa é: " << pessoa.defina_meu_tipo() << std::endl;
-  std::cout << "O estudante é: " << estudante.defina_meu_tipo() << std::endl;
+  Pessoa pessoa("Flavio F.", 12345678900);
+  Estudante estudante("Jane Doe", 12345678901, 20180101);
+  cout << pessoa.acesso_moodle() << endl;
+  cout << estudante.acesso_moodle() << endl;
   f(pessoa);
   f(estudante);
   return 0;

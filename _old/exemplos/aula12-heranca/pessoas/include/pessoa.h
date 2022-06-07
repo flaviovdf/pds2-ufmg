@@ -3,13 +3,22 @@
 
 #include <string>
 
+enum Acesso {
+  SEM_ACESSO, BAIXO, ALTO
+};
+
 class Pessoa {
 private:
   const std::string _nome;
+  const unsigned long _cpf;
 public:
-  Pessoa(std::string nome);
+  Pessoa(
+    std::string nome,
+    unsigned long cpf
+  );
   std::string get_nome() const;
-  virtual std::string defina_meu_tipo() const;
+  unsigned long get_cpf() const;
+  virtual Acesso acesso_moodle() const;
 };
 
 #endif

@@ -3,16 +3,16 @@
 
 #include "pessoa.h"
 
-class Estudante : public Pessoa {
+class Funcionario : public Pessoa {
 private:
-  unsigned int _matricula;
+  double _salario;
 public:
-  Estudante(
+  Funcionario(
     std::string nome,
     unsigned long cpf,
-    unsigned int matricula
+    double salario
   );
-  unsigned int get_matricula() const;
+  double get_salario();
   virtual Acesso acesso_moodle() const override;
 };
 
