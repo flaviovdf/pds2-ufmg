@@ -7,7 +7,7 @@ description: Polimorfismo e Interfaces
 nav_order: 14
 ---
 
-# Depuração
+# Polimorfismo
 {: .no_toc .mb-2 }
 
 Polimorfismo e Interfaces (com Douglas Macharet)
