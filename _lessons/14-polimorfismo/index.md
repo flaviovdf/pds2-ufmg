@@ -18,6 +18,6 @@ Polimorfismo e Interfaces (com Douglas Macharet)
 Usar os
 [slides](https://docs.google.com/presentation/d/1uNr4alZw8q3EohJd0kINcxfeL-pb8FZLuqW8FXUqoDU)
 
-Exemplos de sala (em breve): 
+Exemplos de sala (em breve): [Aqui](https://github.com/flaviovdf/pds2-ufmg/tree/master/exemplos/aulas-polimorfismo)
 
 ---
