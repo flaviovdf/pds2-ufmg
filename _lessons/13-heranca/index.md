@@ -7,7 +7,7 @@ description: Herança
 nav_order: 13
 ---
 
-# Depuração
+# Herança
 {: .no_toc .mb-2 }
 
 Herança e Introdução ao Polimorfismo (com Douglas Macharet)
