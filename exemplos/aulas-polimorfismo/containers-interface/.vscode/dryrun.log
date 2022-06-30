@@ -1,0 +1,11 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/flaviovdf/workspace/pds2-ufmg/containers-interface'
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/listavetor.o src/listavetor.cpp
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/listadupla.o src/listadupla.cpp
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/main.o src/main.cpp
+g++ build/listavetor.o build/listadupla.o build/main.o -o main
+make: Leaving directory '/home/flaviovdf/workspace/pds2-ufmg/containers-interface'
+ 

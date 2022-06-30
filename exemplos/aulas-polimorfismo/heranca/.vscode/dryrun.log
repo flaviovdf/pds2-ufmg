@@ -1,0 +1,15 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/flaviovdf/workspace/pds2-ufmg/heranca'
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/professor.o src/professor.cpp
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/estudante.o src/estudante.cpp
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/main.o src/main.cpp
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/servidor.o src/servidor.cpp
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/pessoa.o src/pessoa.cpp
+g++ build/professor.o build/estudante.o build/main.o build/servidor.o build/pessoa.o -o main
+make: Leaving directory '/home/flaviovdf/workspace/pds2-ufmg/heranca'
+ 

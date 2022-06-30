@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/flaviovdf/workspace/pds2-ufmg/aula16-testes/exemplo_aula'
+mkdir -p bin
+g++ -std=c++20 -I include/ -I third_party/ program/main.cpp build/fmat.o -o bin/main
+make: Leaving directory '/home/flaviovdf/workspace/pds2-ufmg/aula16-testes/exemplo_aula'
+ 

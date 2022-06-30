@@ -1,0 +1,13 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/flaviovdf/workspace/pds2-ufmg/composicao'
+ 
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/boost.o src/boost.cpp
+ 
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/carta.o src/carta.cpp
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/main.o src/main.cpp
+g++ build/boost.o build/carta.o build/main.o -o main
+make: Leaving directory '/home/flaviovdf/workspace/pds2-ufmg/composicao'
+ 

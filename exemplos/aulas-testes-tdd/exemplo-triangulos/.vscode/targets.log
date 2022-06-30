@@ -1,0 +1,418 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Tue Jun 28 22:13:08 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# makefile (from 'Makefile', line 8)
+TESTER := program/tester.cpp
+# environment
+GTK_RC_FILES = /etc/gtk/gtkrc:/home/flaviovdf/.gtkrc:/home/flaviovdf/.config/gtkrc
+# makefile (from 'Makefile', line 4)
+OBJDIR := build
+# environment
+THEME_SHOW_PYTHON = false
+# makefile (from 'Makefile', line 5)
+BINDIR := bin
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b8bcf96c-7dac-4e76-86b3-b74fbaecfd9d.sock
+# environment
+LC_NAME = pt_BR.UTF-8
+# environment
+LC_NUMERIC = pt_BR.UTF-8
+# environment
+VSCODE_CWD = /home/flaviovdf
+# environment
+LC_ADDRESS = pt_BR.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+GTK3_MODULES = xapp-gtk3-module
+# environment
+GOPATH = /home/flaviovdf/go
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/flaviovdf/workspace/pds2-ufmg/aula16-testes/exemplo_aula
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+MAIL = /var/spool/mail/flaviovdf
+# environment
+XDG_DATA_DIRS = /home/flaviovdf/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+# environment
+BASH_IT = /home/flaviovdf/.bash_it
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/flaviovdf/.config/Code - OSS/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# environment
+LANG = C
+# environment
+XAUTHORITY = /home/flaviovdf/.Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/flaviovdf/workspace/pds2-ufmg/aula16-testes/exemplo_aula
+# environment
+VSCODE_PIPE_LOGGING = true
+# makefile (from 'Makefile', line 13)
+TSTSOURCES := tests/test_fmat.cpp
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+QT_LINUX_ACCESSIBILITY_ALWAYS_ON = 1
+# environment
+XDG_CONFIG_DIRS = /home/flaviovdf/.config/kdedefaults:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+SCM_CHECK = true
+# environment
+XCURSOR_THEME = breeze_cursors
+# environment
+XDG_SESSION_DESKTOP = KDE
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 5084
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/wall-e:@/tmp/.ICE-unix/1132,unix/wall-e:/tmp/.ICE-unix/1132
+# automatic
+*F = $(notdir $*)
+# makefile (from 'Makefile', line 3)
+TSTDIR := tests
+# environment
+CHROME_DESKTOP = code-oss.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+CLICOLOR = 
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/flaviovdf/miniconda3/bin:/home/flaviovdf/go/bin:/Users/flaviov/anaconda3/bin:/home/flaviovdf/bin:/usr/local/bin:/home/flaviovdf/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin
+# default
+MAKEFILES := 
+# environment
+LC_MONETARY = pt_BR.UTF-8
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# environment
+LC_TIME = pt_BR.UTF-8
+# environment
+BASH_IT_THEME = bobby-python
+# makefile (from 'Makefile', line 7)
+MAIN := program/main.cpp
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+LC_TELEPHONE = pt_BR.UTF-8
+# automatic
+?F = $(notdir $?)
+# environment
+KDE_APPLICATIONS_AS_SCOPE = 1
+# makefile (from 'Makefile', line 17)
+INC := -I include/ -I third_party/
+# environment
+XDG_SEAT = seat0
+# environment
+XDG_CURRENT_DESKTOP = KDE
+# automatic
++F = $(notdir $+)
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+DESKTOP_SESSION = plasma
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = KDE
+# makefile (from 'Makefile', line 12)
+OBJECTS := build/fmat.o
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+QT_SCREEN_SCALE_FACTORS = DSI-1=1.25;HDMI-1=1.25;DP-1=1.25;
+# environment
+LOGNAME = flaviovdf
+# environment
+XDG_VTNR = 1
+# makefile (from 'Makefile', line 10)
+SRCEXT := cpp
+# makefile
+.DEFAULT_GOAL := main
+# environment
+SYSTEMD_EXEC_PID = 964
+# environment
+EDITOR = nvim
+# environment
+DISPLAY = :0
+# environment
+GTK_MODULES = canberra-gtk-module
+# environment
+USER = flaviovdf
+# default
+MAKE_VERSION := 4.3
+# environment
+KDE_SESSION_UID = 1000
+# environment
+_printf_cmd = printf
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+LC_MEASUREMENT = pt_BR.UTF-8
+# environment
+DEBUGINFOD_URLS = https://debuginfod.archlinux.org 
+# environment
+_ = /usr/bin/make
+# environment
+LC_PAPER = pt_BR.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 16)
+CFLAGS := -std=c++20
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/flaviovdf/.gtkrc-2.0:/home/flaviovdf/.config/gtkrc-2.0
+# environment
+HOME = /home/flaviovdf
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+THEME_SHOW_CLOCK = false
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-0df8b567-1.67.2-main.sock
+# makefile (from 'Makefile', line 2)
+SRCDIR := src
+# environment
+XDG_SESSION_ID = 1
+# environment
+XCURSOR_SIZE = 36
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+QT_AUTO_SCREEN_SCALE_FACTOR = 0
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+KDE_SESSION_VERSION = 5
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# makefile (from 'Makefile', line 1)
+CC := g++
+# makefile (from 'Makefile', line 11)
+SOURCES := src/fmat.cpp
+# environment
+KDE_FULL_SESSION = true
+# environment
+LC_IDENTIFICATION = pt_BR.UTF-8
+# variable set hash-table stats:
+# Load=131/1024=13%, Rehash=0, Collisions=16/190=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# src (device 45826, inode 1865898): 3 files, no impossibilities so far.
+# . (device 45826, inode 1865897): 11 files, no impossibilities.
+
+# 14 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+build/%.o: src/%.cpp
+#  recipe to execute (from 'Makefile', line 20):
+	@mkdir -p $(@D)
+	$(CC) $(CFLAGS) $(INC) -c -o $@ $<
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+build/fmat.o: src/fmat.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'fmat'
+#  Last modified 2022-06-28 22:12:36.896762817
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 20):
+	@mkdir -p $(@D)
+	$(CC) $(CFLAGS) $(INC) -c -o $@ $<
+
+coverage:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-28 22:12:46.889971498
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 35):
+	$(RM) -r $(OBJDIR)/* $(BINDIR)/* coverage/* *.gcda *.gcno
+
+tests: build/fmat.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 28):
+	@mkdir -p $(BINDIR)
+	$(CC) $(CFLAGS) $(INC) $(TESTER) $(TSTSOURCES) $^ -o $(BINDIR)/tester
+	$(BINDIR)/tester
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: main
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/9=0%
+
+main: build/fmat.o
+#  Implicit rule search has not been done.
+ 
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := main
+# automatic
+# * := 
+# automatic
+# < := build/fmat.o
+# automatic
+# + := build/fmat.o
+# automatic
+# % := 
+# automatic
+# ^ := build/fmat.o
+# automatic
+# ? := build/fmat.o
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=13/18=72%
+#  recipe to execute (from 'Makefile', line 24):
+	@mkdir -p $(BINDIR)
+	$(CC) $(CFLAGS) $(INC) $(MAIN) $^ -o $(BINDIR)/main
+
+# Not a target:
+src/fmat.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-28 22:12:29.843531922
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: clean coverage
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=11/1024=1%, Rehash=0, Collisions=0/31=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 26 / storage = 212 B / avg = 8 B
+# current buf: size = 8162 B / used = 212 B / count = 26 / avg = 8 B
+
+# strcache performance: lookups = 45 / hit rate = 42%
+# hash-table stats:
+# Load=26/8192=0%, Rehash=0, Collisions=0/45=0%
+# Finished Make data base on Tue Jun 28 22:13:08 2022
+
+ 

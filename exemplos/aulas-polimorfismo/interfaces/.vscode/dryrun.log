@@ -1,0 +1,13 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/flaviovdf/workspace/pds2-ufmg/interfaces'
+ 
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/mensagem_audio.o src/mensagem_audio.cpp
+ 
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/mensagem_texto.o src/mensagem_texto.cpp
+mkdir -p build
+g++ -g -Wall -O3 -std=c++20 -I include/ -I third_party/ -c -o build/main.o src/main.cpp
+g++ build/mensagem_audio.o build/mensagem_texto.o build/main.o -o main
+make: Leaving directory '/home/flaviovdf/workspace/pds2-ufmg/interfaces'
+ 
