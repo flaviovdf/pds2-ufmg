@@ -1,22 +1,22 @@
 ---
 layout: page
-title: Programação Defensiva
+title: Test Driven Development e Programação Defensiva
 has_children: true
 has_toc: false
-description: Programação Defensiva
+description: Test Driven Development e Programação Defensiva
 nav_order: 17
 ---
 
-# Programação Defensiva
+# Test Driven Development e Programação Defensiva
 {: .no_toc .mb-2 }
 
 
-Programação Defensiva (com Douglas Macharet)
+Test Driven Development e Programação Defensiva (com Douglas Macharet)
 {: .fs-6 .fw-300 }
 
 ---
 
 Usar os
-[slides](https://docs.google.com/presentation/d/1BHEruqLGflqjbCSVjW864hyHRsoeLVhproDEiSqdUkY/edit?usp=sharing)
+[slides](https://docs.google.com/presentation/d/1GjSVhL68fl4pNGZ_lhCqs6mw1wMmPDIxiX5PKDHkIkc)
 
 ---
