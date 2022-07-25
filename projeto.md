@@ -84,7 +84,3 @@ código.
 1. Entrevista (2pts).
 1. Participação individual (2pts).
 1. Criatividade, extras (+2pts).
-
-## Avaliações Finais
-
-Depois da segunda prova teremos as avaliaç
