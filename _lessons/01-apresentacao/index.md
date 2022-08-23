@@ -36,6 +36,7 @@ Visão Geral do Curso, Introdução C++ e Logística
 1. Isto complementa o ponto de vista de PDS2
     - Comandos básicos para desenvolver programas
     - Noções de algoritmos
+
 ---
 
 # Nossos Objetivos
@@ -58,7 +59,7 @@ Visão Geral do Curso, Introdução C++ e Logística
 # Avaliação
 
 1. 2 Provas (**30 pontos, 2 de 15ptos**)
-1. 1 VPL por Aula (**40 pontos**)
+1. (na média) 1 VPL por Aula (**40 pontos**)
 1. 1 Projeto (**20 pontos**)
 1. Quizzes Moodle (**10 pontos**)
 
