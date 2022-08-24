@@ -334,8 +334,10 @@ class Ponto {
 }
 ```
 
-1. Iguais (conceito) e Diferentes (dados)!
-1. ** Tipo/TAD **
+1. Iguais (em conceito)
+    - Abstração do mesmo conceito da matemática
+1. Diferentes (em dados)!
+1. **Tipo/TAD**
     - Elementos com propriedades semelhantes
     - Clientes dependem do conceito geral
 
