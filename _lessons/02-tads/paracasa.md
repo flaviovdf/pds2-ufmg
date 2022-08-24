@@ -39,9 +39,7 @@ os seguintes requisitos:
 
 (a) Quais atributos e operações o tipo abstrato de dados `Conta` deve possuir?
 
-<details>
-<summary>Solução</summary>
-
+```
 Atributos
 - Dono da conta (string)
 - Saldo (inteiro)
@@ -49,14 +47,11 @@ Atributos
 Operações
 - Retirar
 - Depositar
-
-<details>
+```
 
 
 (b) Escreva, em c++, uma implementação do tipo abstrato de dados `Conta`.
 
-<details>
-<summary>Solução</summary>
 
 ```cpp
 #include <string>
@@ -101,8 +96,6 @@ class Conta {
     }
 };
 ```
-
-</details>
 
 ---
 
