@@ -213,7 +213,7 @@ int main() {
 }
 ```
 
-*É impossível fora da Classe acessar campos private**.
+*É impossível fora da Classe acessar campos private*.
 
 ---
 
