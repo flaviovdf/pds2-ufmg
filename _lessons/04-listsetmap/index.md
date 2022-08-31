@@ -72,7 +72,7 @@ struct node_t {
 1. Observe que para caminhar temos que usar os ponteiros
     - Voltaremos para uma 'list do zero' em aulas futuras
 
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23include%20%3Ciostream%3E%0A%0Astruct%20node_t%20%7B%0A%20%20int%20valor%3B%0A%20%20node_t%20*anterior%3B%0A%20%20node_t%20*proximo%3B%0A%7D%3B%0A%0Avoid%20imprime_lista%28node_t%20*primeiro%29%20%7B%0A%20%20node_t%20*atual%20%3D%20primeiro%3B%0A%20%20while%20%28atual%20!%3D%20nullptr%29%20%7B%0A%20%20%20%20std%3A%3Acout%20%3C%3C%20atual-%3Evalor%20%3C%3C%20std%3A%3Aendl%3B%0A%20%20%20%20atual%20%3D%20atual-%3Eproximo%3B%0A%20%20%7D%0A%7D%0A%0Aint%20main%28%29%20%7B%0A%20%20%0A%20%20node_t%20primeiro%20%3D%20%7B7,%20nullptr,%20nullptr%7D%3B%0A%20%20node_t%20segundo%20%3D%20%7B2,%20%26primeiro,%20nullptr%7D%3B%0A%20%20primeiro.proximo%20%3D%20%26segundo%3B%0A%20%20%0A%20%20node_t%20terceiro%20%3D%20%7B15,%20%26segundo,%20nullptr%7D%3B%0A%20%20segundo.proximo%20%3D%20%26terceiro%3B%0A%20%20%0A%20%20imprime_lista%28%26primeiro%29%3B%0A%20%20%0A%20%20return%200%3B%0A%7D&codeDivHeight=400&codeDivWidth=350&curInstr=0&origin=opt-frontend.js&py=cpp_g%2B%2B9.3.0&rawInputLstJSON=%5B%5D"> </iframe>
+<iframe width="1280" height="720" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23include%20%3Ciostream%3E%0A%0Astruct%20node_t%20%7B%0A%20%20int%20valor%3B%0A%20%20node_t%20*anterior%3B%0A%20%20node_t%20*proximo%3B%0A%7D%3B%0A%0Avoid%20imprime_lista%28node_t%20*primeiro%29%20%7B%0A%20%20node_t%20*atual%20%3D%20primeiro%3B%0A%20%20while%20%28atual%20!%3D%20nullptr%29%20%7B%0A%20%20%20%20std%3A%3Acout%20%3C%3C%20atual-%3Evalor%20%3C%3C%20std%3A%3Aendl%3B%0A%20%20%20%20atual%20%3D%20atual-%3Eproximo%3B%0A%20%20%7D%0A%7D%0A%0Aint%20main%28%29%20%7B%0A%20%20%0A%20%20node_t%20primeiro%20%3D%20%7B7,%20nullptr,%20nullptr%7D%3B%0A%20%20node_t%20segundo%20%3D%20%7B2,%20%26primeiro,%20nullptr%7D%3B%0A%20%20primeiro.proximo%20%3D%20%26segundo%3B%0A%20%20%0A%20%20node_t%20terceiro%20%3D%20%7B15,%20%26segundo,%20nullptr%7D%3B%0A%20%20segundo.proximo%20%3D%20%26terceiro%3B%0A%20%20%0A%20%20imprime_lista%28%26primeiro%29%3B%0A%20%20%0A%20%20return%200%3B%0A%7D&codeDivHeight=400&codeDivWidth=350&curInstr=0&origin=opt-frontend.js&py=cpp_g%2B%2B9.3.0&rawInputLstJSON=%5B%5D"> </iframe>
 
 ---
 
@@ -348,7 +348,7 @@ Pra qualquer nó:
 1. Chamada recursiva que desce até a posição correta, estilo o gif acima
 1. A `BST` é assunto de Estruturas de Dados
 
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=struct%20node_t%20%7B%0A%20%20int%20value%3B%0A%20%20node_t%20*esq%3B%0A%20%20node_t%20*dir%3B%0A%7D%3B%0A%0Avoid%20insere%28node_t%20*raiz,%20node_t%20*novo_no%29%20%7B%0A%20%20if%20%28novo_no-%3Evalue%20%3C%20raiz-%3Evalue%29%20%7B%0A%20%20%20%20if%20%28raiz-%3Eesq%20%3D%3D%20nullptr%29%20%7B%0A%20%20%20%20%20%20raiz-%3Eesq%20%3D%20novo_no%3B%20%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20insere%28raiz-%3Eesq,%20novo_no%29%3B%0A%20%20%20%20%7D%0A%20%20%7D%20else%20if%20%28novo_no-%3Evalue%20%3E%20raiz-%3Evalue%29%20%7B%0A%20%20%20%20if%20%28raiz-%3Edir%20%3D%3D%20nullptr%29%20%7B%0A%20%20%20%20%20%20raiz-%3Edir%20%3D%20novo_no%3B%20%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20insere%28raiz-%3Edir,%20novo_no%29%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%0Aint%20main%28%29%20%7B%0A%20%20node_t%20no_raiz%20%3D%20%7B7,%20nullptr,%20nullptr%7D%3B%0A%20%20node_t%20no2%20%3D%20%7B15,%20nullptr,%20nullptr%7D%3B%0A%20%20node_t%20no3%20%3D%20%7B16,%20nullptr,%20nullptr%7D%3B%0A%20%20node_t%20no4%20%3D%20%7B5,%20nullptr,%20nullptr%7D%3B%0A%20%20%0A%20%20insere%28%26no_raiz,%20%26no2%29%3B%0A%20%20insere%28%26no_raiz,%20%26no3%29%3B%0A%20%20insere%28%26no_raiz,%20%26no4%29%3B%0A%20%20%0A%20%20return%200%3B%0A%7D&codeDivHeight=400&codeDivWidth=700&curInstr=0&origin=opt-frontend.js&py=cpp_g%2B%2B9.3.0&rawInputLstJSON=%5B%5D"> </iframe>
+<iframe width="1280" height="720" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=struct%20node_t%20%7B%0A%20%20int%20value%3B%0A%20%20node_t%20*esq%3B%0A%20%20node_t%20*dir%3B%0A%7D%3B%0A%0Avoid%20insere%28node_t%20*raiz,%20node_t%20*novo_no%29%20%7B%0A%20%20if%20%28novo_no-%3Evalue%20%3C%20raiz-%3Evalue%29%20%7B%0A%20%20%20%20if%20%28raiz-%3Eesq%20%3D%3D%20nullptr%29%20%7B%0A%20%20%20%20%20%20raiz-%3Eesq%20%3D%20novo_no%3B%20%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20insere%28raiz-%3Eesq,%20novo_no%29%3B%0A%20%20%20%20%7D%0A%20%20%7D%20else%20if%20%28novo_no-%3Evalue%20%3E%20raiz-%3Evalue%29%20%7B%0A%20%20%20%20if%20%28raiz-%3Edir%20%3D%3D%20nullptr%29%20%7B%0A%20%20%20%20%20%20raiz-%3Edir%20%3D%20novo_no%3B%20%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20insere%28raiz-%3Edir,%20novo_no%29%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A%0Aint%20main%28%29%20%7B%0A%20%20node_t%20no_raiz%20%3D%20%7B7,%20nullptr,%20nullptr%7D%3B%0A%20%20node_t%20no2%20%3D%20%7B15,%20nullptr,%20nullptr%7D%3B%0A%20%20node_t%20no3%20%3D%20%7B16,%20nullptr,%20nullptr%7D%3B%0A%20%20node_t%20no4%20%3D%20%7B5,%20nullptr,%20nullptr%7D%3B%0A%20%20%0A%20%20insere%28%26no_raiz,%20%26no2%29%3B%0A%20%20insere%28%26no_raiz,%20%26no3%29%3B%0A%20%20insere%28%26no_raiz,%20%26no4%29%3B%0A%20%20%0A%20%20return%200%3B%0A%7D&codeDivHeight=400&codeDivWidth=700&curInstr=0&origin=opt-frontend.js&py=cpp_g%2B%2B9.3.0&rawInputLstJSON=%5B%5D"> </iframe>
 
 ---
 
@@ -402,17 +402,18 @@ Pra qualquer nó:
 #include <map>
  
 int main() {
-  std::map<int,std::string> m;
-  m.insert(std::pair<int,std::string>(2017123456, "Joao"));
+  std::map<int,std::string> telefones;
+  telefones.insert({2017123456, "Joao"}); // uma forma de inserir
  
-  m[2016123456] = "Maria";
-  m[2018123456] = "Carlos";
-  m[2015123456] = "Jose";
-  m[2014123456] = "Joana";
+  telefones[2016123456] = "Maria";        // outras formas
+  telefones[2018123456] = "Carlos";
+  telefones[2015123456] = "Jose";
+  telefones[2014123456] = "Joana";
  
-  std::map<int,std::string>::iterator it;
-  for (it = m.begin(); it != m.end(); it++) {
-    std::cout << it->first << ": " << it->second << std::endl;
+  auto pair;
+  while(pair != telefones.end()) {
+    std::cout << pair->first << ": " << pair->second << std::endl;
+    pair = next(pair);
   }
   return 0;
 }
@@ -431,7 +432,7 @@ int main() {
 
 ---
 
-# Comparators (avançado)
+# Comparators (Avançado, podem pular inicialmente)
 
 1. C++ sabe comparar números e strings
 1. Não sabe comparar seus TADs
