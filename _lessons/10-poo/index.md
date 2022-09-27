@@ -3,8 +3,8 @@ layout: page
 title: Programação Orientada a Objetos
 has_children: true
 has_toc: false
-description: Prática de Containers
-nav_order: 7
+description: Ligando o resto do assunto com POO
+nav_order: 10
 ---
 
 # Programação Orientada a Objetos

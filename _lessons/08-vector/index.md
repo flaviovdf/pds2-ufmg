@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Listas Lineares
+title: Listas Lineares com Vetores
 has_children: true
 has_toc: false
-description: Listas Lineares
-nav_order: 10
+description: Implementando o Vector
+nav_order: 8
 ---
 
-# Listas Lineares
+# Listas Lineares com Vetores
 {: .no_toc .mb-2 }
 
-Implementando o vector e a list
+Implementando o vector
 {: .fs-6 .fw-300 }
 
 ---

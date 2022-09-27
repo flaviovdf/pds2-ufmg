@@ -4,7 +4,7 @@ title: Mais Conceitos de POO
 has_children: true
 has_toc: false
 description: Encapsulamento e outros conceitos
-nav_order: 8
+nav_order: 11
 ---
 
 # Encapsulamento e outros conceitos
