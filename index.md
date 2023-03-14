@@ -34,8 +34,8 @@ mais básicas utilizadas no processo de desenvolvimento de software.
 
 ## Avaliação
 
-* Provas Teóricas (2 x 15 pts): 30 pontos.
-* Atividades práticas (entre 15 e 20): 40 pontos.
+* Provas Teóricas (2 x 25 pts): 50 pontos.
+* Atividades práticas (approx 20 VPLs de 1 pto): 20 pontos.
 * Projeto: 30 pontos.
 
 ## Livros
