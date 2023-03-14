@@ -21,6 +21,8 @@ A forma de se ter um ambiente mais próximo do professor no *Windows* é atravé
 
 Alguns alunos preferem manter seu ambiente em [MinGW](https://www.mingw-w64.org/). Não tem nenhum problema com isso. De qualquer forma, o uso de compiladores mais modernos como o [Clang](https://clang.llvm.org/) é mais chatinho de configurar neste ambiente (eu acho, não sei, nunca fiz). Usar o MinGW não vai impactar sua vida na disciplina. Se você gosta, use e seja feliz.
 
+Como a juventude, vocês, gostam de vídeos. Abaixo tem tudo em vídeos para ajudar no passo-a-passo.
+
 ## Vídeos de configuração WSL
 
 ### (PT-BR) 1. Instalando o WSL
