@@ -58,9 +58,9 @@ Visão Geral do Curso, Introdução C++ e Logística
 
 # Avaliação
 
-1. 2 Provas (**30 pontos, 2 de 15ptos**)
-1. (na média) 1 VPL por Aula (**40 pontos**)
-1. 1 Projeto (**30 pontos**)
+* Provas Teóricas (2 x 25 pts): 50 pontos.
+* Atividades práticas (approx 20 VPLs de 1 pto): 20 pontos.
+* Projeto: 30 pontos.
 
 ---
 
