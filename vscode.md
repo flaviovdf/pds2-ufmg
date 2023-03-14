@@ -6,11 +6,6 @@ description: Configurando seu ambiente
 
 # Introdução ao MinGW e ao Visual Studio Code
 
-{: .no_toc .mb-2 }
-
-Por PET UFPB
-{: .fs-6 .fw-300 }
-
 ---
 
 ## Informações básicas
