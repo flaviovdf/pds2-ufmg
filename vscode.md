@@ -4,8 +4,16 @@ title: Uso do VSCode
 description: Configurando seu ambiente
 ---
 
-# Introdução ao MinGW e ao Visual Studio Code
+# Introdução ao WSL e/ou MinGW junto com o Visual Studio Code
 
+{: .no_toc .mb-2 }
+Como configurar o seu ambiente para a disciplina.
+{: .fs-6 .fw-300 }
+
+---
+**Sumário**
+1. TOC
+{:toc}
 ---
 
 ## Informações básicas
