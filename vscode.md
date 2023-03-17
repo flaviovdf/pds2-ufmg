@@ -51,3 +51,9 @@ Como a juventude, vocês, gostam de vídeos. Abaixo tem tudo em vídeos para aju
 ### O link abaixo também tem informações parecidas
 
 [Instalando o VSCode](http://cfbcursos.com.br/instalando-e-configurando-o-vs-code-com-mingw/)
+
+## Extensões Utilizadas pelo Professor
+
+Abaixo tem uma imagem com as extensões que recomendo. As mesmas devem funcionar tanto no Windows quanto no Linux. Caso não tenha o compilador `clang`, pode ignorar tal extens 
+
+![](extensoes.png)
