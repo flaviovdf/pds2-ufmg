@@ -54,6 +54,6 @@ Como a juventude, vocês, gostam de vídeos. Abaixo tem tudo em vídeos para aju
 
 ## Extensões Utilizadas pelo Professor
 
-Abaixo tem uma imagem com as extensões que recomendo. As mesmas devem funcionar tanto no Windows quanto no Linux. Caso não tenha o compilador `clang`, pode ignorar tal extens 
+Abaixo tem uma imagem com as extensões que recomendo. As mesmas devem funcionar tanto no Windows quanto no Linux. Caso não tenha o compilador `clang`, pode ignorar a extensão `clangd`. A extensão C/C++ da Microsoft cumpre um prop
 
 ![](extensoes.png)
