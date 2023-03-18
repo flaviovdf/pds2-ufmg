@@ -28,21 +28,27 @@ Como a juventude, vocês, gostam de vídeos. Abaixo tem tudo em vídeos para aju
 
 ## Vídeos de configuração WSL
 
-### (PT-BR) 1. Instalando o WSL
+Eu realmente acho que dá para fazer tudo com os links que já postei. Mas, se você quer ter uma experiência cinematográfica, isto é, ver vídeos, seguem alguns abaixo. Aviso que coloquei os vídeos que achei melhor ao passar o olho. A pessoinha que faz o vídeo em português, por exemplo, instalar um monte de coisa que não usamos na aula. Porém é didática. O em inglês é mais direto ao assunto.
+
+### (Inglês) Rapidinho, tudo certo. Abaixo tem em português.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hwbii-fnKIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### (PT-BR) Vídeos em Português
+
+#### 1. Instalando o WSL
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kJElMJGbMHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### (PT-BR) 2. Configurando o Code para C/C++
+#### (PT-BR) 2. Configurando o Code para C/C++
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k54NwMto8GI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### (Inglês) Mesmo do vídeo acima só que mais rápido e em inglês
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Hwbii-fnKIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ## Vídeos de configuração MinGW
+
+Caso queira manter o MinGW (de boa), segue alguns dados para voc
 
 ### (PT-BR) Veja o vídeo abaixo para configurar seu ambiente
 
