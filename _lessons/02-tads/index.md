@@ -322,15 +322,27 @@ int main() {
 
 ```cpp
 class Ponto {
-  float x;
-  float y;
+  private:
+    float _x;
+    float _y;
+  public:
+    Ponto(float x, float y) {
+      _x = x;
+      _y = y;
+    }
 }
 ```
 
 ```cpp
 class Ponto {
-  float r;
-  float theta;
+  private:
+    float _r;
+    float _theta;
+  public:
+    Ponto(float r, float theta) {
+      _r = r;
+      _theta = theta;
+    }
 }
 ```
 
