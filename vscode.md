@@ -30,21 +30,34 @@ Como a juventude, vocês, gostam de vídeos. Abaixo tem tudo em vídeos para aju
 
 Eu realmente acho que dá para fazer tudo com os links que já postei. Mas, se você quer ter uma experiência cinematográfica, isto é, ver vídeos, seguem alguns abaixo. Aviso que coloquei os vídeos que achei melhor ao passar o olho. A pessoinha que faz o vídeo em português, por exemplo, instalar um monte de coisa que não usamos na aula. Porém é didática. O em inglês é mais direto ao assunto.
 
-### (Inglês) Rapidinho, tudo certo. Abaixo tem em português.
+### Vídeos em Português
+
+O professor Thiago Noronha, criou uma ótima playlist mostrando o passo-a-passo. Podem seguir!
+
+#### 1. Importância do ambiente de desenvolvimento e depuração de software 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V4h8w47NIxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### 2. Instalação do WSL2 no Windows 10
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8-WZY4yIS54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### 3. Configuração e uso do WSL2 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rMXu7gT9l_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### 4. Instalando o VSCode
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mtLg-oYCZyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### 5. Configurando o Code para C/C++
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6dbYunHnpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### (Inglês) Rapidinho
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hwbii-fnKIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### (PT-BR) Vídeos em Português
-
-#### 1. Instalando o WSL
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kJElMJGbMHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-#### (PT-BR) 2. Configurando o Code para C/C++
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k54NwMto8GI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ## Vídeos de configuração MinGW
 
