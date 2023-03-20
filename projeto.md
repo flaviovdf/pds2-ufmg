@@ -22,7 +22,7 @@ O grupo deve escolher um problema de seu interesse e realizar todo o processo
 de desenvolvimento de um sistema de médio porte (análise, projeto e
 implementação), aplicando os conceitos e técnicas vistos durante o curso
 (modelagem, POO, testes unitários, etc). O programa deve ser feito baseado na
-linguagem C++11. Uma lista de sugestões de temas é apresentada abaixo.
+linguagem C++20. Uma lista de sugestões de temas é apresentada abaixo.
 Entretanto, o tema é aberto à negociação caso o grupo tenha outra ideia.
 
 1. Batalha RPG
