@@ -26,6 +26,15 @@ Alguns alunos preferem manter seu ambiente em [MinGW](https://www.mingw-w64.org/
 
 Como a juventude, vocês, gostam de vídeos. Abaixo tem tudo em vídeos para ajudar no passo-a-passo.
 
+## Já tenho WSL ou Ubuntu? Do que preciso.
+
+Depois de instalar o WSL, execute os comandos abaixo no terminal Linux. O mesmo vale se você tiver Windows. Mas Flavio, você nem me disse como instalar o WSL ainda? Então, veja os vídeos abaixo e volte aqui. Coloquei isso antes para garantir que ninguém esqueça.
+
+```
+sudo apt update
+sudo apt install build-essential git gdb cmake
+```
+
 ## Vídeos de configuração WSL
 
 Eu realmente acho que dá para fazer tudo com os links que já postei. Mas, se você quer ter uma experiência cinematográfica, isto é, ver vídeos, seguem alguns abaixo. Aviso que coloquei os vídeos que achei melhor ao passar o olho. A pessoinha que faz o vídeo em português, por exemplo, instalar um monte de coisa que não usamos na aula. Porém é didática. O em inglês é mais direto ao assunto.
