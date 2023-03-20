@@ -73,6 +73,6 @@ Caso queira manter o MinGW (de boa), segue alguns dados para voc
 
 ## Extensões Utilizadas pelo Professor
 
-Abaixo tem uma imagem com as extensões que recomendo. As mesmas devem funcionar tanto no Windows quanto no Linux. Caso não tenha o compilador `clang`, pode ignorar a extensão `clangd`. A extensão C/C++ da Microsoft cumpre um prop
+Abaixo tem uma imagem com as extensões que recomendo. As mesmas devem funcionar tanto no Windows quanto no Linux. Caso não tenha o compilador `clang`, pode ignorar a extensão `clangd`. A extensão C/C++ da Microsoft cumpre um propósito similar, então o uso das duas é até redundante. Não se preocupe se a `clang` n
 
 ![](extensoes.png)
