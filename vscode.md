@@ -26,9 +26,9 @@ Alguns alunos preferem manter seu ambiente em [MinGW](https://www.mingw-w64.org/
 
 Como a juventude, vocês, gostam de vídeos. Abaixo tem tudo em vídeos para ajudar no passo-a-passo.
 
-## Já tenho WSL ou Ubuntu? Do que preciso.
+## Já tenho WSL ou Ubuntu!! Do que preciso?
 
-Depois de instalar o WSL, execute os comandos abaixo no terminal Linux. O mesmo vale se você tiver Windows. Mas Flavio, você nem me disse como instalar o WSL ainda? Então, veja os vídeos abaixo e volte aqui. Coloquei isso antes para garantir que ninguém esqueça.
+Além do instalar o Visual Studio Code, execute os comandos abaixo no terminal Linux. O mesmo vale se você tiver Windows. Mas Flavio, você nem me disse como instalar o WSL ainda? Então, veja os vídeos abaixo e volte aqui. Coloquei isso antes para garantir que ninguém esqueça.
 
 ```
 sudo apt update
