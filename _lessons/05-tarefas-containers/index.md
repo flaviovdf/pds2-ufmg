@@ -103,6 +103,7 @@ Você vai usar qual container?
   
 <details>
 <summary>Resposta</summary>
+  
 ```cpp
 #include <fstream>
 #include <iostream>
@@ -139,6 +140,21 @@ int main() {
 
 std::set<std::string> nomes;
 ```
-</details>
   
+</details>
+
+### Imprima os nomes únicos
+  
+<details>
+<summary>Resposta</summary>
+  
+```cpp
+// use um for each
+for (std::string nome : nome)) {
+  std::cout << nome << std::endl;
+}
+```
+  
+</details>
+
 [Slides](https://docs.google.com/presentation/d/1VuzsmsKkgtQiFidEZw-sKHz0Me4Bo0a5SRJy5KgdO24/edit#slide=id.p)
