@@ -94,7 +94,7 @@ int main() {
   
 ### Escreva uma função que pega os nomes únicos dos alunos
 
-Você vai usar qual container?
+Antes de ver a resposa se pergunte, você vai usar qual container?
 1. Vector
 1. Set
 1. Map
@@ -157,4 +157,36 @@ for (std::string nome : nome)) {
   
 </details>
 
+### Imprima os nomes únicos
+  
+<details>
+<summary>Resposta</summary>
+  
+```cpp
+// use um for each
+for (std::string nome : nome)) {
+  std::cout << nome << std::endl;
+}
+```
+
+</details>
+  
+### Escreva um TAD `RegistroDeAlunos que guarda os alunos por matrícula.
+
+Antes de ver a resposa se pergunte, você vai usar qual container?
+1. Vector
+1. Set
+1. Map
+1. Deque
+1. List
+  
+<details>
+<summary>Resposta</summary>
+  
+```cpp
+// Feito em sala de aula
+``` 
+
+</details>
+  
 [Slides](https://docs.google.com/presentation/d/1VuzsmsKkgtQiFidEZw-sKHz0Me4Bo0a5SRJy5KgdO24/edit#slide=id.p)
