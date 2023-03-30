@@ -55,8 +55,8 @@ Aqui, cada linha indica o nome e a matrícula de um discente.
 
 ### 1.1 Escreva um código locar um novo aluno para cada registro (linha)
 
-<details>
-<summary>Resposta</summary><p>
+Observe que o código abaixo faz uso de tipos novos, como o `std::ifstream` e o std::istringstream`. Em C++ a interação com a entrada e saída é feita através de `streams` (ou fluxos). Durante o curso, você já usou o `std::cout` e `std::cin`. O tipo `std::ifstream` se comporta quase que exatamente como os streams `cout` e `cin`. Depois de criado, ou seja, aberto o arquivo, observe que fazemos uso dos operadores `<<` e `>>` no mesmo.
+
 
 ```cpp
 #include <fstream>
@@ -66,7 +66,7 @@ Aqui, cada linha indica o nome e a matrícula de um discente.
 #include <string>
 
 int main() {
-  std::ifstream entrada("nome_do_arquivo.txt");
+  std::ifstream entrada("nome_do_arquivo.txt"); // 0. Abre o arquivo
   std::string linha;
   
   // 1. Lê o stream linha a linha
@@ -86,12 +86,11 @@ int main() {
 
     Aluno aluno(nome, matricula);
   }
-  entrada.close();
+  
+  entrada.close();  // 3. Fecha o arquivo
 }
 
 ```  
-
-</p></details>
   
 ### 1.2 Escreva uma função que armazena os nomes únicos dos alunos
 
@@ -101,10 +100,7 @@ Antes de ver a resposa se pergunte, você vai usar qual container?
 1. Map
 1. Deque
 1. List
-  
-<details>
-<summary>Resposta</summary><p>
-  
+   
 ```cpp
 #include <fstream>
 #include <iostream>
@@ -141,8 +137,6 @@ int main() {
 
 std::set<std::string> nomes;
 ```
-  
-</p></details>
 
 ### 1.3 Imprima os nomes únicos
   
@@ -160,17 +154,12 @@ for (std::string nome : nome)) {
 
 ### 1.4 Imprima os nomes únicos
   
-<details>
-<summary>Resposta</summary>
-  
 ```cpp
 // use um for each
 for (std::string nome : nome)) {
   std::cout << nome << std::endl;
 }
 ```
-
-</p></details>
   
 ### 1.5 Escreva um TAD `RegistroDeAlunos que guarda os alunos por matrícula.
 
@@ -181,14 +170,9 @@ Antes de ver a resposa se pergunte, você vai usar qual container?
 1. Deque
 1. List
   
-<details>
-<summary>Resposta</summary><p>
-  
 ```cpp
 // Feito em sala de aula
 ``` 
-
-</p></details>
   
 ## 2. Arquivo de Tweets
   
