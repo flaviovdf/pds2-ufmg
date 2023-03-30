@@ -1,0 +1,15 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/flaviovdf/workspace/pds2/aula23/aula15-refatoramento/02-codigo-um-pouco-melhor'
+mkdir -p build
+g++ -g -Wall -O3 -std=c++14 -I include/ -I third_party/ -c -o build/goplay.o src/goplay.cpp
+mkdir -p build
+g++ -g -Wall -O3 -std=c++14 -I include/ -I third_party/ -c -o build/usuario.o src/usuario.cpp
+mkdir -p build
+g++ -g -Wall -O3 -std=c++14 -I include/ -I third_party/ -c -o build/midia.o src/midia.cpp
+mkdir -p build
+g++ -g -Wall -O3 -std=c++14 -I include/ -I third_party/ -c -o build/item.o src/item.cpp
+mkdir -p build
+g++ -g -Wall -O3 -std=c++14 -I include/ -I third_party/ -c -o build/main.o src/main.cpp
+g++ build/goplay.o build/usuario.o build/midia.o build/item.o build/main.o -o main
+make: Leaving directory '/home/flaviovdf/workspace/pds2/aula23/aula15-refatoramento/02-codigo-um-pouco-melhor'
+ 
