@@ -60,7 +60,7 @@ Aqui, cada linha indica o nome e a matrícula de um discente.
 ### 1.1 Escreva um código locar um novo aluno para cada registro (linha)
 
 Observe que o código abaixo faz uso de tipos novos, como o
-`std::ifstream` e o std::istringstream`. Em C++ a interação
+`std::ifstream` e o `std::istringstream`. Em C++ a interação
 com a entrada e saída é feita através de `streams` (ou
 fluxos). Durante o curso, você já usou o `std::cout` e
 `std::cin`. O tipo `std::ifstream` se comporta quase que
@@ -150,17 +150,12 @@ std::set<std::string> nomes;
 
 ### 1.3 Imprima os nomes únicos
 
-<details>
-<summary>Resposta</summary></p>
-
 ```cpp
 // use um for each
 for (std::string nome : nome)) {
   std::cout << nome << std::endl;
 }
 ```
-
-</details>
 
 ### 1.4 Imprima os nomes únicos
 
