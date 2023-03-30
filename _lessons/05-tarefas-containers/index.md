@@ -56,8 +56,8 @@ Aqui, cada linha indica o nome e a matrícula de um discente.
 ### Escreva um código locar um novo aluno para cada registro (linha)
 
 <details>
-<summary>Resposta</summary>
-  
+<summary>Resposta</summary><p>
+
 ```cpp
 #include <fstream>
 #include <iostream>
@@ -90,7 +90,8 @@ int main() {
 }
 
 ```  
-</details>
+
+</p></details>
   
 ### Escreva uma função que pega os nomes únicos dos alunos
 
@@ -102,7 +103,7 @@ Antes de ver a resposa se pergunte, você vai usar qual container?
 1. List
   
 <details>
-<summary>Resposta</summary>
+<summary>Resposta</summary><p>
   
 ```cpp
 #include <fstream>
@@ -141,12 +142,12 @@ int main() {
 std::set<std::string> nomes;
 ```
   
-</details>
+</p></details>
 
 ### Imprima os nomes únicos
   
 <details>
-<summary>Resposta</summary>
+<summary>Resposta</summary></p>
   
 ```cpp
 // use um for each
@@ -169,7 +170,7 @@ for (std::string nome : nome)) {
 }
 ```
 
-</details>
+</p></details>
   
 ### Escreva um TAD `RegistroDeAlunos que guarda os alunos por matrícula.
 
@@ -181,12 +182,12 @@ Antes de ver a resposa se pergunte, você vai usar qual container?
 1. List
   
 <details>
-<summary>Resposta</summary>
+<summary>Resposta</summary><p>
   
 ```cpp
 // Feito em sala de aula
 ``` 
 
-</details>
+</p></details>
   
 [Slides](https://docs.google.com/presentation/d/1VuzsmsKkgtQiFidEZw-sKHz0Me4Bo0a5SRJy5KgdO24/edit#slide=id.p)
