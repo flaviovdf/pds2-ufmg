@@ -20,6 +20,7 @@ Brincando um pouco com containers
 ## 1. Leitura do Disco e Vector de um TAD Aluno
 
 Dado o TAD aluno abaixo:
+
 ```cpp
 class Aluno {
   private:
@@ -30,11 +31,11 @@ class Aluno {
       _nome = nome;
       _matricula = matricula;
     }
-    
+
     std::string get_nome() {
       return _nome;
     }
-    
+
     int get_matricula() {
       return _matricula;
     }
@@ -42,7 +43,9 @@ class Aluno {
 
 ```
 
-Suponha que existe um arquivo no disco, copie e cole em arquivo, o conteúdo abaixo:
+Suponha que existe um arquivo no disco, copie e cole em
+arquivo, o conteúdo abaixo:
+
 ```
 Flavio 20311028 01
 Flavio 20311028 02
@@ -51,12 +54,19 @@ Pedro 20311018 01
 Pedro 20311018 04
 Ana 20332019 04
 ```
+
 Aqui, cada linha indica o nome e a matrícula de um discente.
 
 ### 1.1 Escreva um código locar um novo aluno para cada registro (linha)
 
-Observe que o código abaixo faz uso de tipos novos, como o `std::ifstream` e o std::istringstream`. Em C++ a interação com a entrada e saída é feita através de `streams` (ou fluxos). Durante o curso, você já usou o `std::cout` e `std::cin`. O tipo `std::ifstream` se comporta quase que exatamente como os streams `cout` e `cin`. Depois de criado, ou seja, aberto o arquivo, observe que fazemos uso dos operadores `<<` e `>>` no mesmo.
-
+Observe que o código abaixo faz uso de tipos novos, como o
+`std::ifstream` e o std::istringstream`. Em C++ a interação
+com a entrada e saída é feita através de `streams` (ou
+fluxos). Durante o curso, você já usou o `std::cout` e
+`std::cin`. O tipo `std::ifstream` se comporta quase que
+exatamente como os streams `cout` e `cin`. Depois de
+criado, ou seja, aberto o arquivo, observe que fazemos uso
+dos operadores `<<` e `>>` no mesmo.
 
 ```cpp
 #include <fstream>
@@ -68,30 +78,30 @@ Observe que o código abaixo faz uso de tipos novos, como o `std::ifstream` e o 
 int main() {
   std::ifstream entrada("nome_do_arquivo.txt"); // 0. Abre o arquivo
   std::string linha;
-  
+
   // 1. Lê o stream linha a linha
   while (std::getline(entrada, linha)) {
-    
+
     // 2. Separa a linha em palavra. Para isto, se usa o istringstream
     //    Similar ao sscanf de C, usamos um texto como um arquivo.
-    
+
     auto stream_string = std::istringstream(linha);
     std::string nome;
     int matricula;
     int codigo_disciplina;
-  
+
     stream_string >> nome;                  // joga do stream no nome
     stream_string >> matricula;             // joga do stream na matricula
     stream_string >> codigo_disciplina;     // joga do stream no codigo
 
     Aluno aluno(nome, matricula);
   }
-  
+
   entrada.close();  // 3. Fecha o arquivo
 }
 
-```  
-  
+```
+
 ### 1.2 Escreva uma função que armazena os nomes únicos dos alunos
 
 Antes de ver a resposa se pergunte, você vai usar qual container?
@@ -100,7 +110,7 @@ Antes de ver a resposa se pergunte, você vai usar qual container?
 1. Map
 1. Deque
 1. List
-   
+
 ```cpp
 #include <fstream>
 #include <iostream>
@@ -113,18 +123,18 @@ int main() {
   std::ifstream entrada("nome_do_arquivo.txt");
   std::string linha;
   std::set<std::string> nomes;
-  
+
   // 1. Lê o stream linha a linha
   while (std::getline(entrada, linha)) {
-    
+
     // 2. Separa a linha em palavra. Para isto, se usa o istringstream
     //    Similar ao sscanf de C, usamos um texto como um arquivo.
-    
+
     auto stream_string = std::istringstream(linha);
     std::string nome;
     int matricula;
     int codigo_disciplina;
-  
+
     stream_string >> nome;                  // joga do stream no nome
     stream_string >> matricula;             // joga do stream na matricula
     stream_string >> codigo_disciplina;     // joga do stream no codigo
@@ -139,28 +149,28 @@ std::set<std::string> nomes;
 ```
 
 ### 1.3 Imprima os nomes únicos
-  
+
 <details>
 <summary>Resposta</summary></p>
-  
+
 ```cpp
 // use um for each
 for (std::string nome : nome)) {
   std::cout << nome << std::endl;
 }
 ```
-  
+
 </details>
 
 ### 1.4 Imprima os nomes únicos
-  
+
 ```cpp
 // use um for each
 for (std::string nome : nome)) {
   std::cout << nome << std::endl;
 }
 ```
-  
+
 ### 1.5 Escreva um TAD `RegistroDeAlunos que guarda os alunos por matrícula.
 
 Antes de ver a resposa se pergunte, você vai usar qual container?
@@ -169,13 +179,13 @@ Antes de ver a resposa se pergunte, você vai usar qual container?
 1. Map
 1. Deque
 1. List
-  
+
 ```cpp
 // Feito em sala de aula
-``` 
-  
+```
+
 ## 2. Arquivo de Tweets
-  
+
 Dado um arquivo grande de texto. Em cada linha, temos um texto diferente (p. ex., tweets, documentos, conversas etc.).
 
 ### 2.1 Como que podemos: carregar o arquivo na memória do computador?
