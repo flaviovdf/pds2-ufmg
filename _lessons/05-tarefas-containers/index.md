@@ -17,7 +17,7 @@ Brincando um pouco com containers
 
 # Vamos práticar com containers um pouco
 
-## Leitura do Disco e Vector de um TAD
+## 1. Leitura do Disco e Vector de um TAD Aluno
 
 Dado o TAD aluno abaixo:
 ```cpp
@@ -53,7 +53,7 @@ Ana 20332019 04
 ```
 Aqui, cada linha indica o nome e a matrícula de um discente.
 
-### Escreva um código locar um novo aluno para cada registro (linha)
+### 1.1 Escreva um código locar um novo aluno para cada registro (linha)
 
 <details>
 <summary>Resposta</summary><p>
@@ -93,7 +93,7 @@ int main() {
 
 </p></details>
   
-### Escreva uma função que pega os nomes únicos dos alunos
+### 1.2 Escreva uma função que armazena os nomes únicos dos alunos
 
 Antes de ver a resposa se pergunte, você vai usar qual container?
 1. Vector
@@ -144,7 +144,7 @@ std::set<std::string> nomes;
   
 </p></details>
 
-### Imprima os nomes únicos
+### 1.3 Imprima os nomes únicos
   
 <details>
 <summary>Resposta</summary></p>
@@ -158,7 +158,7 @@ for (std::string nome : nome)) {
   
 </details>
 
-### Imprima os nomes únicos
+### 1.4 Imprima os nomes únicos
   
 <details>
 <summary>Resposta</summary>
@@ -172,7 +172,7 @@ for (std::string nome : nome)) {
 
 </p></details>
   
-### Escreva um TAD `RegistroDeAlunos que guarda os alunos por matrícula.
+### 1.5 Escreva um TAD `RegistroDeAlunos que guarda os alunos por matrícula.
 
 Antes de ver a resposa se pergunte, você vai usar qual container?
 1. Vector
@@ -190,4 +190,10 @@ Antes de ver a resposa se pergunte, você vai usar qual container?
 
 </p></details>
   
-[Slides](https://docs.google.com/presentation/d/1VuzsmsKkgtQiFidEZw-sKHz0Me4Bo0a5SRJy5KgdO24/edit#slide=id.p)
+## 2. Arquivo de Tweets
+  
+Dado um arquivo grande de texto. Em cada linha, temos um texto diferente (p. ex., tweets, documentos, conversas etc.).
+
+### 2.1 Como que podemos: carregar o arquivo na memória do computador?
+### 2.2 Filtrar as linhas que ocorrem algum termo?
+### 2.3 Contar quantas vezes cada palavra aparece?
