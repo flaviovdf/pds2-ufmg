@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Leitura Complementar
-parent: Tarefas Contêiners
+parent: Prática de Containers
 ---
 
 # Leitura Complementar
