@@ -12,17 +12,24 @@ Algumas perguntas mais avançadas sobre contêiners.
 
 ---
 
-## Com respostas
+## Vector
 
-Em algum momento, `std::vector` vai alterar a ordem dos elementos serem inseridos?
+### Com resposta
 
-```Não, o std::vector é um contêiner sequencial e os elementos são armazenados e acessados na mesma ordem em que são inseridos.```
+**Em algum momento, `std::vector` vai alterar a ordem dos elementos serem inseridos?**
+<details><summary>Resposta</summary>
+Não, o `std::vector` é um contêiner sequencial e os elementos são armazenados e acessados na mesma ordem em que são inseridos.
+</details>
 
-Q Qual função é usada para inserir itens em um vetor e onde o objeto é inserido?
-A A função de membro push_back insere elementos no final do vetor.
+**Qual função é usada para inserir itens em um `std::vector` e onde o objeto é inserido?**
+<details><summary>Resposta</summary>
+O método `push_back()` insere elementos no final do vetor.
+</details>
 
-Q Qual função obtém o número de elementos armazenados em um vetor?
-A A função de membro size() retorna o número de elementos armazenados em um vetor. A propósito, isso é verdade para todos os containers do STL.
+**Qual função obtém o número de elementos armazenados em um `std::vector`?**
+<details><summary>Resposta</summary>
+O método `size()` retorna o número de elementos armazenados em um vetor. A propósito, isso é verdade para todos os contêiners da STL.
+</details>
 
 Q A inserção ou remoção de elementos no final do vetor leva mais tempo se o vetor contiver mais elementos?
 A Não. A inserção e remoção de elementos no final de um vetor são atividades de tempo constante.
