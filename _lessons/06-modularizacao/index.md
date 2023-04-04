@@ -29,7 +29,7 @@ nav_order: 6
 ## Vamos entender um pouco como organizar um código
 
 1. Todos os nossos arquivos `.cpp` vão ficar na pasta `src`
-    - `src` é *source* ou *fontes*; aqui moram os arquivos fontes.  
+    - `src` é *source* ou *fontes*: aqui moram os arquivos fontes.
 1. Vamos criar arquivos `.h` para definir o contrato do TAD
 1. Os arquivos `.h` moram na pasta `include` (inclua isso)
 1. Por um `Makefile` vai compilar tudo
@@ -43,7 +43,7 @@ nav_order: 6
 ├── include
 │  └── ponto.h
 │  └── retangulo.h
-└── src 
+└── src
 │  └── ponto.cpp
 │  └── retangulo.cpp
 
@@ -132,7 +132,7 @@ nav_order: 6
 1. Princípio do encapsulamento
     - Separar a especificação de como a classe é usada dos detalhes de como é implementada
 
---- 
+---
 
 # Compilacao
 
