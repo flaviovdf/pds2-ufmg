@@ -18,9 +18,7 @@ Para fixar os cont
 
 ---
 
-## Vector
-
-### Com respostas
+## Com respostas
 
 **Preciso usar um array. Não sei quantos elementos ele precisa conter. Que contêiner STL devo usar?**
 <details><summary>Resposta</summary>
@@ -38,7 +36,7 @@ Um contêiner associativo, `std::set` ou `std::map`, são ambos adequados para r
 Um contêiner associativo do tipo `std::multimap` (não visto em sala) é adequado para esse requisito. Um multimap pode conter pares chave-valor não exclusivos e pode oferecer uma pesquisa rápida característica de contêineres associativos.
 </details>
 
-### Sem respostas
+## Sem respostas
 
 1. Qual seria sua escolha de um contêiner que precisa conter um array de objetos com inserção possível no topo e na parte inferior?
 1. Você precisa armazenar elementos para pesquisa rápida. Que contêiner você escolheria?
