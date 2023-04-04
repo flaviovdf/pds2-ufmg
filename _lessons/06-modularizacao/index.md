@@ -51,7 +51,111 @@ nav_order: 6
 
 ---
 
-# “Agrupar para conquistar”
+## E estes arquivos .h?
+
+Lembre-se que TADs são contratos. Os arquivos `.h` é a
+forma que C/C++ tem de separar o contrato da implementação.
+
+Observe o exemplo de `ponto.h` abaixo:
+
+```cpp
+#ifndef PDS2_PONTO_H
+#define PDS2_PONTO_H
+
+/*
+ * Representa um ponto em duas dimensões. Não faz muito
+ * mais do que isso :-)
+ */
+class Ponto {
+  private:
+    double _x;
+    double _y;
+  public:
+    /*
+     * @brief Constutor do nosso ponto.
+     * /
+    Public(double x, double y);
+
+    /*
+     * @brief Retorna o valor na coordenada x
+     */
+    double get_x();
+
+    /*
+     * @brief Retorna o valor na coordenada y
+     */
+    double get_y();
+};
+#endif
+```
+
+---
+
+# Vamos por partes
+
+## Include Guards
+
+Observe que o arquivo começa e termina com:
+
+```cpp
+#ifndef PDS2_PONTO_H
+#define PDS2_PONTO_H
+
+// ...
+
+#endif
+```
+
+Essas três chamadas são conhecidas como "include guards".
+Tais linhas evitam bugs (ver
+[aqui](https://en.wikipedia.org/wiki/Include_guard) na hora
+de fazermos uso dos nossos arquivos `.h`
+
+Vou falar mais de erros depois.
+
+---
+
+# Definições
+
+## Em segundo lugar, observe que temos só o contrato
+
+```cpp
+/*
+ * Representa um ponto em duas dimensões. Não faz muito
+ * mais do que isso :-)
+ */
+class Ponto {
+  private:
+    double _x;
+    double _y;
+  public:
+    /*
+     * @brief Constutor do nosso ponto.
+     * /
+    Public(double x, double y);
+
+    /*
+     * @brief Retorna o valor na coordenada x
+     */
+    double get_x();
+
+    /*
+     * @brief Retorna o valor na coordenada y
+     */
+    double get_y();
+};
+```
+
+1. Observe que todos os métodos não tem comportamento
+   nenhum.
+1. Além disso, todos estão documentados. Não é obrigatório
+   mas é uma boa prática.
+1. Assim qualquer pessoa que vai usar nosso código consegue
+   entender quais são os contratos!
+
+---
+
+# Motivos de modularizar: “Agrupar para conquistar”
 
 ## Juntar elementos inter-relacionados
 
@@ -62,7 +166,8 @@ nav_order: 6
 
 ---
 
-# Módulo
+# Motivos de modularizar: “Agrupar para conquistar”
+## Módulo
 
 1. Propósito único
 1. Interface apropriada com outros módulos
@@ -229,6 +334,3 @@ clean:
 - Modificações facilitadas (e mais seguras)
 - Maior confiabilidade
 - Aumento da produtividade
-
-
-
