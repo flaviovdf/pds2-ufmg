@@ -286,6 +286,8 @@ Dado um arquivo grande de texto. Em cada linha, temos um texto diferente (p. ex.
 
 ### 2.1 Como que podemos: carregar o arquivo na memória do computador?
 
+Aqui basta usar um vector ou uma list para guardar tudo.
+
 ```cpp
 #include <iostream>
 #include <list>
@@ -307,6 +309,10 @@ int main() {
 ```
 
 ### 2.2 Filtrar as linhas que ocorrem algum termo?
+
+Abaixo temos a solução. Observe como usamos o método `erase` da `std::list`. Observe o passo a passo no gif:
+
+![](./)
 
 ```cpp
 #include <iostream>
