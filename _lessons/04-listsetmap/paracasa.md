@@ -22,15 +22,18 @@ Para fixar os cont
 
 ### Com respostas
 
-1. Preciso usar um array. Não sei quantos elementos ele precisa conter. Que contêiner STL devo usar?
+**Preciso usar um array. Não sei quantos elementos ele precisa conter. Que contêiner STL devo usar?**
 <details><summary>Resposta</summary>
 Um `std::vector` ou um `std::list` são perfeitamente adequados para esse requisito. Ambos gerenciam a memória e podem dimensionar dinamicamente para atender aos requisitos crescentes de um aplicativo.
 </summary>
-1. Meu aplicativo tem um requisito que envolve buscas frequentes. Que tipo de contêiner devo escolher?
+
+**Meu aplicativo tem um requisito que envolve buscas frequentes. Que tipo de contêiner devo escolher?**
 <details><summary>Resposta</summary>
 Um contêiner associativo, `std::set` ou `std::map`, são ambos adequados para requisitos que envolvem buscas frequentes.
 </summary>
-1. Preciso armazenar pares chave-valor para pesquisa rápida. No entanto, a situação pode resultar em várias chaves que não são exclusivas. Que contêiner devo escolher?
+
+**Preciso armazenar pares chave-valor para pesquisa rápida. No entanto, a situação pode resultar em várias chaves que não são exclusivas. Que contêiner devo escolher?**
+
 <details><summary>Resposta</summary>
 Um contêiner associativo do tipo `std::multimap` (não visto em sala) é adequado para esse requisito. Um multimap pode conter pares chave-valor não exclusivos e pode oferecer uma pesquisa rápida característica de contêineres associativos.
 </summary>
