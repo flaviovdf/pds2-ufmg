@@ -176,7 +176,108 @@ Antes de ver a resposa se pergunte, você vai usar qual container?
 1. List
 
 ```cpp
-// Feito em sala de aula
+#include <fstream>
+#include <iostream>
+#include <iterator>
+#include <map>
+#include <set>
+#include <string>
+#include <vector>
+
+
+using namespace std;
+
+class Aluno {
+  private:
+    std::string _nome;
+    int _matricula;
+    set<int> _materias;
+  public:
+    Aluno(std::string nome, int matricula) {
+      _nome = nome;
+      _matricula = matricula;
+    }
+
+    std::string get_nome() {
+      return _nome;
+    }
+
+    int get_matricula() {
+      return _matricula;
+    }
+
+    void matricular(int materia) {
+      _materias.insert(materia);
+    }
+
+    set<int> get_materias() {
+      return _materias;
+    }
+};
+
+class RegistroDeAlunos {
+  private:
+    map<int, Aluno> _registro_alunos;
+  public:
+    void inserir_aluno(Aluno a) {
+      _registro_alunos.insert(
+        pair<int, Aluno>(a.get_matricula(), a)
+      );
+    }
+
+    void adicionar_materia(int matricula, int materia) {
+      _registro_alunos.at(matricula).matricular(materia);
+    }
+
+    bool ja_registrada(int matricula) {
+      return _registro_alunos.count(matricula) > 0;
+    }
+
+    void imprime_registro() {
+      auto it = _registro_alunos.begin();
+      while (it != _registro_alunos.end()) {
+        int matricula = it->first;
+        Aluno a = it->second;
+        int n = a.get_materias().size();
+
+        cout << "O aluno com nome: " << a.get_nome();
+        cout << " e matricula " << matricula;
+        cout << " se matriculou em " << n << " materias";
+        cout << endl;
+
+        it = next(it);
+      }
+    }
+};
+
+
+int main() {
+  fstream arquivo_entrada_stream;
+  arquivo_entrada_stream.open("alunos.dat");
+  
+  RegistroDeAlunos registro;
+  while (!arquivo_entrada_stream.eof()) {
+    string nome;
+    arquivo_entrada_stream >> nome;
+
+    int matricula;
+    arquivo_entrada_stream >> matricula;
+
+    int cod_disciplina;
+    arquivo_entrada_stream >> cod_disciplina;
+
+    if (!registro.ja_registrada(matricula)) {
+      Aluno a = Aluno(nome, matricula);
+      registro.inserir_aluno(a);
+    }
+    registro.adicionar_materia(matricula, cod_disciplina);
+  };
+  
+  registro.imprime_registro();
+
+  arquivo_entrada_stream.close();
+  return 0;
+}
 ```
 
 ## 2. Arquivo de Tweets
@@ -185,4 +286,76 @@ Dado um arquivo grande de texto. Em cada linha, temos um texto diferente (p. ex.
 
 ### 2.1 Como que podemos: carregar o arquivo na memória do computador?
 ### 2.2 Filtrar as linhas que ocorrem algum termo?
+
+```cpp
+#include <iostream>
+#include <list>
+#include <sstream>
+#include <string>
+
+int main() {
+  std::string linha;
+  std::string palavra;
+  std::istringstream stream_string;
+
+  std::list<std::string> linhas;
+
+  while (std::getline(std::cin, linha)) {
+    if (linha == "sair") // 2. Se o usuário digitar sair, quebra o laço
+      break;
+    linhas.push_back(linha);
+  }
+
+  std::string termo;
+  std::cout << "Digite o termo para filtrar" << std::endl;
+  std::cin >> termo;
+
+  std::list<std::string>::iterator it = linhas.begin();
+  while (it != linhas.end()) {
+    linha = *it;
+    int posicao = linha.find(termo);    // find procura o termo na linha
+    if (posicao != std::string::npos)   // aqui comparamos se achamos algo
+      linhas.erase(it);                 // observe que o erase recebe o it
+    it = next(it);
+  }
+
+  for (std::string linha : linhas) {
+    std::cout << linha << std::endl;
+  }
+}
+```
+
 ### 2.3 Contar quantas vezes cada palavra aparece?
+
+```cpp
+#include <iostream>
+#include <map>
+#include <sstream>
+#include <string>
+
+int main() {
+  std::string linha;
+  std::string palavra;
+  std::istringstream stream_string;
+
+  std::map<std::string, int> contagem;
+  std::string termo;
+  while (std::getline(std::cin, linha)) {
+    if (linha == "sair")
+      break;
+    stream_string = std::istringstream(linha);
+    while (std::getline(stream_string, termo, ' ')) {
+      if (contagem.count(termo) == 0) { // 0 se não existe; 1 cc.
+        contagem[termo] = 0;
+      }
+      contagem[termo] = contagem[termo] + 1;
+    }
+  }
+
+  std::cout << std::endl;
+  for (std::pair<std::string, int> pair : contagem) {
+    std::cout << "Termo : " << pair.first << " Contagem: " << pair.second;
+    std::cout << std::endl;
+  }
+}
+```
