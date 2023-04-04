@@ -282,7 +282,13 @@ int main() {
 
 ## 2. Arquivo de Tweets
 
-Dado um arquivo grande de texto. Em cada linha, temos um texto diferente (p. ex., tweets, documentos, conversas etc.). Embora os exemplos abaixo não usem o arquivo, já argumentamos que usar o mesmo é só uma questão de trocar o `std::cin` para o seu `std::fstream`. Caso queira um arquivo mesmo para testar, baixe [aqui](https://github.com/flaviovdf/pds2-ufmg/blob/master/_old/exemplos/aula08-problemas-tads/data/tweets.txt).
+Dado um arquivo grande de texto. Em cada linha, temos um texto diferente
+(p. ex., tweets, documentos, conversas etc.). Embora os exemplos abaixo
+não usem o arquivo, já argumentamos que usar o mesmo é só uma questão de
+trocar o `std::cin` para o seu `std::fstream`. 
+
+Caso queira um arquivo mesmo para testar, baixe
+[aqui](https://github.com/flaviovdf/pds2-ufmg/blob/master/_old/exemplos/aula08-problemas-tads/data/tweets.txt).
 
 ### 2.1 Como que podemos: carregar o arquivo na memória do computador?
 
@@ -312,7 +318,7 @@ int main() {
 
 Abaixo temos a solução. Observe como usamos o método `erase` da `std::list`. Observe o passo a passo no gif:
 
-![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/05-prob-ani1.gif))
+![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/05-prob-ani1.gif)
 
 ```cpp
 #include <iostream>
@@ -353,6 +359,13 @@ int main() {
 ```
 
 ### 2.3 Contar quantas vezes cada palavra aparece?
+
+
+Abaixo temos a solução. Observe como guardamos as contagens no mapa e atualizamos sempre
+que o termo aparece mais de uma vez.
+
+![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/05-prob-ani2.gif)
+
 
 ```cpp
 #include <iostream>
