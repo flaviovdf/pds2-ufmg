@@ -105,7 +105,7 @@ int main() {
 ### 1.2 Escreva uma função que armazena os nomes únicos dos alunos
 
 Antes de ver a resposa se pergunte, você vai usar qual container?
-1. Vector
+1. **Vector**
 1. Set
 1. Map
 1. Deque
@@ -166,12 +166,12 @@ for (std::string nome : nome)) {
 }
 ```
 
-### 1.5 Escreva um TAD `RegistroDeAlunos que guarda os alunos por matrícula.
+### 1.5 Escreva um TAD `RegistroDeAlunos` que guarda os alunos por matrícula.
 
 Antes de ver a resposa se pergunte, você vai usar qual container?
 1. Vector
 1. Set
-1. Map
+1. **Map**
 1. Deque
 1. List
 
