@@ -69,10 +69,10 @@ criado, ou seja, aberto o arquivo, observe que fazemos uso
 dos operadores `<<` e `>>` no mesmo.
 
 ```cpp
-#include <fstream>
+#include <fstream>      // leitura de arquivos
 #include <iostream>
 #include <map>
-#include <sstream>
+#include <sstream>      // trata strings como stream, útil
 #include <string>
 
 int main() {
@@ -85,7 +85,7 @@ int main() {
     // 2. Separa a linha em palavra. Para isto, se usa o istringstream
     //    Similar ao sscanf de C, usamos um texto como um arquivo.
 
-    auto stream_string = std::istringstream(linha);
+    auto stream_string = std::istringstream(linha);  // observe que quebramos a linha
     std::string nome;
     int matricula;
     int codigo_disciplina;
@@ -184,7 +184,6 @@ Antes de ver a resposa se pergunte, você vai usar qual container?
 #include <string>
 #include <vector>
 
-
 using namespace std;
 
 class Aluno {
@@ -250,7 +249,6 @@ class RegistroDeAlunos {
     }
 };
 
-
 int main() {
   fstream arquivo_entrada_stream;
   arquivo_entrada_stream.open("alunos.dat");
@@ -290,9 +288,9 @@ trocar o `std::cin` para o seu `std::fstream`.
 Caso queira um arquivo mesmo para testar, baixe
 [aqui](https://github.com/flaviovdf/pds2-ufmg/blob/master/_old/exemplos/aula08-problemas-tads/data/tweets.txt).
 
-### 2.1 Como que podemos: carregar o arquivo na memória do computador?
+### 2.1 Como que podemos carregar o arquivo na memória do computador?
 
-Aqui basta usar um vector ou uma list para guardar tudo.
+Aqui basta usar um `std::vector` ou uma `std::list` para guardar tudo.
 
 ```cpp
 #include <iostream>
@@ -316,8 +314,8 @@ int main() {
 
 ### 2.2 Filtrar as linhas que ocorrem algum termo?
 
-Abaixo temos a solução. Observe como usamos o método `erase` da `std::list`. Observe o passo a passo no gif:
-
+Abaixo temos a solução. Observe como usamos o método `erase` da
+`std::list`. Observe o passo a passo no gif:
 ![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/05-prob-ani1.gif)
 
 ```cpp
@@ -363,7 +361,6 @@ int main() {
 
 Abaixo temos a solução. Observe como guardamos as contagens no mapa e atualizamos sempre
 que o termo aparece mais de uma vez.
-
 ![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/05-prob-ani2.gif)
 
 
