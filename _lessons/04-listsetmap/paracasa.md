@@ -7,7 +7,7 @@ parent: List, Set e Map
 # Exercícios para Casa
 {: .no_toc .mb-2 }
 
-Vários Exercícios por Douglas Macharet
+Para fixar os cont
 {: .fs-6 .fw-300 }
 
 ---
