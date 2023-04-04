@@ -282,9 +282,30 @@ int main() {
 
 ## 2. Arquivo de Tweets
 
-Dado um arquivo grande de texto. Em cada linha, temos um texto diferente (p. ex., tweets, documentos, conversas etc.).
+Dado um arquivo grande de texto. Em cada linha, temos um texto diferente (p. ex., tweets, documentos, conversas etc.). Embora os exemplos abaixo não usem o arquivo, já argumentamos que usar o mesmo é só uma questão de trocar o `std::cin` para o seu `std::fstream`. Caso queira um arquivo mesmo para testar, baixe [aqui](https://github.com/flaviovdf/pds2-ufmg/blob/master/_old/exemplos/aula08-problemas-tads/data/tweets.txt).
 
 ### 2.1 Como que podemos: carregar o arquivo na memória do computador?
+
+```cpp
+#include <iostream>
+#include <list>
+#include <sstream>
+#include <string>
+
+int main() {
+  std::string linha;
+  std::string palavra;
+  std::istringstream stream_string;
+
+  std::list<std::string> linhas;
+
+  while (std::getline(std::cin, linha)) {
+    if (linha == "sair") // 2. Se o usuário digitar sair, quebra o laço
+      break;
+    linhas.push_back(linha);
+  }
+```
+
 ### 2.2 Filtrar as linhas que ocorrem algum termo?
 
 ```cpp
