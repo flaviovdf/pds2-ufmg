@@ -73,7 +73,7 @@ class Ponto {
   public:
     /*
      * @brief Constutor do nosso ponto.
-     * /
+     */
     Public(double x, double y);
 
     /*
