@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Exercícios para Casa
-parent: Prática de Contêiners
+parent: Prática de Containers
 ---
 
 # Exercícios para Casa
@@ -14,7 +14,7 @@ Algumas perguntas mais avançadas sobre contêiners.
 
 ## Vector
 
-### Com resposta
+### Perguntas Teóricas
 
 **Em algum momento, `std::vector` vai alterar a ordem dos elementos serem inseridos?**
 <details><summary>Resposta</summary>
@@ -31,20 +31,9 @@ O método `push_back()` insere elementos no final do vetor.
 O método `size()` retorna o número de elementos armazenados em um vetor. A propósito, isso é verdade para todos os contêiners da STL.
 </details>
 
-Q A inserção ou remoção de elementos no final do vetor leva mais tempo se o vetor contiver mais elementos?
-A Não. A inserção e remoção de elementos no final de um vetor são atividades de tempo constante.
+### Prática
 
-Q Qual é a vantagem de usar a função de membro reserve?
-A reserve(...) aloca espaço no buffer interno do vetor e a inserção de elementos não precisa que o vetor realoque o buffer e copie os conteúdos existentes. Dependendo da natureza dos objetos armazenados no vetor, a reserva de espaço em um vetor pode resultar em melhorias de desempenho.
-
-Q As propriedades da deque são diferentes do vetor quando se trata de inserção de elementos?
-A Não, as propriedades da deque são semelhantes às do vetor quando se trata de inserção, que é uma atividade de tempo constante para elementos adicionados no final da sequência e uma atividade de tempo linear para elementos inseridos no meio. No entanto, o vetor permite a inserção apenas em uma extremidade (a parte inferior), enquanto a deque permite a inserção em ambas as extremidades (a parte superior e a inferior).
-
-## Sem Respostas
-
-## Código
-
-Write an interactive program that accepts integer input from the user and saves it in
+1. Write an interactive program that accepts integer input from the user and saves it in
 the vector. The user should be able to query a value stored in the vector at any
 time, given an index.
 2. Extend the program from Exercise 1 to be able to tell the user whether a value he
@@ -53,8 +42,8 @@ queries for already exists in the vector.
 in which he can enter the dimensions of each of these articles, store them in a
 vector, and have them printed on the screen.
 
+### Set
 
-Q&A
 Q How would I declare a set of integers to be sorted and stored in order of
 descending magnitude?
 A set <int> defines a set of integers. This takes the default sort predicate
