@@ -312,7 +312,7 @@ int main() {
 
 Abaixo temos a solução. Observe como usamos o método `erase` da `std::list`. Observe o passo a passo no gif:
 
-![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/05-prob-ani1.gif))
+![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/05-prob-ani1.gif)
 
 ```cpp
 #include <iostream>
