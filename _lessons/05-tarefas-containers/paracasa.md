@@ -31,7 +31,7 @@ O método `push_back()` insere elementos no final do vetor.
 O método `size()` retorna o número de elementos armazenados em um vetor. A propósito, isso é verdade para todos os contêiners da STL.
 </details>
 
-### Prática
+### Prática (sem resposta)
 
 1. Escreva um programa que lê inteiros da entrada e saída e guarda os mesmos em um
    `std::vector`.
@@ -43,40 +43,30 @@ O método `size()` retorna o número de elementos armazenados em um vetor. A pro
    métodos. Um para inserir um novo produto, outro para desfazer a última inserção
    (apagar a última inserção do vector), e um para imprimir todos os produtos do pedido.
 
-### Set
+## Set
 
-Q How would I declare a set of integers to be sorted and stored in order of
-descending magnitude?
-A set <int> defines a set of integers. This takes the default sort predicate
-std::less <T> to sort items in order of ascending magnitude, and can also be
-expressed as set <int, less <int> >. To sort in order of descending magnitude,
-define the set as set <int, greater <int> >.
-Q What would happen if, in a set of strings, I inserted the string “Jack” twice?
-A A set is not meant to be used to insert nonunique values. So, the implementation
-of the std::set class would not allow insertion of the second value.
-Q In the preceding example, if I wanted to have two instances of “Jack”, what
-would I change?
-A By design, a set holds only unique values. You would need to change your selec-
-tion of container to a multiset.
-Q What multiset member function returns the count of items of a particular
-value in the container?
-A count (value) is the function of interest.
-Q I have found an element in the set using the find function and have an iterator
-pointing to it. Would I use this iterator to change the value being pointed to?
-A No. Some STL implementations might allow the user to change the value of an
-element inside a set via an iterator returned by, for example, find. However, this
-is not the correct thing to do. An iterator to an element in the set should be used as
-a const iterator—even when the STL implementation has not enforced it as such.
-Workshop
-The Workshop contains quiz questions to help solidify your understanding of the mater-
-ial covered and exercises to provide you with experience in using what you’ve learned.
-Try to answer the quiz and exercise questions before checking the answers in Appendix
-D, and be certain you understand the answers before going to the next lesson.
-Quiz
-1. You declare a set of integers as set <int>. What function supplies the sort criteria?
-2. Where would you find duplicate elements in a multiset?
-3. What set or multiset function supplies the number of elements in the container?
-530 LESSON 20: STL set and multiset
+### Perguntas teóricas
+
+**O que aconteceria se, em um `std::set` de strings, eu inserisse a string "Jack" duas vezes?**
+<details><summary>Resposta</summary>
+Um `std::set` não deve ser usado para inserir valores não exclusivos. Assim, a implementação
+da classe std::`std::set` não permitiria a inserção do segundo valor.
+</details>
+
+**No exemplo anterior, se eu quisesse ter duas instâncias de "Jack", o que
+eu mudaria?**
+<details><summary>Resposta</summary>
+Por padrão, um `std::set` contém apenas valores únicos. Você precisaria mudar
+sua seleção do container para um `std::multiset` (não discutido em aula) ou
+um `std::vector`.
+</details>
+
+**Encontrei um elemento no `std::set` usando a função `find`. Agora, tenho um iterador
+apontando para o elemto. Eu poderia usar este iterador para alterar o valor apontado?**
+<details><summary>Resposta</summary>
+Não. Iteradores são constantes (ou deveriam ser, algumas versões de C++ alteram isso)
+</details>
+
 Exercises
 1. Extend the telephone directory example in this lesson to find a person’s name
 given a phone number, without changing structure ContactItem. (Hint: Define the
