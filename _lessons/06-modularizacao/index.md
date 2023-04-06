@@ -32,14 +32,12 @@ nav_order: 6
     - `src` é *source* ou *fontes*: aqui moram os arquivos fontes.
 1. Vamos criar arquivos `.h` para definir o contrato do TAD
 1. Os arquivos `.h` moram na pasta `include` (inclua isso)
-1. Por um `Makefile` vai compilar tudo
+1. Por um `Makefile` vai compilar tudo (vamos falar dele depois!)
 
 
 ```
 . project
 ├── Makefile
-├── build
-│  └── [objects]
 ├── include
 │  └── ponto.h
 │  └── retangulo.h
@@ -109,9 +107,7 @@ Observe que o arquivo começa e termina com:
 Essas três chamadas são conhecidas como "include guards".
 Tais linhas evitam bugs (ver
 [aqui](https://en.wikipedia.org/wiki/Include_guard) na hora
-de fazermos uso dos nossos arquivos `.h`
-
-Vou falar mais de erros depois.
+de fazermos uso dos nossos arquivos `.h`.
 
 ---
 
@@ -149,13 +145,13 @@ class Ponto {
 1. Observe que todos os métodos não tem comportamento
    nenhum.
 1. Além disso, todos estão documentados. Não é obrigatório
-   mas é uma boa prática.
+   mas é uma **boa prática**.
 1. Assim qualquer pessoa que vai usar nosso código consegue
    entender quais são os contratos!
 
 ---
 
-# Motivos de modularizar: “Agrupar para conquistar”
+# “Agrupar para conquistar”
 
 ## Juntar elementos inter-relacionados
 
@@ -166,17 +162,274 @@ class Ponto {
 
 ---
 
-# Motivos de modularizar: “Agrupar para conquistar”
+# Boas Práticas
+
 ## Módulo
 
 1. Propósito único
 1. Interface apropriada com outros módulos
     - Pode ser compilado separadamente
     - Reutilizáveis e Modificáveis
+1. Geralmente, um único TAD ou um TAD com
+   `structs` e `enums` que são apoio ao TAD
+
+## Exemplo 1
+
+Observe como tenho os enums abaixo que serão utilizados
+pelo TAD (além de clientes do TAD)
+
+### Arquivo .h
+
+```cpp
+#ifndef PDS2_CARTA_H
+#define PDS2_CARTA_H
+
+enum num {
+  AS, N2, N3, N4, N5, N6, N7, N8, N9, N10, J, Q, K
+};
+
+enum naipe {
+  COPAS, ESPADAS, OURO, PAUS
+};
+
+
+/*
+ * A classe carta cuida de representar
+ * uma carta do baralho padrão. Fazemos
+ * uso de enums para garantir que nunca
+ * seja inválida.
+ */
+class Carta {
+  private:
+    num _numero;
+    naipe _naipe;
+  public:
+    /*
+     * @brief Constrói uma carta
+     */
+    Carta(num numero, naipe naipe);
+
+    /*
+     * @brief Pega o número
+     */
+    num get_numero();
+
+    /*
+     * @brief Pega o naipe
+     */
+    naipe get_naipe();
+};
+#endif
+```
+
+## Exemplo 2
+
+```cpp
+#ifndef PDS2_PESSOA_H
+#define PDS2_PESSOA_H
+
+#include <string>
+
+struct endereco_t {
+  std::string rua,
+  std::string bairro,
+  std::string cidade
+};
+
+/*
+ * A classe pessoa serve para associarmos
+ * nomes aos endereços.
+ */
+class Carta {
+  private:
+    endereco_t _endereco;
+    std::string _nome;
+  public:
+    /*
+     * @brief Constrói uma pessoa
+     */
+    Carta(std::string nome, std::string pessoa);
+    
+    // ... Resto da classe aqui
+};
+#endif
+```
+
+---
+
+# Ok, mas e o código?
+
+## Arquivos .cpp
+
+- Os arquivos .cpp vão guardar a implementação do contrato
+- Os mesmos moram na pasta `src`
+- Antes de criar os mesmos temos que fazer o include do `.h`
+  que criamos antes.
+
+## Exemplo 1
+
+### Arquivo .h
+
+```cpp
+/*
+ * Representa um ponto em duas dimensões. Não faz muito
+ * mais do que isso :-)
+ */
+class Ponto {
+  private:
+    double _x;
+    double _y;
+  public:
+    /*
+     * @brief Constutor do nosso ponto.
+     * /
+    Public(double x, double y);
+
+    /*
+     * @brief Retorna o valor na coordenada x
+     */
+    double get_x();
+
+    /*
+     * @brief Retorna o valor na coordenada y
+     */
+    double get_y();
+};
+```
+
+### Arquivo .cpp
+
+```cpp
+#include "../include/ponto.h"
+
+Ponto::Ponto(double x, double y) {
+  _x = x;
+  _y = y;
+}
+
+double Ponto::get_x() {
+  return _x;
+}
+
+double Ponto::get_y() {
+  return _y;
+}
+```
+
+---
+
+# Como que funciona?
+
+## Preste atenção em alguns detalhes
+
+- O arquivo `.cpp` é um pouco diferente das
+  outras formas que declaramos métodos e funções
+- Porém lembre-se, em C++, `::` significa pertence
+
+```cpp
+// retorno Classe::nome
+double Ponto::get_x()
+```
+
+- A linha acima fala que: na classe Ponto, existe
+  um método `get_x` que retorna um double.
+- Depois de dizer isso você diz: tá aqui o códgo do método
+
+```cpp
+double Ponto::get_x() {
+  return _x
+}
+```
+
+## E o construtor?
+
+- Na classe Ponto existe um construtor que não retorna nada
+- Afinal, é um construtor
+- Tá aqui como ele é implementado
+
+```cpp
+Ponto::Ponto(double x, double y) {
+  _x = x;
+  _y = y;
+}
+``` 
+
+---
+
+# Mais um exemplo
+
+## Exemplo 2
+
+### Arquivo .h
+
+```cpp
+#ifndef PDS2_CARTA_H
+#define PDS2_CARTA_H
+
+enum num {
+  AS, N2, N3, N4, N5, N6, N7, N8, N9, N10, J, Q, K
+};
+
+enum naipe {
+  COPAS, ESPADAS, OURO, PAUS
+};
+
+/*
+ * A classe carta cuida de representar
+ * uma carta do baralho padrão. Fazemos
+ * uso de enums para garantir que nunca
+ * seja inválida.
+ */
+class Carta {
+  private:
+    num _numero;
+    naipe _naipe;
+  public:
+    /*
+     * @brief Constrói uma carta
+     */
+    Carta(num numero, naipe naipe);
+
+    /*
+     * @brief Pega o número
+     */
+    num get_numero();
+
+    /*
+     * @brief Pega o naipe
+     */
+    naipe get_naipe();
+};
+#endif
+```
+
+### Arquivo .cpp
+
+```cpp
+#include "../include/carta.h"   // Vou implementar esse contrato
+
+Carta::Carta(                   // Na classe Carta tem um construtor
+  num numero, naipe naipe
+) {
+  _numero = numero;
+  _naipe = naipe;
+}
+
+num Carta::get_numero() {       // Na classe Carta tem um `get_numero` que retorna um num
+  return _numero;
+}
+
+naipe Carta::get_naipe() {
+  return _naipe;
+}
+```
+
+- Vamos agora falar um pouco das vantagens antes de entrar em mais exemplos
 
 ---
 
 # Projeto Modular
+
 ## Propriedades
 
 1. Decomposição
