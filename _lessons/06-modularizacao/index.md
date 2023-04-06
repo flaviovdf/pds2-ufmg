@@ -207,11 +207,29 @@ class Retangulo {
     bool interseccao(Retangulo outro);
 };
 ```
-
 ---
 
 # Caminhos relativos
 
+## Sobre o ../include/ponto.h
+
+Vai parece redundante, mas vai ficar mais claro quando fizer o `.cpp`
+
+- Para entender a linha `#include "../include/ponto.h"`
+- Precisamos entender de caminhos relativos
+- .. é um caminho para a pasta superior à `include`
+- Ou seja, a pasta raiz do projeto
+- Dentro dela, naturalmente, existe a pasta `include`
+- Se eu saio de uma pasta, e vou para a logo a acima
+  a pasta e onde saí existe na logo acima
+- Dentro de include existe o arquivo `ponto.h`
+- Veja a figura abaixo.
+
+![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/06-mod-fig-3.png)
+
+- Antes de ver o código vamos entender o motivo pelo qual
+  estamos fazendo essa nova organização.
+  
 ---
 
 # “Agrupar para conquistar”
@@ -222,14 +240,16 @@ class Retangulo {
     - Aspectos da funcionalidade do programa
 1. Programação modular
     - Partes independentes e intercambiáveis
+1. Quebrar em módulos permite desenvolver um código
+   mais fácil de manter.
 
 ---
 
 # Boas Práticas
 
-## Módulo
+## O Módulo
 
-1. Propósito único
+1. Tem um propósito único
 1. Interface apropriada com outros módulos
     - Pode ser compilado separadamente
     - Reutilizáveis e Modificáveis
@@ -322,6 +342,8 @@ class Carta {
 
 # Ok, mas e o código?
 
+- O código vai morar na pasta 
+
 ## Arquivos .cpp
 
 - Os arquivos .cpp vão guardar a implementação do contrato
@@ -382,6 +404,13 @@ double Ponto::get_y() {
 ---
 
 # Como que funciona?
+
+## O include
+
+- A primeira linha é: `#include "../include/ponto.h"`
+- Caminhe até a pasta acima de source com .. (já falamos disso ainda agora)
+- Na pasta mãe de `src` existe uma pasta `include`
+- L
 
 ## Preste atenção em alguns detalhes
 
