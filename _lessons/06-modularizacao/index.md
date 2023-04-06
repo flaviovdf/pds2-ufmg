@@ -127,7 +127,7 @@ class Ponto {
   public:
     /*
      * @brief Constutor do nosso ponto.
-     * /
+     */
     Public(double x, double y);
 
     /*
@@ -148,6 +148,63 @@ class Ponto {
    mas é uma **boa prática**.
 1. Assim qualquer pessoa que vai usar nosso código consegue
    entender quais são os contratos!
+
+
+---
+
+# Vamos fazer o outro contrato
+
+## Cliente do Ponto
+
+- Observe como o código abaixo inclui o `ponto.h`
+- Quando um include é `#include <assim>`
+    - Estamos incluindo uma biblioteca do sistema
+- Quando é `#include "assim"`
+    - Estamos incluindo um arquivo nosso
+
+```cpp
+
+#include "../include/ponto.h"
+
+/*
+ * Um Retângulo pode ser representado com um
+ * ponto de origem, uma altura e uma largura.
+ * 
+ *        largura
+ *    ---------------
+ *    |             |
+ *    |             | altura
+ *    |             |
+ *    ---------------
+ *  (x,y)
+ *    origem
+ */
+class Retangulo {
+  private:
+    double _x;
+    double _y;
+  public:
+    /*
+     * @brief Constutor do nosso ponto.
+     */
+    Retangulo(Ponto _origem, double altura, double largura);
+
+    /*
+     * @brief Pega a área do retângulo
+     */
+    double get_area();
+
+    /*
+     * Testa se dois retângulos tem alguma interseção.
+     * parte da premissa que altura e larguras só podem
+     * ser positivas!
+     *
+     * @brief Retorna true se este retângulo tem intersção com
+     *        o outro
+     */
+    bool interseccao(Retangulo outro);
+};
+```
 
 ---
 
