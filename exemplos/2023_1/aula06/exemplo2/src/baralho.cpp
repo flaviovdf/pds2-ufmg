@@ -3,7 +3,7 @@
 #include <vector>
 
 #include "../include/baralho.h"
-#include "carta.h"
+#include "../include/carta.h"
 
 
 Baralho::Baralho() {
