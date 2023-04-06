@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Exercícios para Casa
-parent: Prática de Contêiners
+parent: Prática de Containers
 ---
 
 # Exercícios para Casa
@@ -12,74 +12,61 @@ Algumas perguntas mais avançadas sobre contêiners.
 
 ---
 
-## Com respostas
+## Vector
 
-Em algum momento, `std::vector` vai alterar a ordem dos elementos serem inseridos?
+### Perguntas Teóricas
 
-```Não, o std::vector é um contêiner sequencial e os elementos são armazenados e acessados na mesma ordem em que são inseridos.```
+**Em algum momento, `std::vector` vai alterar a ordem dos elementos serem inseridos?**
+<details><summary>Resposta</summary>
+Não, o `std::vector` é um contêiner sequencial e os elementos são armazenados e acessados na mesma ordem em que são inseridos.
+</details>
 
-Q Qual função é usada para inserir itens em um vetor e onde o objeto é inserido?
-A A função de membro push_back insere elementos no final do vetor.
+**Qual função é usada para inserir itens em um `std::vector` e onde o objeto é inserido?**
+<details><summary>Resposta</summary>
+O método `push_back()` insere elementos no final do vetor.
+</details>
 
-Q Qual função obtém o número de elementos armazenados em um vetor?
-A A função de membro size() retorna o número de elementos armazenados em um vetor. A propósito, isso é verdade para todos os containers do STL.
+**Qual função obtém o número de elementos armazenados em um `std::vector`?**
+<details><summary>Resposta</summary>
+O método `size()` retorna o número de elementos armazenados em um vetor. A propósito, isso é verdade para todos os contêiners da STL.
+</details>
 
-Q A inserção ou remoção de elementos no final do vetor leva mais tempo se o vetor contiver mais elementos?
-A Não. A inserção e remoção de elementos no final de um vetor são atividades de tempo constante.
+### Prática (sem resposta)
 
-Q Qual é a vantagem de usar a função de membro reserve?
-A reserve(...) aloca espaço no buffer interno do vetor e a inserção de elementos não precisa que o vetor realoque o buffer e copie os conteúdos existentes. Dependendo da natureza dos objetos armazenados no vetor, a reserva de espaço em um vetor pode resultar em melhorias de desempenho.
+1. Escreva um programa que lê inteiros da entrada e saída e guarda os mesmos em um
+   `std::vector`.
+1. Após ler uma certa quantidade de elementos, faça seu programa receber uma entrada
+   do usuário e imprima `sim` caso esta entrada esteja no `std::vector`.
+1. Escreva uma classe `Pedido` que deve guardar: (1) o nome do usuário que fez o pedido
+   e (2) um `std::vector` de outra classe, chamada `Produto`. A classe `Produto` por sua
+   vez deve conter o nome e preço de cada produto. Na classe pedido, implemente três
+   métodos. Um para inserir um novo produto, outro para desfazer a última inserção
+   (apagar a última inserção do vector), e um para imprimir todos os produtos do pedido.
 
-Q As propriedades da deque são diferentes do vetor quando se trata de inserção de elementos?
-A Não, as propriedades da deque são semelhantes às do vetor quando se trata de inserção, que é uma atividade de tempo constante para elementos adicionados no final da sequência e uma atividade de tempo linear para elementos inseridos no meio. No entanto, o vetor permite a inserção apenas em uma extremidade (a parte inferior), enquanto a deque permite a inserção em ambas as extremidades (a parte superior e a inferior).
+## Set
 
-## Sem Respostas
+### Perguntas teóricas
 
-## Código
+**O que aconteceria se, em um `std::set` de strings, eu inserisse a string "Jack" duas vezes?**
+<details><summary>Resposta</summary>
+Um `std::set` não deve ser usado para inserir valores não exclusivos. Assim, a implementação
+da classe std::`std::set` não permitiria a inserção do segundo valor.
+</details>
 
-Write an interactive program that accepts integer input from the user and saves it in
-the vector. The user should be able to query a value stored in the vector at any
-time, given an index.
-2. Extend the program from Exercise 1 to be able to tell the user whether a value he
-queries for already exists in the vector.
-3. Jack sells jars on eBay. To help him with packaging and shipment, write a program
-in which he can enter the dimensions of each of these articles, store them in a
-vector, and have them printed on the screen.
+**No exemplo anterior, se eu quisesse ter duas instâncias de "Jack", o que
+eu mudaria?**
+<details><summary>Resposta</summary>
+Por padrão, um `std::set` contém apenas valores únicos. Você precisaria mudar
+sua seleção do container para um `std::multiset` (não discutido em aula) ou
+um `std::vector`.
+</details>
 
+**Encontrei um elemento no `std::set` usando a função `find`. Agora, tenho um iterador
+apontando para o elemto. Eu poderia usar este iterador para alterar o valor apontado?**
+<details><summary>Resposta</summary>
+Não. Iteradores são constantes (ou deveriam ser, algumas versões de C++ alteram isso)
+</details>
 
-Q&A
-Q How would I declare a set of integers to be sorted and stored in order of
-descending magnitude?
-A set <int> defines a set of integers. This takes the default sort predicate
-std::less <T> to sort items in order of ascending magnitude, and can also be
-expressed as set <int, less <int> >. To sort in order of descending magnitude,
-define the set as set <int, greater <int> >.
-Q What would happen if, in a set of strings, I inserted the string “Jack” twice?
-A A set is not meant to be used to insert nonunique values. So, the implementation
-of the std::set class would not allow insertion of the second value.
-Q In the preceding example, if I wanted to have two instances of “Jack”, what
-would I change?
-A By design, a set holds only unique values. You would need to change your selec-
-tion of container to a multiset.
-Q What multiset member function returns the count of items of a particular
-value in the container?
-A count (value) is the function of interest.
-Q I have found an element in the set using the find function and have an iterator
-pointing to it. Would I use this iterator to change the value being pointed to?
-A No. Some STL implementations might allow the user to change the value of an
-element inside a set via an iterator returned by, for example, find. However, this
-is not the correct thing to do. An iterator to an element in the set should be used as
-a const iterator—even when the STL implementation has not enforced it as such.
-Workshop
-The Workshop contains quiz questions to help solidify your understanding of the mater-
-ial covered and exercises to provide you with experience in using what you’ve learned.
-Try to answer the quiz and exercise questions before checking the answers in Appendix
-D, and be certain you understand the answers before going to the next lesson.
-Quiz
-1. You declare a set of integers as set <int>. What function supplies the sort criteria?
-2. Where would you find duplicate elements in a multiset?
-3. What set or multiset function supplies the number of elements in the container?
-530 LESSON 20: STL set and multiset
 Exercises
 1. Extend the telephone directory example in this lesson to find a person’s name
 given a phone number, without changing structure ContactItem. (Hint: Define the

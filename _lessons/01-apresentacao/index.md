@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Apresentação
-has_children: true
+has_children: false
 has_toc: false
 description: Apresentação do Curso
 nav_order: 1
