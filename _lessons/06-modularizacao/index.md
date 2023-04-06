@@ -323,7 +323,7 @@ struct endereco_t {
  * A classe pessoa serve para associarmos
  * nomes aos endereços.
  */
-class Carta {
+class Pessoa {
   private:
     endereco_t _endereco;
     std::string _nome;
@@ -331,7 +331,7 @@ class Carta {
     /*
      * @brief Constrói uma pessoa
      */
-    Carta(std::string nome, std::string pessoa);
+    Pessoa(std::string nome, std::string pessoa);
     
     // ... Resto da classe aqui
 };
