@@ -15,7 +15,7 @@ nav_order: 6
 
 ---
 
-# Lembrando do nosso objetivo
+# (Aula 1) Lembrando do nosso objetivo
 
 1. Com TADs queremos que o resto do programa seja cliente
 1. Apenas use as operações do mesmo.
@@ -410,7 +410,7 @@ double Ponto::get_y() {
 - A primeira linha é: `#include "../include/ponto.h"`
 - Caminhe até a pasta acima de source com .. (já falamos disso ainda agora)
 - Na pasta mãe de `src` existe uma pasta `include`
-- L
+- Lá existe o arquivo 
 
 ## Preste atenção em alguns detalhes
 
@@ -584,26 +584,47 @@ naipe Carta::get_naipe() {
 
 ---
 
+# Um exemplo maior
+
+- Na pasta abaixo temos um exemplo maior com um arquivo main
+- [Exemplo](https://github.com/flaviovdf/pds2-ufmg/tree/master/exemplos/2023_1/aula06/exemplo2)
+- Para compilar o mesmo devemos fazer
+
+```bash
+g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main
+```
+
+- Passamos **TODOS** os arquivos do nosso código para o compilador
+- O compilador cuida de compilar cada parte separada
+
+---
+
 # Compilacao
+
+- Na prática o compilador segue o esquema abaixo
+- Cada `.cpp` é compilado separadamente
+- Depois colamos todos com um `linker`
+- Tudo é oculto de você como programador
 
 ![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/06-mod-fig1.png)
 
 ---
 
-# Um exemplo
-
----
-
 # Uma visão abstrata do processo
 
-1. Cada passa gera código de máquina
+1. Cada passp gera código de máquina
 1. O linker cola tudo junto
+1. Os arquivos `.h` ajudam a compilar os `.cpp` individualmente
+1. O `baralho.cpp` pode ser compilado sem o `carta.cpp`
+    - Qual o motivo? O `baralho.cpp` sabe do contrato da `carta.h`
+    - Então eu posso compilar mesmo sem ter o outro pronto
+1. Depois o linker cola tudo junto
 
 ![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/06-mod-fig2.png)
 
 ---
 
-# Makefile
+# (Aula 2) Makefile
 
 1. Arquivo de texto especialmente formatado para um programa Unix chamado `make`
 1. Contém uma lista de requisitos para que um programa seja considerado ‘up to date’
