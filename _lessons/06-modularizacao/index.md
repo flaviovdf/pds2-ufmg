@@ -154,13 +154,15 @@ class Ponto {
 
 # Vamos fazer o outro contrato
 
-## Cliente do Ponto
+## O módulo retângulo é cliente do módulo ponto
 
 - Observe como o código abaixo inclui o `ponto.h`
 - Quando um include é `#include <assim>`
     - Estamos incluindo uma biblioteca do sistema
 - Quando é `#include "assim"`
     - Estamos incluindo um arquivo nosso
+
+## O módulo retângulo
 
 ```cpp
 
@@ -205,6 +207,10 @@ class Retangulo {
     bool interseccao(Retangulo outro);
 };
 ```
+
+---
+
+# Caminhos relativos
 
 ---
 
