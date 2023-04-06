@@ -3,7 +3,7 @@ layout: page
 title: Modularização
 has_children: true
 has_toc: false
-description: Modularização
+description: Modularização (2 aulas)
 nav_order: 6
 ---
 
