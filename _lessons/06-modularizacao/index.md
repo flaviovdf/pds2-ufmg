@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Modularização
+title: Modularização (2 aulas)
 has_children: true
 has_toc: false
 description: Modularização (2 aulas)
