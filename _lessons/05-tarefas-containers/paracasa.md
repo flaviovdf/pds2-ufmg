@@ -33,14 +33,15 @@ O método `size()` retorna o número de elementos armazenados em um vetor. A pro
 
 ### Prática
 
-1. Write an interactive program that accepts integer input from the user and saves it in
-the vector. The user should be able to query a value stored in the vector at any
-time, given an index.
-2. Extend the program from Exercise 1 to be able to tell the user whether a value he
-queries for already exists in the vector.
-3. Jack sells jars on eBay. To help him with packaging and shipment, write a program
-in which he can enter the dimensions of each of these articles, store them in a
-vector, and have them printed on the screen.
+1. Escreva um programa que lê inteiros da entrada e saída e guarda os mesmos em um
+   `std::vector`.
+1. Após ler uma certa quantidade de elementos, faça seu programa receber uma entrada
+   do usuário e imprima `sim` caso esta entrada esteja no `std::vector`.
+1. Escreva uma classe `Pedido` que deve guardar: (1) o nome do usuário que fez o pedido
+   e (2) um `std::vector` de outra classe, chamada `Produto`. A classe `Produto` por sua
+   vez deve conter o nome e preço de cada produto. Na classe pedido, implemente três
+   métodos. Um para inserir um novo produto, outro para desfazer a última inserção
+   (apagar a última inserção do vector), e um para imprimir todos os produtos do pedido.
 
 ### Set
 
