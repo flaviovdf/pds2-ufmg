@@ -586,6 +586,17 @@ naipe Carta::get_naipe() {
 
 # Um exemplo maior
 
+## Como compilar o código?
+
+```bash
+g++ src/ponto.cpp src/retangulo.cpp main.cpp -o main
+```
+
+- Passamos **TODOS** os arquivos do nosso código para o compilador
+- O compilador cuida de compilar cada parte separada
+
+## Exemplos das Cartas no GitHub
+
 - Na pasta abaixo temos um exemplo maior com um arquivo main
 - [Exemplo](https://github.com/flaviovdf/pds2-ufmg/tree/master/exemplos/2023_1/aula06/exemplo2)
 - Para compilar o mesmo devemos fazer
@@ -593,9 +604,6 @@ naipe Carta::get_naipe() {
 ```bash
 g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main
 ```
-
-- Passamos **TODOS** os arquivos do nosso código para o compilador
-- O compilador cuida de compilar cada parte separada
 
 ---
 
@@ -612,15 +620,36 @@ g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main
 
 # Uma visão abstrata do processo
 
-1. Cada passp gera código de máquina
+1. Cada passo gera código de máquina
 1. O linker cola tudo junto
 1. Os arquivos `.h` ajudam a compilar os `.cpp` individualmente
-1. O `baralho.cpp` pode ser compilado sem o `carta.cpp`
-    - Qual o motivo? O `baralho.cpp` sabe do contrato da `carta.h`
+1. O `retangulo.cpp` pode ser compilado sem o `ponto.cpp`
+    - Qual o motivo? O `retangulo.cpp` sabe do contrato da `ponto.h`
     - Então eu posso compilar mesmo sem ter o outro pronto
 1. Depois o linker cola tudo junto
 
 ![](https://raw.githubusercontent.com/flaviovdf/pds2-ufmg/master/assets/img/06-mod-fig2.png)
+
+---
+
+# Precisa de `.h` e `.cpp`?
+
+## Sobre compilação
+
+- Compilar código é um processo custoso
+- Aqui, por custoso leia-se,lento e que demanda muito uso de CPU (e leitura do disco)
+- Compilar partes separadas nos permite realizar o processo em paralelo
+    - Algo que não fazemos aqui, mas ok
+
+## Sobre módulos
+
+- Usando `gcc -c` você pode compilar seu módulo e re-utilizar o mesmo
+- Se o seu módulo usa `<string>`, não tem motivo para compilar o módulo `<string>`
+- Sempre que você usa `gcc -c` você gera um arquivo `.o`. Seu computador é cheio de
+  tais arquivos.
+    - Ou de arquivos `.so`, `.a`, `.dll` etc.
+    - São módulos pré-compilados
+- Cada módulo 
 
 ---
 
