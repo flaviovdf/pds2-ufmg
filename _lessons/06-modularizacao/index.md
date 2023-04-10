@@ -15,7 +15,7 @@ nav_order: 6
 
 ---
 
-# (Aula 1) Lembrando do nosso objetivo
+# Lembrando do nosso objetivo
 
 1. Com TADs queremos que o resto do programa seja cliente
 1. Apenas use as operações do mesmo.
@@ -654,7 +654,39 @@ g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main
 
 ---
 
-# (Aula 2) Makefile
+# Como automatizar o processo de compilação?
+
+## Ideia (Sistemas de Build/Construção)
+
+- Compilar código "na mão" é um processo tedioso
+- Existem ferramentas para automatizar esse processo
+- Pense em um script, um pequeno código de roteiro, que diz:
+  estes são os passos para compular este código
+
+## Ferramentas
+
+- Sistemas de build, ou seja de construção, são comuns no processo
+  de desenvolvimento de software
+- "People love to hate build systems." ([ref])[https://cliutils.gitlab.io/modern-cmake/]
+- A grande verdade é que não existe uma ferramenta única para este propósito
+    - [Make](https://en.wikipedia.org/wiki/Make_(software))
+    - [Cmake](https://cmake.org/)
+    - [Premake](https://premake.github.io)
+
+
+---
+
+# Sistema Make
+
+- No nosso curso vamos fazer uso do sistema make
+- Caso você use um sistema Linux, como o WSL, já deve ter o make
+- Se usa Windows, veja esta pergunta [aqui](https://stackoverflow.com/questions/17710209/how-to-run-make-from-cygwin-environment)
+- O comando básico é `make`
+- O comando depende de um arquivo chamado de `Makefile`
+
+---
+
+# Makefile
 
 1. Arquivo de texto especialmente formatado para um programa Unix chamado `make`
 1. Contém uma lista de requisitos para que um programa seja considerado ‘up to date’
