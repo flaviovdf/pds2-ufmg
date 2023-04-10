@@ -695,13 +695,43 @@ g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main
     - verifica os timestamps em todos os arquivos de origem;
     - recompila apenas os arquivos com um registro desatualizado
 
-[Leitura adicional](https://www.gnu.org/software/make/manual/make.html)
+1. Uma regra no arquivo make tem a seguinte forma:
 
-[Leitura adicional](https://www.cs.bu.edu/teaching/cpp/writing-makefiles/)
+```make
+target: requisitos ; comando
+```
+
+1. Como que leio isso?
+    1. Para construir o `target`
+    2. Eu preciso primeiro construir os requisitos
+    3. E depois executar tal comando
 
 ---
 
-# Exemplo Makefile
+# Exemplo Makefile (1)
+
+```make
+all: main
+
+main:
+	g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o meuprograma
+
+clean:
+	rm meuprograma
+```
+
+1. Aqui, para executar o comando `all` primeiro eu preciso executar `main` (`all: main`)
+2. Para executar o `main` eu não preciso de nada
+    1. O main executa o comando: `g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main`
+    1. Ou seja, compila o programa
+    1. Gera um executável chamado de `meuprograma`
+3. Para executar o `clean` eu não preciso de nada
+    1.  O clean executa o comando `rm` que apaga um arquivo
+    1.  Estou apagamento o arquivo `meuprograma`
+
+---
+
+# Exemplo Makefile (2)
 
 ```make
 CC=g++
@@ -709,10 +739,10 @@ CFLAGS=-std=c++11 -Wall
 
 all: main
 
-ponto.o: ponto.h ponto.cpp
+ponto.o: include/ponto.h src/ponto.cpp
     ${CC} ${CFLAGS} -c ponto.cpp
 
-main.o: ponto.h main.cpp
+main.o: include/ponto.h src/main.cpp
     ${CC} ${CFLAGS} -c main.cpp
 
 main: main.o ponto.o
