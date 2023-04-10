@@ -649,7 +649,8 @@ g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main
   tais arquivos.
     - Ou de arquivos `.so`, `.a`, `.dll` etc.
     - São módulos pré-compilados
-- Cada módulo 
+- Cada módulo até sabe de outros (através arquivos `.h`) mas foi compilado
+  isoladamente.
 
 ---
 
