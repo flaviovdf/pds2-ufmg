@@ -632,9 +632,9 @@ g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main
 
 ---
 
-# Precisa de `.h` e `.cpp`?
+# Precisa de .h e .cpp?
 
-## Sobre compilação
+## Sobre o processo de compilação
 
 - Compilar código é um processo custoso
 - Aqui, por custoso leia-se,lento e que demanda muito uso de CPU (e leitura do disco)
@@ -672,6 +672,7 @@ g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main
     - [Make](https://en.wikipedia.org/wiki/Make_(software))
     - [Cmake](https://cmake.org/)
     - [Premake](https://premake.github.io)
+    - [Ninja](https://ninja-build.org/)
 
 
 ---
@@ -710,6 +711,8 @@ target: requisitos ; comando
 
 # Exemplo Makefile (1)
 
+## Arquivo Make
+
 ```make
 all: main
 
@@ -729,9 +732,33 @@ clean:
     1.  O clean executa o comando `rm` que apaga um arquivo
     1.  Estou apagamento o arquivo `meuprograma`
 
+## Fazendo uso
+
+- Para compilar seu código, execute o comando `make`
+
+```sh
+make
+```
+
+- ou 
+
+```sh
+make all
+```
+
+- Para limpar tudo
+
+```sh
+make clean
+```
+
 ---
 
 # Exemplo Makefile (2)
+
+- Abaixo temos outro Makefile mais complexo
+- O mesmo faz uso de variáveis no começo
+- Para referenciar umas variável, use `${NOME_DA_VAR}`
 
 ```make
 CC=g++
@@ -740,13 +767,16 @@ CFLAGS=-std=c++11 -Wall
 all: main
 
 ponto.o: include/ponto.h src/ponto.cpp
-    ${CC} ${CFLAGS} -c ponto.cpp
+    ${CC} ${CFLAGS} -c src/ponto.cpp
+
+retangulo.o: ponto.o include/retangulo.h src/retangulo.cpp
+    ${CC} ${CFLAGS} -c src/retangulo.cpp
 
 main.o: include/ponto.h src/main.cpp
-    ${CC} ${CFLAGS} -c main.cpp
+    ${CC} ${CFLAGS} -c src/main.cpp
 
-main: main.o ponto.o
-    ${CC} ${CFLAGS} -o main main.o ponto.o
+main: main.o ponto.o retangulo.o
+    ${CC} ${CFLAGS} -o main main.o ponto.o retangulo.o
 
 clean:
     rm -f main *.o
