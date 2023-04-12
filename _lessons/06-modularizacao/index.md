@@ -806,6 +806,19 @@ clean:
    da forma abaixo
 1. Copie e cole esse make, organize seu código em pastas similares que vai funcionar em sistemas unix
 
+```
+. project
+├── Makefile
+├── include            // aqui moram os seus .h ou .hpp
+│  └── arq1.h
+│  └── arq2.h
+└── src                // aqui moram os seus .cpp
+│  └── arq1.cpp
+│  └── arq2.cpp
+└── third_party        // aqui mora código de terceiros que você pegou da internet
+│  └── doctest.h       // vai ficar mais claro quando falarmos de testes
+```
+
 ```make
 CC := g++
 SRCDIR := src
@@ -835,8 +848,14 @@ clean:
 
 # Considerações Finais
 
+## Qual o motivo de modularizar?
+
 - Maior reusabilidade
 - Melhoria da legibilidade
 - Modificações facilitadas (e mais seguras)
 - Maior confiabilidade
 - Aumento da produtividade
+
+## Qual de usar um sistema de construção estilo o Make?
+
+- Constriir o código em partes e de forma automatizada
