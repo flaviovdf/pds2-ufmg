@@ -806,6 +806,8 @@ clean:
    da forma abaixo
 1. Copie e cole esse make, organize seu código em pastas similares que vai funcionar em sistemas unix
 
+## Como organizar os arquivos
+
 ```
 . project
 ├── Makefile
@@ -818,6 +820,8 @@ clean:
 └── third_party        // aqui mora código de terceiros que você pegou da internet
 │  └── doctest.h       // vai ficar mais claro quando falarmos de testes
 ```
+
+## O makefile
 
 ```make
 CC := g++
