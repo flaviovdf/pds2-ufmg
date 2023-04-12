@@ -799,7 +799,12 @@ clean:
 
 # Exemplo Makefile "Genérico"
 
-1. Copie e cole, funciona em sistemas unix
+1. Make é um sistema poderoso que permite executar comandos
+1. Nosso foco aqui não é passar por todos esses comandos 
+1. Possivelmente, um Makefile simples vai ser o suficiente para você na disciplina
+1. Porém, e como sou preguiçoso, tenho um Makefile genérico para uma organização de pastas
+   da forma abaixo
+1. Copie e cole esse make, organize seu código em pastas similares que vai funcionar em sistemas unix
 
 ```make
 CC := g++
@@ -810,7 +815,7 @@ TARGET := main
 SRCEXT := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
-CFLAGS := -g -Wall -O3 -std=c++14
+CFLAGS := -g -Wall -O3 -std=c++20
 INC := -I include/ -I third_party/
 
 $(TARGET): $(OBJECTS)
