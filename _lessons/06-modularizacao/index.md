@@ -691,11 +691,9 @@ g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main
 
 1. Arquivo de texto especialmente formatado para um programa Unix chamado `make`
 1. Contém uma lista de requisitos para que um programa seja considerado ‘up to date’
-
 1. O programa make examina esses requisitos
     - verifica os timestamps em todos os arquivos de origem;
     - recompila apenas os arquivos com um registro desatualizado
-
 1. Uma regra no arquivo make tem a seguinte forma:
 
 ```make
@@ -760,9 +758,11 @@ make clean
 - O mesmo faz uso de variáveis no começo
 - Para referenciar umas variável, use `${NOME_DA_VAR}`
 
+## Arquivo
+
 ```make
 CC=g++
-CFLAGS=-std=c++11 -Wall
+CFLAGS=-std=c++20 -Wall
 
 all: main
 
@@ -781,6 +781,19 @@ main: main.o ponto.o retangulo.o
 clean:
     rm -f main *.o
 ```
+
+## Entendendo
+
+1. O `all: main` depende do main
+1. O `main: main.o ponto.o retangulo.o` depende das regras `main.o`, `ponto.o` e `retangulo.o`.
+1. A regra `ponto.o: include/ponto.h src/ponto.cpp` depende dos arquivos existirem.
+    - Isto é, quando uma dependência no make não é uma regra, o sistema simplesmente verifica se o arquivo existe
+    - Aqui `include/ponto.h` e `src/ponto.cpp` são dois arquivos que **tem** que existir para compilar o ponto
+    - Faz sentido, são os arquivos que definem o código
+1. Para compilar execute: `${CC} ${CFLAGS} -c src/ponto.cpp`, só que `${CC}` é uma variável, qual o valor dela?
+    - Basta substituir com a definição no começo do arquivi
+1. Ou seja, para compilar execute `g++ -std=c++20 -Wall -c src/ponto.cpp`
+1. Dado que: `${CC}` vira `g++` e `${CFLAGS}` vira `-std=c++20 -Wall
 
 ---
 
