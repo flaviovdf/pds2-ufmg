@@ -15,7 +15,7 @@ nav_order: 6
 
 ---
 
-# (Aula 1) Lembrando do nosso objetivo
+# Lembrando do nosso objetivo
 
 1. Com TADs queremos que o resto do programa seja cliente
 1. Apenas use as operações do mesmo.
@@ -367,7 +367,7 @@ class Ponto {
   public:
     /*
      * @brief Constutor do nosso ponto.
-     * /
+     */
     Public(double x, double y);
 
     /*
@@ -586,6 +586,17 @@ naipe Carta::get_naipe() {
 
 # Um exemplo maior
 
+## Como compilar o código?
+
+```bash
+g++ src/ponto.cpp src/retangulo.cpp main.cpp -o main
+```
+
+- Passamos **TODOS** os arquivos do nosso código para o compilador
+- O compilador cuida de compilar cada parte separada
+
+## Exemplos das Cartas no GitHub
+
 - Na pasta abaixo temos um exemplo maior com um arquivo main
 - [Exemplo](https://github.com/flaviovdf/pds2-ufmg/tree/master/exemplos/2023_1/aula06/exemplo2)
 - Para compilar o mesmo devemos fazer
@@ -593,9 +604,6 @@ naipe Carta::get_naipe() {
 ```bash
 g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main
 ```
-
-- Passamos **TODOS** os arquivos do nosso código para o compilador
-- O compilador cuida de compilar cada parte separada
 
 ---
 
@@ -612,11 +620,11 @@ g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main
 
 # Uma visão abstrata do processo
 
-1. Cada passp gera código de máquina
+1. Cada passo gera código de máquina
 1. O linker cola tudo junto
 1. Os arquivos `.h` ajudam a compilar os `.cpp` individualmente
-1. O `baralho.cpp` pode ser compilado sem o `carta.cpp`
-    - Qual o motivo? O `baralho.cpp` sabe do contrato da `carta.h`
+1. O `retangulo.cpp` pode ser compilado sem o `ponto.cpp`
+    - Qual o motivo? O `retangulo.cpp` sabe do contrato da `ponto.h`
     - Então eu posso compilar mesmo sem ter o outro pronto
 1. Depois o linker cola tudo junto
 
@@ -624,47 +632,196 @@ g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main
 
 ---
 
-# (Aula 2) Makefile
+# Precisa de .h e .cpp?
 
-1. Arquivo de texto especialmente formatado para um programa Unix chamado `make`
-1. Contém uma lista de requisitos para que um programa seja considerado ‘up to date’
+## Sobre o processo de compilação
 
-1. O programa make examina esses requisitos
-    - verifica os timestamps em todos os arquivos de origem;
-    - recompila apenas os arquivos com um registro desatualizado
+- Compilar código é um processo custoso
+- Aqui, por custoso leia-se,lento e que demanda muito uso de CPU (e leitura do disco)
+- Compilar partes separadas nos permite realizar o processo em paralelo
+    - Algo que não fazemos aqui, mas ok
 
-[Leitura adicional](https://www.gnu.org/software/make/manual/make.html)
+## Sobre módulos
 
-[Leitura adicional](https://www.cs.bu.edu/teaching/cpp/writing-makefiles/)
+- Usando `gcc -c` você pode compilar seu módulo e re-utilizar o mesmo
+- Se o seu módulo usa `<string>`, não tem motivo para compilar o módulo `<string>`
+- Sempre que você usa `gcc -c` você gera um arquivo `.o`. Seu computador é cheio de
+  tais arquivos.
+    - Ou de arquivos `.so`, `.a`, `.dll` etc.
+    - São módulos pré-compilados
+- Cada módulo até sabe de outros (através arquivos `.h`) mas foi compilado
+  isoladamente.
 
 ---
 
-# Exemplo Makefile
+# Como automatizar o processo de compilação?
+
+## Ideia (Sistemas de Build/Construção)
+
+- Compilar código "na mão" é um processo tedioso
+- Existem ferramentas para automatizar esse processo
+- Pense em um script, um pequeno código de roteiro, que diz:
+  estes são os passos para compular este código
+
+## Ferramentas
+
+- Sistemas de build, ou seja de construção, são comuns no processo
+  de desenvolvimento de software
+- "People love to hate build systems." ([ref])[https://cliutils.gitlab.io/modern-cmake/]
+- A grande verdade é que não existe uma ferramenta única para este propósito
+    - [Make](https://en.wikipedia.org/wiki/Make_(software))
+    - [Cmake](https://cmake.org/)
+    - [Premake](https://premake.github.io)
+    - [Ninja](https://ninja-build.org/)
+
+
+---
+
+# Sistema Make
+
+- No nosso curso vamos fazer uso do sistema make
+- Caso você use um sistema Linux, como o WSL, já deve ter o make
+- Se usa Windows, veja esta pergunta [aqui](https://stackoverflow.com/questions/17710209/how-to-run-make-from-cygwin-environment)
+- O comando básico é `make`
+- O comando depende de um arquivo chamado de `Makefile`
+
+---
+
+# Makefile
+
+1. Arquivo de texto especialmente formatado para um programa Unix chamado `make`
+1. Contém uma lista de requisitos para que um programa seja considerado ‘up to date’
+1. O programa make examina esses requisitos
+    - verifica os timestamps em todos os arquivos de origem;
+    - recompila apenas os arquivos com um registro desatualizado
+1. Uma regra no arquivo make tem a seguinte forma:
+
+```make
+target: requisitos ; comando
+```
+
+1. Como que leio isso?
+    1. Para construir o `target`
+    2. Eu preciso primeiro construir os requisitos
+    3. E depois executar tal comando
+
+---
+
+# Exemplo Makefile (1)
+
+## Arquivo Make
+
+```make
+all: main
+
+main:
+	g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o meuprograma
+
+clean:
+	rm meuprograma
+```
+
+1. Aqui, para executar o comando `all` primeiro eu preciso executar `main` (`all: main`)
+2. Para executar o `main` eu não preciso de nada
+    1. O main executa o comando: `g++ src/jogador.cpp src/carta.cpp src/baralho.cpp main.cpp -o main`
+    1. Ou seja, compila o programa
+    1. Gera um executável chamado de `meuprograma`
+3. Para executar o `clean` eu não preciso de nada
+    1.  O clean executa o comando `rm` que apaga um arquivo
+    1.  Estou apagamento o arquivo `meuprograma`
+
+## Fazendo uso
+
+- Para compilar seu código, execute o comando `make`
+
+```sh
+make
+```
+
+- ou 
+
+```sh
+make all
+```
+
+- Para limpar tudo
+
+```sh
+make clean
+```
+
+---
+
+# Exemplo Makefile (2)
+
+- Abaixo temos outro Makefile mais complexo
+- O mesmo faz uso de variáveis no começo
+- Para referenciar umas variável, use `${NOME_DA_VAR}`
+
+## Arquivo
 
 ```make
 CC=g++
-CFLAGS=-std=c++11 -Wall
+CFLAGS=-std=c++20 -Wall
 
 all: main
 
-ponto.o: ponto.h ponto.cpp
-    ${CC} ${CFLAGS} -c ponto.cpp
+ponto.o: include/ponto.h src/ponto.cpp
+    ${CC} ${CFLAGS} -c src/ponto.cpp
 
-main.o: ponto.h main.cpp
-    ${CC} ${CFLAGS} -c main.cpp
+retangulo.o: ponto.o include/retangulo.h src/retangulo.cpp
+    ${CC} ${CFLAGS} -c src/retangulo.cpp
 
-main: main.o ponto.o
-    ${CC} ${CFLAGS} -o main main.o ponto.o
+main.o: include/ponto.h src/main.cpp
+    ${CC} ${CFLAGS} -c src/main.cpp
+
+main: main.o ponto.o retangulo.o
+    ${CC} ${CFLAGS} -o main main.o ponto.o retangulo.o
 
 clean:
     rm -f main *.o
 ```
 
+## Entendendo
+
+1. O `all: main` depende do main
+1. O `main: main.o ponto.o retangulo.o` depende das regras `main.o`, `ponto.o` e `retangulo.o`.
+1. A regra `ponto.o: include/ponto.h src/ponto.cpp` depende dos arquivos existirem.
+    - Isto é, quando uma dependência no make não é uma regra, o sistema simplesmente verifica se o arquivo existe
+    - Aqui `include/ponto.h` e `src/ponto.cpp` são dois arquivos que **tem** que existir para compilar o ponto
+    - Faz sentido, são os arquivos que definem o código
+1. Para compilar execute: `${CC} ${CFLAGS} -c src/ponto.cpp`, só que `${CC}` é uma variável, qual o valor dela?
+    - Basta substituir com a definição no começo do arquivi
+1. Ou seja, para compilar execute `g++ -std=c++20 -Wall -c src/ponto.cpp`
+1. Dado que: `${CC}` vira `g++` e `${CFLAGS}` vira `-std=c++20 -Wall
+
 ---
 
 # Exemplo Makefile "Genérico"
 
-1. Copie e cole, funciona em sistemas unix
+1. Make é um sistema poderoso que permite executar comandos
+1. Nosso foco aqui não é passar por todos esses comandos 
+1. Possivelmente, um Makefile simples vai ser o suficiente para você na disciplina
+1. Porém, e como sou preguiçoso, tenho um Makefile genérico para uma organização de pastas
+   da forma abaixo
+1. Copie e cole esse make, organize seu código em pastas similares que vai funcionar em sistemas unix
+
+## Como organizar os arquivos
+
+```
+. project
+├── Makefile
+├── include            // aqui moram os seus .h ou .hpp
+│  └── arq1.h
+│  └── arq2.h
+└── src                // aqui moram os seus .cpp
+│  └── arq1.cpp
+│  └── arq2.cpp
+└── third_party        // aqui mora código de terceiros que você pegou da internet
+│  └── doctest.h       // vai ficar mais claro quando falarmos de testes
+```
+
+## O makefile
 
 ```make
 CC := g++
@@ -675,7 +832,7 @@ TARGET := main
 SRCEXT := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
-CFLAGS := -g -Wall -O3 -std=c++14
+CFLAGS := -g -Wall -O3 -std=c++20
 INC := -I include/ -I third_party/
 
 $(TARGET): $(OBJECTS)
@@ -695,8 +852,14 @@ clean:
 
 # Considerações Finais
 
+## Qual o motivo de modularizar?
+
 - Maior reusabilidade
 - Melhoria da legibilidade
 - Modificações facilitadas (e mais seguras)
 - Maior confiabilidade
 - Aumento da produtividade
+
+## Qual de usar um sistema de construção estilo o Make?
+
+- Constriir o código em partes e de forma automatizada

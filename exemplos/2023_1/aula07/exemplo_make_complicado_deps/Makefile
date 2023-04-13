@@ -1,4 +1,4 @@
-CC=clang
+CC=g++
 CFLAGS=-std=c++20 -Wall
 
 all: main
