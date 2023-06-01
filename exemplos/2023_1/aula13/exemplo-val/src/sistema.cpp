@@ -1,8 +1,15 @@
 #include "sistema.h"
-#include "frota.h"
 #include <exception>
 
 #include <iostream>
+
+Sistema::~Sistema() {
+  for (auto pair : _clientes) {
+    Cliente *c = pair.second;
+    delete c;
+  }
+}
+
 
 Cliente *Sistema::cadastra_cliente(std::string nome) {
   if (_clientes.count(nome) > 0) {
@@ -30,4 +37,5 @@ Carro *Sistema::busca_uber(std::string nome) {
   }
 
   return _frota.alocar_carro();
+
 }

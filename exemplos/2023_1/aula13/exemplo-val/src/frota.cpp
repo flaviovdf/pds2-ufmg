@@ -11,6 +11,5 @@ Carro *Frota::alocar_carro() {
   }
 
   Carro *alocado = _carros.back();
-  _carros.pop_back();
   return alocado;
 }
