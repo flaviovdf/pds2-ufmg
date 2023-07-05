@@ -1,6 +1,7 @@
 #include <exception>
 #include <iostream>
 
+#include "frota.h"
 #include "sistema.h"
 
 int main() {
@@ -27,13 +28,9 @@ int main() {
   }
 
   try {
-    sistema_uber.busca_uber("flavio,,@d");
-  } catch(cliente_ja_existe_e &e) {
-
-  } catch(cliente_nao_existe_e &e) {
-    
-  } catch(sem_saldo_e &e) {
-    
+    sistema_uber.busca_uber("flavio@dcc");
+  } catch (zero_carros_disponiveis_e &e) {
+    std::cout << "Tente nova"
   }
   sistema_uber.adicionar_carro(&c1);
   sistema_uber.adicionar_carro(&c2);
