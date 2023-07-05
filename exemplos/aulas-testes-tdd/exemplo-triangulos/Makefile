@@ -13,7 +13,7 @@ OBJECTS := $(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
 TSTSOURCES := $(shell find $(TSTDIR) -type f -name *.$(SRCEXT))
 
 # -g debug, --coverage cobertura
-CFLAGS := -g --coverage -Wall -O3 -std=c++20
+CFLAGS := -Wall -O3 -std=c++14
 INC := -I include/ -I third_party/
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
@@ -32,6 +32,6 @@ tests: $(OBJECTS)
 all: main
 
 clean:
-	$(RM) -r $(OBJDIR)/* $(BINDIR)/* coverage/* *.gcda *.gcno
+	$(RM) -r $(OBJDIR)/* $(BINDIR)/*
 
 .PHONY: clean
